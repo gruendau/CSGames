@@ -13,6 +13,7 @@
 //    2022-04-12 Model, ObservableObject, own project
 //    2022-04-11 Running app
 //    2022-04-10 Creation
+//    2023-06-15 Moved to GitHub
 //
 //  Remarks:
 //    Designed for iPhone 12 mini
