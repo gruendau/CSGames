@@ -44,7 +44,7 @@ let colors = [
 
 
 
-struct CSColorChoser: View {
+struct CSAppColorChoser: View {
     
     let text: String
     @Binding var bindedColor: Color
@@ -123,12 +123,12 @@ struct CSColorChoser: View {
 }
 
 
-struct CSColorChoser_Previews: PreviewProvider {
+struct CSAppColorChoser_Previews: PreviewProvider {
     
     @State static var bindedColor: Color = .white
     
     static var previews: some View {
-        CSColorChoser(text: "Test Color", bindedColor: $bindedColor)
+        CSAppColorChoser(text: "Test Color", bindedColor: $bindedColor)
             .environmentObject(ColoredSquaresModel())
             .environmentObject(ViewParameter())
     }

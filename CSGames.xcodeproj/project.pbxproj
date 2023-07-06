@@ -19,11 +19,11 @@
 		52718AC42805E3150065C9DE /* GapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AC32805E3150065C9DE /* GapView.swift */; };
 		52718AC62805E3A20065C9DE /* CSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AC52805E3A20065C9DE /* CSColor.swift */; };
 		527216352810AA1D001264F3 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527216342810AA1D001264F3 /* TestView.swift */; };
-		527216372810B245001264F3 /* AppUserInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527216362810B245001264F3 /* AppUserInstruction.swift */; };
-		527216392810B257001264F3 /* AppStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527216382810B257001264F3 /* AppStatistics.swift */; };
-		5272163B2810B273001264F3 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5272163A2810B273001264F3 /* AppData.swift */; };
-		5272163D2810B284001264F3 /* AppCustomization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5272163C2810B284001264F3 /* AppCustomization.swift */; };
-		52745F5A28088BCD00B39220 /* ColorChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52745F5928088BCD00B39220 /* ColorChooserView.swift */; };
+		527216372810B245001264F3 /* CSAppUserInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527216362810B245001264F3 /* CSAppUserInstruction.swift */; };
+		527216392810B257001264F3 /* CSAppStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527216382810B257001264F3 /* CSAppStatistics.swift */; };
+		5272163B2810B273001264F3 /* CSAppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5272163A2810B273001264F3 /* CSAppData.swift */; };
+		5272163D2810B284001264F3 /* CSAppCustomization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5272163C2810B284001264F3 /* CSAppCustomization.swift */; };
+		52745F5A28088BCD00B39220 /* CSAppColorChoser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52745F5928088BCD00B39220 /* CSAppColorChoser.swift */; };
 		52745F612808AC9300B39220 /* CSGamesTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52745F602808AC9300B39220 /* CSGamesTitle.swift */; };
 		5276878328076E7400501744 /* CSMainAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276878228076E7400501744 /* CSMainAppInfo.swift */; };
 		527687852807738300501744 /* CopyrightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527687842807738300501744 /* CopyrightView.swift */; };
@@ -51,11 +51,11 @@
 		52718AC32805E3150065C9DE /* GapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GapView.swift; sourceTree = "<group>"; };
 		52718AC52805E3A20065C9DE /* CSColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSColor.swift; sourceTree = "<group>"; };
 		527216342810AA1D001264F3 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
-		527216362810B245001264F3 /* AppUserInstruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUserInstruction.swift; sourceTree = "<group>"; };
-		527216382810B257001264F3 /* AppStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStatistics.swift; sourceTree = "<group>"; };
-		5272163A2810B273001264F3 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
-		5272163C2810B284001264F3 /* AppCustomization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCustomization.swift; sourceTree = "<group>"; };
-		52745F5928088BCD00B39220 /* ColorChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorChooserView.swift; sourceTree = "<group>"; };
+		527216362810B245001264F3 /* CSAppUserInstruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSAppUserInstruction.swift; sourceTree = "<group>"; };
+		527216382810B257001264F3 /* CSAppStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSAppStatistics.swift; sourceTree = "<group>"; };
+		5272163A2810B273001264F3 /* CSAppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSAppData.swift; sourceTree = "<group>"; };
+		5272163C2810B284001264F3 /* CSAppCustomization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSAppCustomization.swift; sourceTree = "<group>"; };
+		52745F5928088BCD00B39220 /* CSAppColorChoser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSAppColorChoser.swift; sourceTree = "<group>"; };
 		52745F602808AC9300B39220 /* CSGamesTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSGamesTitle.swift; sourceTree = "<group>"; };
 		5276878228076E7400501744 /* CSMainAppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMainAppInfo.swift; sourceTree = "<group>"; };
 		527687842807738300501744 /* CopyrightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightView.swift; sourceTree = "<group>"; };
@@ -179,12 +179,12 @@
 			children = (
 				5276878228076E7400501744 /* CSMainAppInfo.swift */,
 				5276878C28077AB600501744 /* CSAppInfo.swift */,
-				52745F5928088BCD00B39220 /* ColorChooserView.swift */,
+				52745F5928088BCD00B39220 /* CSAppColorChoser.swift */,
+				527216362810B245001264F3 /* CSAppUserInstruction.swift */,
+				5272163A2810B273001264F3 /* CSAppData.swift */,
+				527216382810B257001264F3 /* CSAppStatistics.swift */,
+				5272163C2810B284001264F3 /* CSAppCustomization.swift */,
 				527216342810AA1D001264F3 /* TestView.swift */,
-				527216362810B245001264F3 /* AppUserInstruction.swift */,
-				5272163A2810B273001264F3 /* AppData.swift */,
-				527216382810B257001264F3 /* AppStatistics.swift */,
-				5272163C2810B284001264F3 /* AppCustomization.swift */,
 				528C0E6228171AF000C1962B /* NaviTest.swift */,
 			);
 			path = AppInfo;
@@ -294,19 +294,19 @@
 				5276878B280779DA00501744 /* CSButton.swift in Sources */,
 				52779B0B2808371A0071FCDC /* CSMain.swift in Sources */,
 				52718AB22805DE110065C9DE /* ColoredSquaresModel.swift in Sources */,
-				527216372810B245001264F3 /* AppUserInstruction.swift in Sources */,
+				527216372810B245001264F3 /* CSAppUserInstruction.swift in Sources */,
 				5276878328076E7400501744 /* CSMainAppInfo.swift in Sources */,
 				528C0E6328171AF000C1962B /* NaviTest.swift in Sources */,
 				52718ABE2805E05A0065C9DE /* ViewExtensions.swift in Sources */,
 				52718AC42805E3150065C9DE /* GapView.swift in Sources */,
-				52745F5A28088BCD00B39220 /* ColorChooserView.swift in Sources */,
+				52745F5A28088BCD00B39220 /* CSAppColorChoser.swift in Sources */,
 				52718AA62805DD200065C9DE /* ContentView.swift in Sources */,
-				5272163D2810B284001264F3 /* AppCustomization.swift in Sources */,
+				5272163D2810B284001264F3 /* CSAppCustomization.swift in Sources */,
 				52745F612808AC9300B39220 /* CSGamesTitle.swift in Sources */,
 				52718AC62805E3A20065C9DE /* CSColor.swift in Sources */,
 				52718AB42805DE8C0065C9DE /* CSMainApp.swift in Sources */,
-				527216392810B257001264F3 /* AppStatistics.swift in Sources */,
-				5272163B2810B273001264F3 /* AppData.swift in Sources */,
+				527216392810B257001264F3 /* CSAppStatistics.swift in Sources */,
+				5272163B2810B273001264F3 /* CSAppData.swift in Sources */,
 				52718AA42805DD200065C9DE /* ColoredSquaresApp.swift in Sources */,
 				527687872807742C00501744 /* ViewParameter.swift in Sources */,
 				527D1D662A575BF300807DBC /* ForegroundGradient1.swift in Sources */,
