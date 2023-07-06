@@ -33,8 +33,8 @@ struct CSMainAppInfo: View {
 
                 Spacer()
                 
-                CSCopyright()
-                    .padding([.bottom], vp.copyright.paddingBottom)
+                Copyright()
+                    .padding([.bottom], vp.copyrightPaddingBottom)
                 
             }
             

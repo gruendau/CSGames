@@ -62,8 +62,8 @@ class ViewParameter: ObservableObject {
     
     
     // Copyright
-    let copyright = Copyright()
-    
+    let copyrightPaddingBottom: CGFloat = 30
+
 
     
     

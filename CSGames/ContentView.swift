@@ -63,8 +63,8 @@ struct ContentView: View {
                 Spacer()
             
                 // Copyright
-                CSCopyright()
-                    .padding([.bottom], vp.copyright.paddingBottom)
+                Copyright()
+                    .padding([.bottom], vp.copyrightPaddingBottom)
 
             }
             
