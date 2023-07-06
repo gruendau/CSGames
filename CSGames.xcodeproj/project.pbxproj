@@ -32,6 +32,7 @@
 		5276878B280779DA00501744 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276878A280779DA00501744 /* ButtonView.swift */; };
 		5276878D28077AB600501744 /* AppInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276878C28077AB600501744 /* AppInfoView.swift */; };
 		52779B0B2808371A0071FCDC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52779B0A2808371A0071FCDC /* MainView.swift */; };
+		527D1D632A57542F00807DBC /* README.txt in Sources */ = {isa = PBXBuildFile; fileRef = 527D1D622A57542F00807DBC /* README.txt */; };
 		528C0E6328171AF000C1962B /* NaviTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528C0E6228171AF000C1962B /* NaviTest.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		5276878A280779DA00501744 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		5276878C28077AB600501744 /* AppInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoView.swift; sourceTree = "<group>"; };
 		52779B0A2808371A0071FCDC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		527D1D622A57542F00807DBC /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		528C0E6228171AF000C1962B /* NaviTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 		52718AA22805DD200065C9DE /* CSGames */ = {
 			isa = PBXGroup;
 			children = (
+				527D1D622A57542F00807DBC /* README.txt */,
 				52718AA32805DD200065C9DE /* ColoredSquaresApp.swift */,
 				52718AA52805DD200065C9DE /* ContentView.swift */,
 				52745F602808AC9300B39220 /* CSGamesTitle.swift */,
@@ -299,6 +302,7 @@
 				52718AB62805DF0A0065C9DE /* ColoredSquareboxView.swift in Sources */,
 				5276878D28077AB600501744 /* AppInfoView.swift in Sources */,
 				52768789280777A000501744 /* TitleView.swift in Sources */,
+				527D1D632A57542F00807DBC /* README.txt in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
