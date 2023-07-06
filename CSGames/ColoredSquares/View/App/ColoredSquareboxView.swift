@@ -32,7 +32,7 @@ struct ColoredSquareboxView: View {
                     ForEach(0..<csm.number_SquaresPerEdge, id: \.self) {_ in
                         HStack (alignment: .center, spacing: 0) {
                             ForEach(0..<csm.number_SquaresPerEdge, id: \.self) {_ in
-                                ColoredSquareView()
+                                CSSquare()
                             }
                         }.frame(width: csm.size_Squarebox,
                                 height: csm.size_Square)

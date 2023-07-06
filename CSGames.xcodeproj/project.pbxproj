@@ -14,7 +14,7 @@
 		52718AB22805DE110065C9DE /* ColoredSquaresModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB12805DE110065C9DE /* ColoredSquaresModel.swift */; };
 		52718AB42805DE8C0065C9DE /* CSMainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB32805DE8C0065C9DE /* CSMainApp.swift */; };
 		52718AB62805DF0A0065C9DE /* ColoredSquareboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB52805DF0A0065C9DE /* ColoredSquareboxView.swift */; };
-		52718AB82805DF7D0065C9DE /* ColoredSquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB72805DF7D0065C9DE /* ColoredSquareView.swift */; };
+		52718AB82805DF7D0065C9DE /* CSSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB72805DF7D0065C9DE /* CSSquare.swift */; };
 		52718ABE2805E05A0065C9DE /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718ABD2805E05A0065C9DE /* ViewExtensions.swift */; };
 		52718AC42805E3150065C9DE /* GapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AC32805E3150065C9DE /* GapView.swift */; };
 		52718AC62805E3A20065C9DE /* CSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AC52805E3A20065C9DE /* CSColor.swift */; };
@@ -46,7 +46,7 @@
 		52718AB12805DE110065C9DE /* ColoredSquaresModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredSquaresModel.swift; sourceTree = "<group>"; };
 		52718AB32805DE8C0065C9DE /* CSMainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMainApp.swift; sourceTree = "<group>"; };
 		52718AB52805DF0A0065C9DE /* ColoredSquareboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredSquareboxView.swift; sourceTree = "<group>"; };
-		52718AB72805DF7D0065C9DE /* ColoredSquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredSquareView.swift; sourceTree = "<group>"; };
+		52718AB72805DF7D0065C9DE /* CSSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSquare.swift; sourceTree = "<group>"; };
 		52718ABD2805E05A0065C9DE /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		52718AC32805E3150065C9DE /* GapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GapView.swift; sourceTree = "<group>"; };
 		52718AC52805E3A20065C9DE /* CSColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSColor.swift; sourceTree = "<group>"; };
@@ -195,7 +195,7 @@
 			children = (
 				52718AB32805DE8C0065C9DE /* CSMainApp.swift */,
 				52718AB52805DF0A0065C9DE /* ColoredSquareboxView.swift */,
-				52718AB72805DF7D0065C9DE /* ColoredSquareView.swift */,
+				52718AB72805DF7D0065C9DE /* CSSquare.swift */,
 				5276878A280779DA00501744 /* ButtonView.swift */,
 			);
 			path = App;
@@ -289,7 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52718AB82805DF7D0065C9DE /* ColoredSquareView.swift in Sources */,
+				52718AB82805DF7D0065C9DE /* CSSquare.swift in Sources */,
 				527687852807738300501744 /* CopyrightView.swift in Sources */,
 				5276878B280779DA00501744 /* ButtonView.swift in Sources */,
 				52779B0B2808371A0071FCDC /* CSMain.swift in Sources */,

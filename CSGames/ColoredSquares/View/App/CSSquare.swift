@@ -10,7 +10,7 @@
 
 import SwiftUI
 
-struct ColoredSquareView: View {
+struct CSSquare: View {
     
     @EnvironmentObject var csm: ColoredSquaresModel
     @EnvironmentObject var vp: ViewParameter
@@ -52,7 +52,7 @@ struct ColoredSquareView: View {
 
 struct ColoredSquareView_Previews: PreviewProvider {
     static var previews: some View {
-        ColoredSquareView()
+        CSSquare()
             .environmentObject(ColoredSquaresModel())
             .environmentObject(ViewParameter())
             .frame(width: 200, height: 200, alignment: .center)
