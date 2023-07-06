@@ -153,7 +153,7 @@
 				52718AB32805DE8C0065C9DE /* CSMainApp.swift */,
 				5276878228076E7400501744 /* CSMainAppInfo.swift */,
 				52745F5E2808A46900B39220 /* ColoredSquaresViews */,
-				52745F5D2808A42C00B39220 /* AppInfoViews */,
+				52745F5D2808A42C00B39220 /* AppInfo */,
 				52745F5F2808A4DF00B39220 /* MiscViews */,
 			);
 			path = View;
@@ -176,7 +176,7 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		52745F5D2808A42C00B39220 /* AppInfoViews */ = {
+		52745F5D2808A42C00B39220 /* AppInfo */ = {
 			isa = PBXGroup;
 			children = (
 				5276878C28077AB600501744 /* CSAppInfo.swift */,
@@ -188,7 +188,7 @@
 				5272163C2810B284001264F3 /* AppCustomization.swift */,
 				528C0E6228171AF000C1962B /* NaviTest.swift */,
 			);
-			path = AppInfoViews;
+			path = AppInfo;
 			sourceTree = "<group>";
 		};
 		52745F5E2808A46900B39220 /* ColoredSquaresViews */ = {
