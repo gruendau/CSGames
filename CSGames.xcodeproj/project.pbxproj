@@ -13,7 +13,7 @@
 		52718AAB2805DD220065C9DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52718AAA2805DD220065C9DE /* Preview Assets.xcassets */; };
 		52718AB22805DE110065C9DE /* ColoredSquaresModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB12805DE110065C9DE /* ColoredSquaresModel.swift */; };
 		52718AB42805DE8C0065C9DE /* CSMainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB32805DE8C0065C9DE /* CSMainApp.swift */; };
-		52718AB62805DF0A0065C9DE /* ColoredSquareboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB52805DF0A0065C9DE /* ColoredSquareboxView.swift */; };
+		52718AB62805DF0A0065C9DE /* CSSquarebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB52805DF0A0065C9DE /* CSSquarebox.swift */; };
 		52718AB82805DF7D0065C9DE /* CSSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB72805DF7D0065C9DE /* CSSquare.swift */; };
 		52718ABE2805E05A0065C9DE /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718ABD2805E05A0065C9DE /* ViewExtensions.swift */; };
 		52718AC42805E3150065C9DE /* GapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AC32805E3150065C9DE /* GapView.swift */; };
@@ -45,7 +45,7 @@
 		52718AAA2805DD220065C9DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		52718AB12805DE110065C9DE /* ColoredSquaresModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredSquaresModel.swift; sourceTree = "<group>"; };
 		52718AB32805DE8C0065C9DE /* CSMainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMainApp.swift; sourceTree = "<group>"; };
-		52718AB52805DF0A0065C9DE /* ColoredSquareboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredSquareboxView.swift; sourceTree = "<group>"; };
+		52718AB52805DF0A0065C9DE /* CSSquarebox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSquarebox.swift; sourceTree = "<group>"; };
 		52718AB72805DF7D0065C9DE /* CSSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSquare.swift; sourceTree = "<group>"; };
 		52718ABD2805E05A0065C9DE /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		52718AC32805E3150065C9DE /* GapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GapView.swift; sourceTree = "<group>"; };
@@ -194,7 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				52718AB32805DE8C0065C9DE /* CSMainApp.swift */,
-				52718AB52805DF0A0065C9DE /* ColoredSquareboxView.swift */,
+				52718AB52805DF0A0065C9DE /* CSSquarebox.swift */,
 				52718AB72805DF7D0065C9DE /* CSSquare.swift */,
 				5276878A280779DA00501744 /* ButtonView.swift */,
 			);
@@ -311,7 +311,7 @@
 				527687872807742C00501744 /* ViewParameter.swift in Sources */,
 				527D1D662A575BF300807DBC /* ForegroundGradient1.swift in Sources */,
 				527216352810AA1D001264F3 /* TestView.swift in Sources */,
-				52718AB62805DF0A0065C9DE /* ColoredSquareboxView.swift in Sources */,
+				52718AB62805DF0A0065C9DE /* CSSquarebox.swift in Sources */,
 				5276878D28077AB600501744 /* CSAppInfo.swift in Sources */,
 				52768789280777A000501744 /* TitleView.swift in Sources */,
 				527D1D632A57542F00807DBC /* README.txt in Sources */,

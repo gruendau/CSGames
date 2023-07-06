@@ -30,7 +30,7 @@ struct CSMainApp: View {
                 
                 Spacer()
                 
-                ColoredSquareboxView()
+                CSSquarebox()
                 
                 Spacer()
                 
