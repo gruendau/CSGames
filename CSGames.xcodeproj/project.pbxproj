@@ -99,12 +99,12 @@
 		52718AA22805DD200065C9DE /* CSGames */ = {
 			isa = PBXGroup;
 			children = (
-				527D1D642A575BAF00807DBC /* Modifiers */,
 				527D1D622A57542F00807DBC /* README.txt */,
 				52718AA32805DD200065C9DE /* ColoredSquaresApp.swift */,
 				52718AA52805DD200065C9DE /* ContentView.swift */,
 				52745F602808AC9300B39220 /* CSGamesTitle.swift */,
-				52745F54280879EB00B39220 /* ColoredSquaresViews */,
+				527D1D642A575BAF00807DBC /* Modifiers */,
+				52745F54280879EB00B39220 /* ColoredSquares */,
 				52718AA72805DD220065C9DE /* Assets.xcassets */,
 				52745F5828087B7600B39220 /* Utilities */,
 				52718AA92805DD220065C9DE /* Preview Content */,
@@ -135,7 +135,7 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-		52745F54280879EB00B39220 /* ColoredSquaresViews */ = {
+		52745F54280879EB00B39220 /* ColoredSquares */ = {
 			isa = PBXGroup;
 			children = (
 				52779B0A2808371A0071FCDC /* MainView.swift */,
@@ -144,7 +144,7 @@
 				52745F5628087AD300B39220 /* Model */,
 				527378AC280A171B000B92D2 /* Data */,
 			);
-			path = ColoredSquaresViews;
+			path = ColoredSquares;
 			sourceTree = "<group>";
 		};
 		52745F5528087AC700B39220 /* View */ = {
