@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52718AA42805DD200065C9DE /* ColoredSquaresApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AA32805DD200065C9DE /* ColoredSquaresApp.swift */; };
+		52718AA42805DD200065C9DE /* CSGamesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AA32805DD200065C9DE /* CSGamesApp.swift */; };
 		52718AA62805DD200065C9DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AA52805DD200065C9DE /* ContentView.swift */; };
 		52718AA82805DD220065C9DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52718AA72805DD220065C9DE /* Assets.xcassets */; };
 		52718AAB2805DD220065C9DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52718AAA2805DD220065C9DE /* Preview Assets.xcassets */; };
@@ -39,7 +39,7 @@
 
 /* Begin PBXFileReference section */
 		52718AA02805DD200065C9DE /* CSGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		52718AA32805DD200065C9DE /* ColoredSquaresApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredSquaresApp.swift; sourceTree = "<group>"; };
+		52718AA32805DD200065C9DE /* CSGamesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSGamesApp.swift; sourceTree = "<group>"; };
 		52718AA52805DD200065C9DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		52718AA72805DD220065C9DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52718AAA2805DD220065C9DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				527D1D622A57542F00807DBC /* README.txt */,
-				52718AA32805DD200065C9DE /* ColoredSquaresApp.swift */,
+				52718AA32805DD200065C9DE /* CSGamesApp.swift */,
 				52718AA52805DD200065C9DE /* ContentView.swift */,
 				52745F602808AC9300B39220 /* CSGamesTitle.swift */,
 				527D1D642A575BAF00807DBC /* Modifiers */,
@@ -307,7 +307,7 @@
 				52718AB42805DE8C0065C9DE /* CSMainApp.swift in Sources */,
 				527216392810B257001264F3 /* CSAppStatistics.swift in Sources */,
 				5272163B2810B273001264F3 /* CSAppData.swift in Sources */,
-				52718AA42805DD200065C9DE /* ColoredSquaresApp.swift in Sources */,
+				52718AA42805DD200065C9DE /* CSGamesApp.swift in Sources */,
 				527687872807742C00501744 /* ViewParameter.swift in Sources */,
 				527D1D662A575BF300807DBC /* ForegroundGradient1.swift in Sources */,
 				527216352810AA1D001264F3 /* TestView.swift in Sources */,

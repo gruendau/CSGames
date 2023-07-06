@@ -1,6 +1,6 @@
 //
-//  ColoredSquaresApp.swift
-//  ColoredSquares
+//  CSGamesApp.swift
+//  CSGames
 //
 //  Created by Test on 12.04.22.
 //
@@ -9,7 +9,7 @@ import SwiftUI
 
 
 @main
-struct ColoredSquaresApp: App {
+struct CSGamesApp: App {
     
     @StateObject var csm = ColoredSquaresModel()
     @StateObject var vp = ViewParameter()
