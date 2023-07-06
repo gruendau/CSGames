@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ScreenView_AppInfo: View {
+struct CSMainAppInfo: View {
     
     //@Binding var showUserInstruction: Bool
     
@@ -44,9 +44,10 @@ struct ScreenView_AppInfo: View {
     }
 }
 
-struct ScreenView_AppInfo_Previews: PreviewProvider {
+
+struct CSMainAppInfo_Previews: PreviewProvider {
     static var previews: some View {
-        ScreenView_AppInfo()
+        CSMainAppInfo()
             .environmentObject(ColoredSquaresModel())
             .environmentObject(ViewParameter())
             //.edgesIgnoringSafeArea(.all)

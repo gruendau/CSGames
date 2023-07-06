@@ -21,7 +21,7 @@ struct CSMain: View {
                     csm.updateSquarebox()
             }
             
-            ScreenView_AppInfo()
+            CSMainAppInfo()
                 .opacity(vp.showAppInfo ? 1 : 0)
         }
         
