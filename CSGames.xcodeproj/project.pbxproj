@@ -12,7 +12,7 @@
 		52718AA82805DD220065C9DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52718AA72805DD220065C9DE /* Assets.xcassets */; };
 		52718AAB2805DD220065C9DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52718AAA2805DD220065C9DE /* Preview Assets.xcassets */; };
 		52718AB22805DE110065C9DE /* ColoredSquaresModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB12805DE110065C9DE /* ColoredSquaresModel.swift */; };
-		52718AB42805DE8C0065C9DE /* ScreenView_Squares.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB32805DE8C0065C9DE /* ScreenView_Squares.swift */; };
+		52718AB42805DE8C0065C9DE /* CSMainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB32805DE8C0065C9DE /* CSMainApp.swift */; };
 		52718AB62805DF0A0065C9DE /* ColoredSquareboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB52805DF0A0065C9DE /* ColoredSquareboxView.swift */; };
 		52718AB82805DF7D0065C9DE /* ColoredSquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB72805DF7D0065C9DE /* ColoredSquareView.swift */; };
 		52718ABE2805E05A0065C9DE /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718ABD2805E05A0065C9DE /* ViewExtensions.swift */; };
@@ -44,7 +44,7 @@
 		52718AA72805DD220065C9DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52718AAA2805DD220065C9DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		52718AB12805DE110065C9DE /* ColoredSquaresModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredSquaresModel.swift; sourceTree = "<group>"; };
-		52718AB32805DE8C0065C9DE /* ScreenView_Squares.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenView_Squares.swift; sourceTree = "<group>"; };
+		52718AB32805DE8C0065C9DE /* CSMainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMainApp.swift; sourceTree = "<group>"; };
 		52718AB52805DF0A0065C9DE /* ColoredSquareboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredSquareboxView.swift; sourceTree = "<group>"; };
 		52718AB72805DF7D0065C9DE /* ColoredSquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredSquareView.swift; sourceTree = "<group>"; };
 		52718ABD2805E05A0065C9DE /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 		52745F5528087AC700B39220 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				52718AB32805DE8C0065C9DE /* ScreenView_Squares.swift */,
+				52718AB32805DE8C0065C9DE /* CSMainApp.swift */,
 				5276878228076E7400501744 /* ScreenView_AppInfo.swift */,
 				52745F5E2808A46900B39220 /* ColoredSquaresViews */,
 				52745F5D2808A42C00B39220 /* AppInfoViews */,
@@ -304,7 +304,7 @@
 				5272163D2810B284001264F3 /* AppCustomization.swift in Sources */,
 				52745F612808AC9300B39220 /* CSGamesTitle.swift in Sources */,
 				52718AC62805E3A20065C9DE /* CSColor.swift in Sources */,
-				52718AB42805DE8C0065C9DE /* ScreenView_Squares.swift in Sources */,
+				52718AB42805DE8C0065C9DE /* CSMainApp.swift in Sources */,
 				527216392810B257001264F3 /* AppStatistics.swift in Sources */,
 				5272163B2810B273001264F3 /* AppData.swift in Sources */,
 				52718AA42805DD200065C9DE /* ColoredSquaresApp.swift in Sources */,

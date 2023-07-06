@@ -16,7 +16,7 @@ struct CSMain: View {
         
         ZStack {
             
-            ScreenView_Squares()
+            CSMainApp()
                 .onTapGesture() {
                     csm.updateSquarebox()
             }
