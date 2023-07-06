@@ -70,7 +70,7 @@ struct ContentView: View {
             
             // 3. Layer
             // Chosen content of screen
-            MainView()
+            CSMain()
                 .opacity(vp.isAcitive_ColoredSquares ? 1 : 0)
                 
             

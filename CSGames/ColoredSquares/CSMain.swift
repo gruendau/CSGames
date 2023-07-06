@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MainView: View {
+struct CSMain: View {
     
     @EnvironmentObject var csm: ColoredSquaresModel
     @EnvironmentObject var vp: ViewParameter
@@ -28,9 +28,9 @@ struct MainView: View {
     }
 }
 
-struct MainView_Previews: PreviewProvider {
+struct CSMain_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        CSMain()
             .environmentObject(ColoredSquaresModel())
             .environmentObject(ViewParameter())
     }
