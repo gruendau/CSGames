@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct CSColors {
+struct Colors {
     
     let colors: [Color] = [.red, .green, .blue, .yellow, .purple,
                            .cyan, .orange, .pink, .indigo, .brown,

@@ -16,7 +16,7 @@
 		52718AB62805DF0A0065C9DE /* CSSquarebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB52805DF0A0065C9DE /* CSSquarebox.swift */; };
 		52718AB82805DF7D0065C9DE /* CSSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB72805DF7D0065C9DE /* CSSquare.swift */; };
 		52718AC42805E3150065C9DE /* xGapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AC32805E3150065C9DE /* xGapView.swift */; };
-		52718AC62805E3A20065C9DE /* CSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AC52805E3A20065C9DE /* CSColor.swift */; };
+		52718AC62805E3A20065C9DE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AC52805E3A20065C9DE /* Colors.swift */; };
 		527216352810AA1D001264F3 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527216342810AA1D001264F3 /* TestView.swift */; };
 		527216372810B245001264F3 /* CSAppUserInstructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527216362810B245001264F3 /* CSAppUserInstructions.swift */; };
 		527216392810B257001264F3 /* CSAppStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527216382810B257001264F3 /* CSAppStatistics.swift */; };
@@ -48,7 +48,7 @@
 		52718AB52805DF0A0065C9DE /* CSSquarebox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSquarebox.swift; sourceTree = "<group>"; };
 		52718AB72805DF7D0065C9DE /* CSSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSquare.swift; sourceTree = "<group>"; };
 		52718AC32805E3150065C9DE /* xGapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xGapView.swift; sourceTree = "<group>"; };
-		52718AC52805E3A20065C9DE /* CSColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSColor.swift; sourceTree = "<group>"; };
+		52718AC52805E3A20065C9DE /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		527216342810AA1D001264F3 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		527216362810B245001264F3 /* CSAppUserInstructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSAppUserInstructions.swift; sourceTree = "<group>"; };
 		527216382810B257001264F3 /* CSAppStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSAppStatistics.swift; sourceTree = "<group>"; };
@@ -171,7 +171,7 @@
 		52745F5828087B7600B39220 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				52718AC52805E3A20065C9DE /* CSColor.swift */,
+				52718AC52805E3A20065C9DE /* Colors.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -311,7 +311,7 @@
 				52718AA62805DD200065C9DE /* ContentView.swift in Sources */,
 				5272163D2810B284001264F3 /* CSAppCustomization.swift in Sources */,
 				52745F612808AC9300B39220 /* Title.swift in Sources */,
-				52718AC62805E3A20065C9DE /* CSColor.swift in Sources */,
+				52718AC62805E3A20065C9DE /* Colors.swift in Sources */,
 				52718AB42805DE8C0065C9DE /* CSMainApp.swift in Sources */,
 				527216392810B257001264F3 /* CSAppStatistics.swift in Sources */,
 				5272163B2810B273001264F3 /* CSAppData.swift in Sources */,

@@ -22,12 +22,12 @@ struct CSTitle: View {
                 //.foregroundColor(.white)
                 //.foregroundColor(CSColors(withoutBlack: true).color)
                     .gradientForeground(colors:
-                        [CSColors(withoutBlack: true).color,
-                        CSColors(withoutBlack: true).color,
-                        CSColors(withoutBlack: true).color])
+                        [Colors(withoutBlack: true).color,
+                        Colors(withoutBlack: true).color,
+                        Colors(withoutBlack: true).color])
                 //.background(LinearGradient(gradient: Gradient(colors: [.red, .orange, .yellow, .green, .blue]), startPoint: .leading, endPoint: .trailing))
                     .font(.largeTitle)
-                    .shadow(color: CSColors(withoutBlack: true).color, radius: 1.3, x: -1, y: 1)
+                    .shadow(color: Colors(withoutBlack: true).color, radius: 1.3, x: -1, y: 1)
                     .onTapGesture {
                         csm.reset()
                     }
