@@ -98,7 +98,8 @@ struct CSAppInfo: View {
             NavigationView {
                 
                 List {
-                    NavigationLink(destination: CSAppUserInstruction()) {
+                    
+                    NavigationLink(destination: CSAppUserInstructions()) {
                         ItemCell(item: "User Instruction")
                     }
                     .listRowBackground(listRowBGColor)
@@ -107,14 +108,17 @@ struct CSAppInfo: View {
                         ItemCell(item: "Data")
                     }
                     .listRowBackground(listRowBGColor)
+                    
                     NavigationLink(destination: CSAppStatistics()) {
                         ItemCell(item: "Statistics")
                     }
                     .listRowBackground(listRowBGColor)
+                    
                     NavigationLink(destination: CSAppCustomization()) {
                         ItemCell(item: "Custumization")
                     }
                     .listRowBackground(listRowBGColor)
+                    
                 }
                 //.background(Color.purple.ignoresSafeArea())
                 //.background(.red)

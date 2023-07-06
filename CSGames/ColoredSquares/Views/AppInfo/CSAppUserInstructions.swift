@@ -7,31 +7,45 @@
 
 import SwiftUI
 
-struct CSAppUserInstruction: View {
+struct CSAppUserInstructions: View {
     
     @EnvironmentObject var vp: ViewParameter
     
     var body: some View {
         
-        VStack(alignment: .leading) {
+        ZStack(alignment: .leading) {
+            
+            // 1.Layer
+            Color.black
+            
+            // 2. Layer
             VStack(alignment: .leading) {
-                Text("User Instruction")
+                Text("User Instructions")
                     .font(.title3)
-                .bold()
+                    .bold()
+                    .padding(.bottom)
                 
                 VStack(alignment: .leading) {
                     Text("Tap on screen to render squarebox.")
+                        .padding(.vertical, 1)
                     Text("Tap on single square to render it.")
+                        .padding(.vertical, 1)
                     Text("Tap on top buttons to change number of squares.")
+                        .padding(.vertical, 1)
                     Text("Tap on bottom buttons to change size of squarebox.")
+                        .padding(.vertical, 1)
                     Text("Tap on title to reset data.")
+                        .padding(.vertical, 1)
                     Text("Tap on copyright to get app info.")
-                }.padding([.leading], 15)
+                        .padding(.vertical, 1)
+                }
+                .padding(.leading, 15)
                 
                 Spacer()
             }
             .padding(.leading)
-        
+            .padding(.top, -35)
+            
         }
         .padding(.horizontal, 20)
         .foregroundColor(vp.textColor)
@@ -42,9 +56,9 @@ struct CSAppUserInstruction: View {
 }
 
 
-struct CSAppUserInstruction_Previews: PreviewProvider {
+struct CSAppUserInstructions_Previews: PreviewProvider {
     static var previews: some View {
-        CSAppUserInstruction()
+        CSAppUserInstructions()
             .environmentObject(ViewParameter())
     }
 }
