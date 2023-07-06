@@ -28,7 +28,7 @@ struct ScreenView_AppInfo: View {
                 TitleView()
                     .padding([.top], vp.titlePaddingTop)
                 
-                AppInfoView()
+                CSAppInfo()
                     //.padding(.vertical, -150)
 
                 Spacer()

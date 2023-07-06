@@ -49,7 +49,7 @@ struct ItemCell: View {
     }
 }
 
-struct AppInfoView: View {
+struct CSAppInfo: View {
     
     // https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/TableView_iPhone/TableViewAPIOverview/TableViewAPIOverview.html
     
@@ -229,10 +229,10 @@ struct AppInfoView: View {
 }
 
 
-struct AppInfoView_Previews: PreviewProvider {
+struct CSAppInfo_Previews: PreviewProvider {
     
     static var previews: some View {
-        AppInfoView()
+        CSAppInfo()
             .background(ViewParameter().screenBackgroundColor)
             .environmentObject(ColoredSquaresModel())
             .environmentObject(ViewParameter())
