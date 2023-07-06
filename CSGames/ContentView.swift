@@ -31,24 +31,29 @@ struct ContentView: View {
         
         ZStack {
             
+            // 1. Layer
             // Background for screen
             Rectangle()
                 .foregroundColor(.black)
             
+            // 2. Layer
             // Initial content of screen
             VStack {
                 
+                // Title
                 CSGamesTitle()
                     .padding([.top], vp.titlePaddingTop)
                 
-                //Spacer()
-                
+                // Table of content
                 ZStack {
+                    // Colored Squares
                     Text("Colored Squares")
                         .foregroundGradient1()
                         .onTapGesture {
                             vp.activateGame("Colored Squares")
                     }
+                    
+                    // Next ...
                     
                 }
                 .font(.title2)
@@ -57,13 +62,15 @@ struct ContentView: View {
                 
                 Spacer()
             
+                // Copyright
                 CopyrightView()
                     .padding([.bottom], vp.copyright.paddingBottom)
 
             }
-             // Choosen conten of screen
+            
+            // 3. Layer
+            // Chosen content of screen
             MainView()
-                //.edgesIgnoringSafeArea(.all)
                 .opacity(vp.isAcitive_ColoredSquares ? 1 : 0)
                 
             
