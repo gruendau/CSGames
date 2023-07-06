@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct CSGamesTitle: View {
+struct Title: View {
     
     @State var refreshTitle = 1
     
@@ -33,6 +33,6 @@ struct CSGamesTitle: View {
 
 struct CSGamesTitle_Previews: PreviewProvider {
     static var previews: some View {
-        CSGamesTitle()
+        Title()
     }
 }

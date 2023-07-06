@@ -41,7 +41,7 @@ struct ContentView: View {
             VStack {
                 
                 // Title
-                CSGamesTitle()
+                Title()
                     .padding([.top], vp.titlePaddingTop)
                 
                 // Table of content
