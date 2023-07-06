@@ -33,6 +33,7 @@
 		5276878D28077AB600501744 /* AppInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276878C28077AB600501744 /* AppInfoView.swift */; };
 		52779B0B2808371A0071FCDC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52779B0A2808371A0071FCDC /* MainView.swift */; };
 		527D1D632A57542F00807DBC /* README.txt in Sources */ = {isa = PBXBuildFile; fileRef = 527D1D622A57542F00807DBC /* README.txt */; };
+		527D1D662A575BF300807DBC /* ForegroundGradient1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D1D652A575BF300807DBC /* ForegroundGradient1.swift */; };
 		528C0E6328171AF000C1962B /* NaviTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528C0E6228171AF000C1962B /* NaviTest.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		5276878C28077AB600501744 /* AppInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoView.swift; sourceTree = "<group>"; };
 		52779B0A2808371A0071FCDC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		527D1D622A57542F00807DBC /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		527D1D652A575BF300807DBC /* ForegroundGradient1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForegroundGradient1.swift; sourceTree = "<group>"; };
 		528C0E6228171AF000C1962B /* NaviTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +99,7 @@
 		52718AA22805DD200065C9DE /* CSGames */ = {
 			isa = PBXGroup;
 			children = (
+				527D1D642A575BAF00807DBC /* Modifiers */,
 				527D1D622A57542F00807DBC /* README.txt */,
 				52718AA32805DD200065C9DE /* ColoredSquaresApp.swift */,
 				52718AA52805DD200065C9DE /* ContentView.swift */,
@@ -208,6 +211,14 @@
 			path = MiscViews;
 			sourceTree = "<group>";
 		};
+		527D1D642A575BAF00807DBC /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				527D1D652A575BF300807DBC /* ForegroundGradient1.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -298,6 +309,7 @@
 				5272163B2810B273001264F3 /* AppData.swift in Sources */,
 				52718AA42805DD200065C9DE /* ColoredSquaresApp.swift in Sources */,
 				527687872807742C00501744 /* ViewParameter.swift in Sources */,
+				527D1D662A575BF300807DBC /* ForegroundGradient1.swift in Sources */,
 				527216352810AA1D001264F3 /* TestView.swift in Sources */,
 				52718AB62805DF0A0065C9DE /* ColoredSquareboxView.swift in Sources */,
 				5276878D28077AB600501744 /* AppInfoView.swift in Sources */,
