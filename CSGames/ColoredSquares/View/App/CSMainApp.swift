@@ -34,7 +34,7 @@ struct CSMainApp: View {
                 
                 Spacer()
                 
-                ButtonView()
+                CSButton()
                 
                 Spacer()
                 

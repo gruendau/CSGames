@@ -8,32 +8,7 @@
 import SwiftUI
 
 
-struct RoundButtonView: View {
-    
-    var sign: String
-    
-    init (_ sign: String = "+") {
-        self.sign = sign
-    }
-
-    var body: some View {
-        
-        ZStack {
-            Circle()
-                .frame(width: 35, height: 35)
-            Text(sign)
-                .bold()
-                .foregroundColor(.white)
-                .font(.largeTitle)
-                .padding([.top], -3)
-                .padding([.leading], 1)
-        }.padding(5)
-        
-    }
-}
-
-
-struct ButtonView: View {
+struct CSButton: View {
     
     @EnvironmentObject var csm: ColoredSquaresModel
     @EnvironmentObject var vp: ViewParameter
@@ -47,11 +22,11 @@ struct ButtonView: View {
                 
                 Button(action: {
                     csm.increaseNumber_SquaresPerEdge()
-                }, label: { RoundButtonView("+") })
+                }, label: { CSRoundButton("+") })
                 
                 Button(action: {
                     csm.decreaseNumber_SquaresPerEdge()
-                }, label: { RoundButtonView("-") })
+                }, label: { CSRoundButton("-") })
                 
             }
             
@@ -60,24 +35,48 @@ struct ButtonView: View {
                 
                 Button(action: {
                     csm.increaseSize_Squarebox()
-                }, label: { RoundButtonView("+") })
+                }, label: { CSRoundButton("+") })
                 
                 Button(action: {
                     csm.decreaseSize_Squarebox()
-                }, label: { RoundButtonView("-") })
+                }, label: { CSRoundButton("-") })
                 
             }
             
         }
         
-
-        
     }
+    
+    struct CSRoundButton: View {
+        
+        var sign: String
+        
+        init (_ sign: String = "+") {
+            self.sign = sign
+        }
+
+        var body: some View {
+            
+            ZStack {
+                Circle()
+                    .frame(width: 35, height: 35)
+                Text(sign)
+                    .bold()
+                    .foregroundColor(.white)
+                    .font(.largeTitle)
+                    .padding([.top], -3)
+                    .padding([.leading], 1)
+            }.padding(5)
+            
+        }
+    }
+    
 }
 
-struct ButtonView_Previews: PreviewProvider {
+
+struct CSButton_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonView()
+        CSButton()
             .environmentObject(ColoredSquaresModel())
             .environmentObject(ViewParameter())
     }

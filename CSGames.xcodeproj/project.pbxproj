@@ -29,7 +29,7 @@
 		527687852807738300501744 /* CopyrightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527687842807738300501744 /* CopyrightView.swift */; };
 		527687872807742C00501744 /* ViewParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527687862807742C00501744 /* ViewParameter.swift */; };
 		52768789280777A000501744 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52768788280777A000501744 /* TitleView.swift */; };
-		5276878B280779DA00501744 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276878A280779DA00501744 /* ButtonView.swift */; };
+		5276878B280779DA00501744 /* CSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276878A280779DA00501744 /* CSButton.swift */; };
 		5276878D28077AB600501744 /* CSAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276878C28077AB600501744 /* CSAppInfo.swift */; };
 		52779B0B2808371A0071FCDC /* CSMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52779B0A2808371A0071FCDC /* CSMain.swift */; };
 		527D1D632A57542F00807DBC /* README.txt in Sources */ = {isa = PBXBuildFile; fileRef = 527D1D622A57542F00807DBC /* README.txt */; };
@@ -61,7 +61,7 @@
 		527687842807738300501744 /* CopyrightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightView.swift; sourceTree = "<group>"; };
 		527687862807742C00501744 /* ViewParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewParameter.swift; sourceTree = "<group>"; };
 		52768788280777A000501744 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
-		5276878A280779DA00501744 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		5276878A280779DA00501744 /* CSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSButton.swift; sourceTree = "<group>"; };
 		5276878C28077AB600501744 /* CSAppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSAppInfo.swift; sourceTree = "<group>"; };
 		52779B0A2808371A0071FCDC /* CSMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMain.swift; sourceTree = "<group>"; };
 		527D1D622A57542F00807DBC /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
@@ -196,7 +196,7 @@
 				52718AB32805DE8C0065C9DE /* CSMainApp.swift */,
 				52718AB52805DF0A0065C9DE /* CSSquarebox.swift */,
 				52718AB72805DF7D0065C9DE /* CSSquare.swift */,
-				5276878A280779DA00501744 /* ButtonView.swift */,
+				5276878A280779DA00501744 /* CSButton.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -291,7 +291,7 @@
 			files = (
 				52718AB82805DF7D0065C9DE /* CSSquare.swift in Sources */,
 				527687852807738300501744 /* CopyrightView.swift in Sources */,
-				5276878B280779DA00501744 /* ButtonView.swift in Sources */,
+				5276878B280779DA00501744 /* CSButton.swift in Sources */,
 				52779B0B2808371A0071FCDC /* CSMain.swift in Sources */,
 				52718AB22805DE110065C9DE /* ColoredSquaresModel.swift in Sources */,
 				527216372810B245001264F3 /* AppUserInstruction.swift in Sources */,
