@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TitleView: View {
+struct CSTitle: View {
     
     @EnvironmentObject var csm: ColoredSquaresModel
     @EnvironmentObject var vp: ViewParameter
@@ -59,9 +59,10 @@ struct TitleView: View {
     }
 }
 
-struct TitleView_Previews: PreviewProvider {
+
+struct CSTitle_Previews: PreviewProvider {
     static var previews: some View {
-        TitleView()
+        CSTitle()
             .environmentObject(ColoredSquaresModel())
             .environmentObject(ViewParameter())
     }

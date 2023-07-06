@@ -25,7 +25,7 @@ struct CSMainAppInfo: View {
             // Content of screen
             VStack {
                 
-                TitleView()
+                CSTitle()
                     .padding([.top], vp.titlePaddingTop)
                 
                 CSAppInfo()

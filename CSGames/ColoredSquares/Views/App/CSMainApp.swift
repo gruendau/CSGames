@@ -25,7 +25,7 @@ struct CSMainApp: View {
             // Content of screen
             VStack {
                 
-                TitleView()
+                CSTitle()
                     .padding([.top], vp.titlePaddingTop)
                 
                 Spacer()
