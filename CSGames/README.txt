@@ -13,6 +13,7 @@ eMail:
   volker.kasack@protonmail.com
 
 Updated:
+  2023-07-07 Refactured app
   2023-07-06 Added README
   2023-06-15 Moved to GitHub
   2022-04-20 Classes for parameter, Navigationview color

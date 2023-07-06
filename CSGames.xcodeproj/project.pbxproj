@@ -105,9 +105,9 @@
 				527687842807738300501744 /* Copyright.swift */,
 				527D1D642A575BAF00807DBC /* Modifiers */,
 				52745F54280879EB00B39220 /* ColoredSquares */,
-				52718AA72805DD220065C9DE /* Assets.xcassets */,
 				52745F5828087B7600B39220 /* Utilities */,
 				527D1D6B2A5784A000807DBC /* Junk */,
+				52718AA72805DD220065C9DE /* Assets.xcassets */,
 				52718AA92805DD220065C9DE /* Preview Content */,
 			);
 			path = CSGames;
