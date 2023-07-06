@@ -97,13 +97,17 @@ struct CSAppInfo: View {
                 .edgesIgnoringSafeArea(.all)
             NavigationView {
                 
+                
+                
+                
+                
                 List {
                     
                     NavigationLink(destination: CSAppUserInstructions()) {
                         ItemCell(item: "User Instruction")
                     }
                     .listRowBackground(listRowBGColor)
-
+                    
                     NavigationLink(destination: CSAppData()) {
                         ItemCell(item: "Data")
                     }
@@ -122,20 +126,22 @@ struct CSAppInfo: View {
                 }
                 //.background(Color.purple.ignoresSafeArea())
                 //.background(.red)
+                
+                
                 .navigationBarHidden(true)
                 
                 //.navigationBarTitle("App Info")
                 .foregroundColor(.white)
-//                .toolbar {
-//                    ToolbarItem(placement: .navigationBarLeading) {
-//                        HStack {
-//                            //Image(systemName: "sun.min.fill")
-//                            Text("App Info")
-//                                .font(.largeTitle)
-//                                .foregroundColor(.white)
-//                        }
-//                    }
-//                }
+                //                .toolbar {
+                //                    ToolbarItem(placement: .navigationBarLeading) {
+                //                        HStack {
+                //                            //Image(systemName: "sun.min.fill")
+                //                            Text("App Info")
+                //                                .font(.largeTitle)
+                //                                .foregroundColor(.white)
+                //                        }
+                //                    }
+                //                }
                 .padding([.top], -25)
                 
                 
