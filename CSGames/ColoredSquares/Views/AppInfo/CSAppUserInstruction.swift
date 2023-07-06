@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AppUserInstruction: View {
+struct CSAppUserInstruction: View {
     
     @EnvironmentObject var vp: ViewParameter
     
@@ -41,9 +41,10 @@ struct AppUserInstruction: View {
     }
 }
 
-struct AppUserInstruction_Previews: PreviewProvider {
+
+struct CSAppUserInstruction_Previews: PreviewProvider {
     static var previews: some View {
-        AppUserInstruction()
+        CSAppUserInstruction()
             .environmentObject(ViewParameter())
     }
 }

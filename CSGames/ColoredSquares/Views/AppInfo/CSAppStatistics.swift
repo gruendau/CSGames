@@ -7,14 +7,15 @@
 
 import SwiftUI
 
-struct AppStatistics: View {
+struct CSAppStatistics: View {
     var body: some View {
         Text("App Statistics")
     }
 }
 
-struct AppStatistics_Previews: PreviewProvider {
+
+struct CSAppStatistics_Previews: PreviewProvider {
     static var previews: some View {
-        AppStatistics()
+        CSAppStatistics()
     }
 }

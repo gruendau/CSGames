@@ -98,20 +98,20 @@ struct CSAppInfo: View {
             NavigationView {
                 
                 List {
-                    NavigationLink(destination: AppUserInstruction()) {
+                    NavigationLink(destination: CSAppUserInstruction()) {
                         ItemCell(item: "User Instruction")
                     }
                     .listRowBackground(listRowBGColor)
 
-                    NavigationLink(destination: AppData()) {
+                    NavigationLink(destination: CSAppData()) {
                         ItemCell(item: "Data")
                     }
                     .listRowBackground(listRowBGColor)
-                    NavigationLink(destination: AppStatistics()) {
+                    NavigationLink(destination: CSAppStatistics()) {
                         ItemCell(item: "Statistics")
                     }
                     .listRowBackground(listRowBGColor)
-                    NavigationLink(destination: AppCustomization()) {
+                    NavigationLink(destination: CSAppCustomization()) {
                         ItemCell(item: "Custumization")
                     }
                     .listRowBackground(listRowBGColor)

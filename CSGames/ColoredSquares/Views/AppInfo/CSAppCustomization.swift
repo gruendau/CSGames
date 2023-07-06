@@ -7,14 +7,15 @@
 
 import SwiftUI
 
-struct AppCustomization: View {
+struct CSAppCustomization: View {
     var body: some View {
         Text("App Customization")
     }
 }
 
-struct AppCustomization_Previews: PreviewProvider {
+
+struct CSAppCustomization_Previews: PreviewProvider {
     static var previews: some View {
-        AppCustomization()
+        CSAppCustomization()
     }
 }
