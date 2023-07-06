@@ -16,7 +16,7 @@
 		52718AB62805DF0A0065C9DE /* CSSquarebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB52805DF0A0065C9DE /* CSSquarebox.swift */; };
 		52718AB82805DF7D0065C9DE /* CSSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB72805DF7D0065C9DE /* CSSquare.swift */; };
 		52718ABE2805E05A0065C9DE /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718ABD2805E05A0065C9DE /* ViewExtensions.swift */; };
-		52718AC42805E3150065C9DE /* GapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AC32805E3150065C9DE /* GapView.swift */; };
+		52718AC42805E3150065C9DE /* xGapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AC32805E3150065C9DE /* xGapView.swift */; };
 		52718AC62805E3A20065C9DE /* CSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AC52805E3A20065C9DE /* CSColor.swift */; };
 		527216352810AA1D001264F3 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527216342810AA1D001264F3 /* TestView.swift */; };
 		527216372810B245001264F3 /* CSAppUserInstructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527216362810B245001264F3 /* CSAppUserInstructions.swift */; };
@@ -49,7 +49,7 @@
 		52718AB52805DF0A0065C9DE /* CSSquarebox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSquarebox.swift; sourceTree = "<group>"; };
 		52718AB72805DF7D0065C9DE /* CSSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSquare.swift; sourceTree = "<group>"; };
 		52718ABD2805E05A0065C9DE /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
-		52718AC32805E3150065C9DE /* GapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GapView.swift; sourceTree = "<group>"; };
+		52718AC32805E3150065C9DE /* xGapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xGapView.swift; sourceTree = "<group>"; };
 		52718AC52805E3A20065C9DE /* CSColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSColor.swift; sourceTree = "<group>"; };
 		527216342810AA1D001264F3 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		527216362810B245001264F3 /* CSAppUserInstructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSAppUserInstructions.swift; sourceTree = "<group>"; };
@@ -101,6 +101,7 @@
 		52718AA22805DD200065C9DE /* CSGames */ = {
 			isa = PBXGroup;
 			children = (
+				527D1D6B2A5784A000807DBC /* Junk */,
 				527D1D622A57542F00807DBC /* README.txt */,
 				52718AA32805DD200065C9DE /* CSGamesApp.swift */,
 				52718AA52805DD200065C9DE /* ContentView.swift */,
@@ -209,7 +210,6 @@
 			isa = PBXGroup;
 			children = (
 				52768788280777A000501744 /* CSTitle.swift */,
-				52718AC32805E3150065C9DE /* GapView.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -220,6 +220,14 @@
 				527D1D652A575BF300807DBC /* ForegroundGradient1.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		527D1D6B2A5784A000807DBC /* Junk */ = {
+			isa = PBXGroup;
+			children = (
+				52718AC32805E3150065C9DE /* xGapView.swift */,
+			);
+			path = Junk;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,7 +310,7 @@
 				528C0E6328171AF000C1962B /* NaviTest.swift in Sources */,
 				52718ABE2805E05A0065C9DE /* ViewExtensions.swift in Sources */,
 				527D1D6A2A5782B900807DBC /* Main.swift in Sources */,
-				52718AC42805E3150065C9DE /* GapView.swift in Sources */,
+				52718AC42805E3150065C9DE /* xGapView.swift in Sources */,
 				52745F5A28088BCD00B39220 /* CSAppColorChoser.swift in Sources */,
 				52718AA62805DD200065C9DE /* ContentView.swift in Sources */,
 				5272163D2810B284001264F3 /* CSAppCustomization.swift in Sources */,

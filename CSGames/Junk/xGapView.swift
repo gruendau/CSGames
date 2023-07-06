@@ -14,7 +14,7 @@ enum Orientation {
 }
 
 
-struct GapView: View {
+struct xGapView: View {
     
     var gap: CGFloat
     var orientation: Orientation
