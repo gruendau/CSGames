@@ -45,7 +45,7 @@ import SwiftUI
 //}
 
 
-struct SomeView1InsideNavigationView: View {
+struct xSomeView1InsideNavigationView: View {
     // This should be the first view you present
     var body: some View {
         NavigationView { // Use NavigationView only once
@@ -85,7 +85,7 @@ struct SomeView2: View {
 
 struct SomeView1InsideNavigationView_Previews: PreviewProvider {
     static var previews: some View {
-        SomeView1InsideNavigationView()
+        xSomeView1InsideNavigationView()
     }
 }
 
