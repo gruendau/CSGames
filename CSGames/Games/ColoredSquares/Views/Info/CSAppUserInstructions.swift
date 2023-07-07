@@ -23,7 +23,11 @@ struct CSAppUserInstructions: View {
                 Text("User Instructions")
                     .font(.title3)
                     .bold()
+                    .foregroundColor(.blue)
                     .padding(.bottom)
+                    .onTapGesture {
+                        set.showUserInstructions = false
+                    }
                 
                 VStack(alignment: .leading) {
                     Text("Tap on screen to render squarebox.")
@@ -39,12 +43,13 @@ struct CSAppUserInstructions: View {
                     Text("Tap on copyright to get app info.")
                         .padding(.vertical, 1)
                 }
-                .padding(.leading, 15)
+                //.padding(.leading, 15)
                 
                 Spacer()
             }
-            .padding(.leading)
-            .padding(.top, -35)
+            //.padding(.leading)
+            .padding(.leading, 30)
+            .padding(.top, 25)
             
         }
         .padding(.horizontal, 20)

@@ -27,6 +27,12 @@ class CSSettings: ObservableObject {
     // AppInfo
     @Published var showAppInfo = false
     
+    @Published var showUserInstructions = false
+    @Published var showData = false
+    @Published var showStatistics = false
+    @Published var showCustomization = false
+    @Published var showAbout = false
+
     // Squarebox
     @Published var squarebox = Squarebox()
     

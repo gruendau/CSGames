@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct CSInfo: View {
-    
+
     // https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/TableView_iPhone/TableViewAPIOverview/TableViewAPIOverview.html
-    
+
     init () {
         // Remove separator lines
         UITableView.appearance().separatorColor = .clear
@@ -23,51 +23,98 @@ struct CSInfo: View {
 
     @EnvironmentObject var csm: CSViewModel
     @EnvironmentObject var set: CSSettings
-    
+
     @State private var showSquareboxInfo = false
-    
-    let listRowBGColor: Color = .black
-    
+
+    //let listRowBGColor: Color = .black
+
     var body: some View {
-        
-        VStack {
+
+        ZStack {
             
-            NavigationView {
+            // 1. Layer
+            // Content list
+            List {
                 
-                List {
-                    
-                    NavigationLink(destination: CSAppUserInstructions()) {
-                        ItemCell(item: "User Instruction")
-                    }
-                    .listRowBackground(listRowBGColor)
-                    
-                    NavigationLink(destination: CSAppData()) {
-                        ItemCell(item: "Data")
-                    }
-                    .listRowBackground(listRowBGColor)
-                    
-                    NavigationLink(destination: CSAppStatistics()) {
-                        ItemCell(item: "Statistics")
-                    }
-                    .listRowBackground(listRowBGColor)
-                    
-                    NavigationLink(destination: CSAppCustomization()) {
-                        ItemCell(item: "Custumization")
-                    }
-                    .listRowBackground(listRowBGColor)
-                    
-                }
-                .navigationBarHidden(true)
-                .foregroundColor(set.colorForeground)
-                .padding(.top, -25)
+                CSInfoSelector(name: "User Instructions",
+                               show: $set.showUserInstructions)
                 
+                CSInfoSelector(name: "Data",
+                               show: $set.showData)
+                
+                CSInfoSelector(name: "Statistics",
+                               show: $set.showStatistics)
+                
+                CSInfoSelector(name: "Customization",
+                               show: $set.showCustomization)
+                
+                CSInfoSelector(name: "About",
+                               show: $set.showAbout)
+
+
             }
-            .navigationBarBackButtonHidden(true)
+            .padding(.leading, 10)
+            .padding(.top, -20)
             
-            Spacer()
+            // 2. Layer
+            //
+            if set.showUserInstructions {
+                CSAppUserInstructions()
+            }
+            if set.showData {
+                CSAppData()
+            }
+            if set.showStatistics {
+                CSAppStatistics()
+            }
+            if set.showCustomization {
+                CSAppCustomization()
+            }
+            if set.showAbout {
+                //CSAppAbout()
+            }
             
         }
-        
+
+
+
+
+//            NavigationView {
+//
+//                List {
+//
+//                    NavigationLink(destination: CSAppUserInstructions()) {
+//                        ItemCell(item: "User Instructions")
+//                    }
+//                    .listRowBackground(listRowBGColor)
+//
+//                    NavigationLink(destination: CSAppData()) {
+//                        ItemCell(item: "Data")
+//                    }
+//                    .listRowBackground(listRowBGColor)
+//
+//                    NavigationLink(destination: CSAppStatistics()) {
+//                        ItemCell(item: "Statistics")
+//                    }
+//                    .listRowBackground(listRowBGColor)
+//
+//                    NavigationLink(destination: CSAppCustomization()) {
+//                        ItemCell(item: "Custumization")
+//                    }
+//                    .listRowBackground(listRowBGColor)
+//
+//                }
+//                .navigationBarHidden(true)
+//                .foregroundColor(set.colorForeground)
+//                .padding(.top, -25)
+//
+//            }
+//            .navigationBarBackButtonHidden(true)
+//
+//            Spacer()
+//
+//        }
+
     }
 }
 
@@ -107,3 +154,67 @@ struct ItemCell: View {
         
     }
 }
+
+
+
+//struct CSInfo: View {
+//
+//    // https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/TableView_iPhone/TableViewAPIOverview/TableViewAPIOverview.html
+//
+//    init () {
+//        // Remove separator lines
+//        UITableView.appearance().separatorColor = .clear
+//        // Set background color
+//        UITableView.appearance().backgroundColor = .black
+//
+//        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+//
+//    }
+//
+//    @EnvironmentObject var csm: CSViewModel
+//    @EnvironmentObject var set: CSSettings
+//
+//    @State private var showSquareboxInfo = false
+//
+//    let listRowBGColor: Color = .black
+//
+//    var body: some View {
+//
+//        NavigationView {
+//
+//            List {
+//
+//                NavigationLink(destination: CSAppUserInstructions()) {
+//                    ItemCell(item: "User Instructions")
+//                }
+//                .listRowBackground(listRowBGColor)
+//
+//                NavigationLink(destination: CSAppData()) {
+//                    ItemCell(item: "Data")
+//                }
+//                .listRowBackground(listRowBGColor)
+//
+//                NavigationLink(destination: CSAppStatistics()) {
+//                    ItemCell(item: "Statistics")
+//                }
+//                .listRowBackground(listRowBGColor)
+//
+//                NavigationLink(destination: CSAppCustomization()) {
+//                    ItemCell(item: "Custumization")
+//                }
+//                .listRowBackground(listRowBGColor)
+//
+//            }
+//            .navigationBarHidden(true)
+//            .foregroundColor(set.colorForeground)
+//            .padding(.top, -25)
+//
+//        }
+//        .navigationBarBackButtonHidden(true)
+//
+//        Spacer()
+//
+//    }
+//
+//}
+
