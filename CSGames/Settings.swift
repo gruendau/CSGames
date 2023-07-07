@@ -9,7 +9,11 @@ import SwiftUI
 
 class Settings: ObservableObject {
     
+    // Colors
     let colorBackground = Color.black
+    
+    // Positions
+    let paddingTitleTop: CGFloat = 90
     
 }
 

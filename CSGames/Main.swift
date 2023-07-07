@@ -30,7 +30,7 @@ struct Main: View {
                 
                 // Title
                 Title()
-                    .padding([.top], vp.titlePaddingTop)
+                    .padding(.top, s.paddingTitleTop)
                 
                 // Table of content
                 ZStack {
