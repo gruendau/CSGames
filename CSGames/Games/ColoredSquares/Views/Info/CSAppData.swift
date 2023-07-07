@@ -9,7 +9,6 @@ import SwiftUI
 
 struct CSAppData: View {
     
-    @EnvironmentObject var csm: CSViewModel
     @EnvironmentObject var set: CSSettings
     
     var body: some View {
@@ -50,7 +49,6 @@ struct CSAppData: View {
 struct CSAppData_Previews: PreviewProvider {
     static var previews: some View {
         CSAppData()
-            .environmentObject(CSViewModel())
             .environmentObject(CSSettings())
     }
 }
