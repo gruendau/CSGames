@@ -36,7 +36,7 @@ struct Main: View {
                     Text("Colored Squares")
                         .foregroundGradient1()
                         .onTapGesture {
-                            s.activateGame(.ColoredSquares)
+                            s.isAcitive_ColoredSquares = true
                     }
                     
                     // Next App ...
