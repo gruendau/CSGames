@@ -14,6 +14,7 @@ struct Main: View {
     
     @EnvironmentObject var csm: CSModel
     @EnvironmentObject var vp: CSSettings
+    @EnvironmentObject var s: Settings
     
     var body: some View {
         
@@ -21,7 +22,7 @@ struct Main: View {
             
             // 1. Layer
             // Background for screen
-            Color.black
+            Color.colorBackground
             
             // 2. Layer
             // Initial content of screen
@@ -74,5 +75,6 @@ struct Main_Previews: PreviewProvider {
         Main()
             .environmentObject(CSModel())
             .environmentObject(CSSettings())
+            .environmentObject(Settings())
     }
 }
