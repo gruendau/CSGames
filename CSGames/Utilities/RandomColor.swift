@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 /// Returns a random color.
 ///
 /// The color set is:
@@ -21,7 +22,7 @@ import SwiftUI
 ///
 struct RandomColor {
     
-    // Private Properties
+    // MARK: Private Properties
     private let colors: [Color] = [.red, .green, .blue, .yellow, .purple,
                            .cyan, .orange, .pink, .indigo, .brown,
                            .mint, .black, .white, .gray]
@@ -36,14 +37,16 @@ struct RandomColor {
     //
     private let withoutBlack: Bool
     
-    // Public properties
+    
+    // MARK: Public properties
     /// Color of the random color.
     var color: Color { colors[colorNumber] }
     
     /// Name of the random color.
     var name: String { names[colorNumber] }
 
-    // Initializer
+    
+    // MARK: Initializer
     
     /// Initialize RandomColor.
     ///
@@ -53,7 +56,7 @@ struct RandomColor {
         random()
     }
     
-    // Private Methodes
+    // MARK: Private Methodes
     private mutating func random () {
         var foundNumber = false
         while !foundNumber {
