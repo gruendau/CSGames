@@ -16,9 +16,11 @@ struct CSAppUserInstructions: View {
         ZStack(alignment: .leading) {
             
             // 1.Layer
+            // Background color
             Color.black
             
             // 2. Layer
+            // Content
             VStack(alignment: .leading) {
                 
                 CSInfoTitle(title: "User Instructions",
@@ -53,7 +55,6 @@ struct CSAppUserInstructions: View {
         }
         .padding(.horizontal, 20)
         .foregroundColor(set.colorForeground)
-        .background(set.colorBackground)
         
     }
 }
