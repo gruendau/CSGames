@@ -26,7 +26,7 @@ struct CSSquare: View {
                 ZStack {
                     // Colored square
                     Rectangle()
-                        .foregroundColor(Colors().color) //})
+                        .foregroundColor(RandomColor().color) //})
                         //.gradientForeground(colors: [CSColors().color,
                         //                             CSColors().color,
                         //                             CSColors().color])

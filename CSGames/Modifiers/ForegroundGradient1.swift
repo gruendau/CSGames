@@ -11,11 +11,11 @@ struct ForegroundGradient1: ViewModifier {
     func body(content: Content) -> some View {
         content
             .gradientForeground(colors: [
-                Colors(withoutBlack: true).color,
-                Colors(withoutBlack: true).color,
-                Colors(withoutBlack: true).color])
+                RandomColor(withoutBlack: true).color,
+                RandomColor(withoutBlack: true).color,
+                RandomColor(withoutBlack: true).color])
         
-            .shadow(color: Colors(withoutBlack: true).color,
+            .shadow(color: RandomColor(withoutBlack: true).color,
                     radius: 1.3, x: -1, y: 1)
     }
 }

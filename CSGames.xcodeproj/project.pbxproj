@@ -16,7 +16,7 @@
 		52718AB62805DF0A0065C9DE /* CSSquarebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB52805DF0A0065C9DE /* CSSquarebox.swift */; };
 		52718AB82805DF7D0065C9DE /* CSSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB72805DF7D0065C9DE /* CSSquare.swift */; };
 		52718AC42805E3150065C9DE /* xGapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AC32805E3150065C9DE /* xGapView.swift */; };
-		52718AC62805E3A20065C9DE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AC52805E3A20065C9DE /* Colors.swift */; };
+		52718AC62805E3A20065C9DE /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AC52805E3A20065C9DE /* RandomColor.swift */; };
 		527216372810B245001264F3 /* CSAppUserInstructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527216362810B245001264F3 /* CSAppUserInstructions.swift */; };
 		527216392810B257001264F3 /* CSAppStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527216382810B257001264F3 /* CSAppStatistics.swift */; };
 		5272163B2810B273001264F3 /* CSAppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5272163A2810B273001264F3 /* CSAppData.swift */; };
@@ -47,7 +47,7 @@
 		52718AB52805DF0A0065C9DE /* CSSquarebox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSquarebox.swift; sourceTree = "<group>"; };
 		52718AB72805DF7D0065C9DE /* CSSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSquare.swift; sourceTree = "<group>"; };
 		52718AC32805E3150065C9DE /* xGapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xGapView.swift; sourceTree = "<group>"; };
-		52718AC52805E3A20065C9DE /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		52718AC52805E3A20065C9DE /* RandomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
 		527216362810B245001264F3 /* CSAppUserInstructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSAppUserInstructions.swift; sourceTree = "<group>"; };
 		527216382810B257001264F3 /* CSAppStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSAppStatistics.swift; sourceTree = "<group>"; };
 		5272163A2810B273001264F3 /* CSAppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSAppData.swift; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 		52745F5828087B7600B39220 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				52718AC52805E3A20065C9DE /* Colors.swift */,
+				52718AC52805E3A20065C9DE /* RandomColor.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -300,7 +300,7 @@
 				52745F5A28088BCD00B39220 /* CSAppColorChoser.swift in Sources */,
 				5272163D2810B284001264F3 /* CSAppCustomization.swift in Sources */,
 				52745F612808AC9300B39220 /* Title.swift in Sources */,
-				52718AC62805E3A20065C9DE /* Colors.swift in Sources */,
+				52718AC62805E3A20065C9DE /* RandomColor.swift in Sources */,
 				52718AB42805DE8C0065C9DE /* CSMainApp.swift in Sources */,
 				527216392810B257001264F3 /* CSAppStatistics.swift in Sources */,
 				5272163B2810B273001264F3 /* CSAppData.swift in Sources */,

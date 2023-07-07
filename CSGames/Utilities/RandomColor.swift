@@ -7,8 +7,14 @@
 
 import SwiftUI
 
+/// Returns a random color.
+///
+/// The color set is:
+///
+///   red, green, blue, yellow, purple, cyan, orange, pink, indigo, brown, mint, black, white and gray.
+///
 
-struct Colors {
+struct RandomColor {
     
     // Private Properties
     private let colors: [Color] = [.red, .green, .blue, .yellow, .purple,
@@ -28,11 +34,11 @@ struct Colors {
         get { colors[number] }
         set { processColor(newValue) }
     }
+    
     var name: String {
         get { names[number] }
         set { processName(newValue) }
     }
-    
     
     // Initializer
     init (withoutBlack: Bool = false) {
@@ -57,8 +63,7 @@ struct Colors {
         }
     }
     
-    // Public methodes
-    mutating func random () {
+    private mutating func random () {
         var foundNumber = false
         while !foundNumber {
             number = Int.random(in: 0..<colors.endIndex)
