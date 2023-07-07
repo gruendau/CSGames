@@ -51,8 +51,8 @@ struct Main: View {
                     
                 }
                 .font(.title2)
-                //.foregroundColor(vp.textColor)
-                .foregroundGradient1()
+                .foregroundColor(vp.textColor)
+                //.foregroundGradient1()
                 .padding(.top, 30)
                 
                 Spacer()
