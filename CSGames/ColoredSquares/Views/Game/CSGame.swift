@@ -9,39 +9,22 @@ import SwiftUI
 
 struct CSGame: View {
     
-    //@Binding var showUserInstruction: Bool
-    
     @EnvironmentObject var csm: CSModel
     @EnvironmentObject var vp: CSSettings
     
     var body: some View {
-        
-        ZStack {
-            
-            // Background for screen
-            Rectangle()
-                .foregroundColor(vp.screenBackgroundColor)
-            
-            // Content of screen
-            VStack {
-                
-                CSTitle()
-                    .padding([.top], vp.titlePaddingTop)
-                
-                Spacer()
-                
-                CSSquarebox()
-                
-                Spacer()
-                
-                CSButton()
-                
-                Spacer()
-                
-                Copyright()
-                    .padding([.bottom], vp.copyrightPaddingBottom)
 
-            }
+        VStack {
+
+            Spacer()
+            
+            CSSquarebox()
+            
+            Spacer()
+            
+            CSButton()
+            
+            Spacer()
             
         }
         
@@ -54,6 +37,5 @@ struct CSGame_Previews: PreviewProvider {
         CSGame()
             .environmentObject(CSModel())
             .environmentObject(CSSettings())
-            //.edgesIgnoringSafeArea(.all)
     }
 }
