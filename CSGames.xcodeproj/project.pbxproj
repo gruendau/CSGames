@@ -145,7 +145,7 @@
 		527378AB280A170F000B92D2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				527687862807742C00501744 /* CSSettings.swift */,
+				52718AB12805DE110065C9DE /* CSModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -156,6 +156,7 @@
 				52779B0A2808371A0071FCDC /* CSMain.swift */,
 				52768788280777A000501744 /* CSTitle.swift */,
 				521CDECA2A5881180082C56B /* CSCopyright.swift */,
+				527687862807742C00501744 /* CSSettings.swift */,
 				52745F5528087AC700B39220 /* Views */,
 				527378AB280A170F000B92D2 /* ViewModel */,
 				52745F5628087AD300B39220 /* Model */,
@@ -175,7 +176,6 @@
 		52745F5628087AD300B39220 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				52718AB12805DE110065C9DE /* CSModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
