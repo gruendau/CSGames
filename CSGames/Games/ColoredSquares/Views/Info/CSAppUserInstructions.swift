@@ -25,18 +25,24 @@ struct CSAppUserInstructions: View {
                             show: $set.showUserInstructions)
                 
                 VStack(alignment: .leading) {
-                    Text("Tap on screen to render squarebox.")
+                    Text("Tap on ...")
                         .padding(.vertical, 1)
-                    Text("Tap on single square to render it.")
-                        .padding(.vertical, 1)
-                    Text("Tap on top buttons to change number of squares.")
-                        .padding(.vertical, 1)
-                    Text("Tap on bottom buttons to change size of squarebox.")
-                        .padding(.vertical, 1)
-                    Text("Tap on title to reset data.")
-                        .padding(.vertical, 1)
-                    Text("Tap on copyright to get app info.")
-                        .padding(.vertical, 1)
+                    Group {
+                        Text("Title to reset data.")
+                            .padding(.vertical, 1)
+                        Text("Screen to render squarebox.")
+                            .padding(.vertical, 1)
+                        Text("Single square to render the square.")
+                            .padding(.vertical, 1)
+                        Text("Top buttons to change number of squares.")
+                            .padding(.vertical, 1)
+                        Text("Bottom buttons to change size of squarebox.")
+                            .padding(.vertical, 1)
+                        Text("Copyright to get info.")
+                            .padding(.vertical, 1)
+                    }
+                    .padding(.leading)
+
                 }
                 
                 Spacer()
