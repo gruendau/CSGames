@@ -103,14 +103,14 @@ struct CSAppColorChoser: View {
                 // Border of color chooser square for active color
                 Rectangle()
                     .frame(width: 14 + 4, height: 14 + 4)
-                    .foregroundColor(vp.screenBackgroundColor == . red ? .blue : .red)
+                    .foregroundColor(vp.colorBackground == . red ? .blue : .red)
                     .padding(-3)
                     .opacity(color == bindedColor ? 1 : 0)
                 
                 // Interior of color chooser square
                 Rectangle()
                     .frame(width: 14, height: 14)
-                    .border(vp.screenBackgroundColor == . red ? .blue : .red)
+                    .border(vp.colorBackground == . red ? .blue : .red)
                     .padding(-3)
                     .onTapGesture() { bindedColor = color }
                     .foregroundColor(isHovered ? .green : color)

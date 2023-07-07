@@ -48,9 +48,8 @@ struct CSAppUserInstructions: View {
             
         }
         .padding(.horizontal, 20)
-        .foregroundColor(vp.textColor)
-        .background(vp.screenBackgroundColor)
-        
+        .foregroundColor(vp.colorForeground)
+        .background(vp.colorBackground)
         
     }
 }
