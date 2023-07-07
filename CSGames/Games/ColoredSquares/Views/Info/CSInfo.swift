@@ -15,32 +15,41 @@ struct CSInfo: View {
 
     var body: some View {
 
+
         ZStack {
+            
+            // 1.Layer
+            // Background color
+            Color.black
             
             // 1. Layer
             // Content list
-            List {
-                
-                CSInfoSelector(name: "User Instructions",
-                               show: $set.showUserInstructions)
-                
-                CSInfoSelector(name: "Data",
-                               show: $set.showData)
-                
-                CSInfoSelector(name: "Statistics",
-                               show: $set.showStatistics)
-                
-                CSInfoSelector(name: "Customization",
-                               show: $set.showCustomization)
-                
-                CSInfoSelector(name: "About",
-                               show: $set.showAbout)
+            
+                List {
+                    
+                    CSInfoSelector(name: "User Instructions",
+                                   show: $set.showUserInstructions)
+                    
+                    CSInfoSelector(name: "Data",
+                                   show: $set.showData)
+                    
+                    CSInfoSelector(name: "Statistics",
+                                   show: $set.showStatistics)
+                    
+                    CSInfoSelector(name: "Customization",
+                                   show: $set.showCustomization)
+                    
+                    CSInfoSelector(name: "About",
+                                   show: $set.showAbout)
 
 
-            }
-            .padding(.leading, 10)
-            .padding(.top, -20)
-            //.background(set.colorBackground)
+                }
+                .padding(.leading, 10)
+                .padding(.top, -20)
+                .background(set.colorBackground)
+            
+
+
             
             // 2. Layer
             // Show Info Pages
