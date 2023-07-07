@@ -33,7 +33,7 @@ struct Main: View {
                     .padding(.top, s.paddingTitleTop)
                 
                 // Table of content
-                ZStack {
+                VStack {
                     // Colored Squares
                     Text("Colored Squares")
                         .foregroundGradient1()
@@ -42,10 +42,17 @@ struct Main: View {
                     }
                     
                     // Next ...
+//                    Text("Hallo")
+//                        .foregroundGradient1()
+//                    Text("Hallo")
+//                        .foregroundGradient1()
+//                    Text("Hallo")
+//                        .foregroundGradient1()
                     
                 }
                 .font(.title2)
-                .foregroundColor(vp.textColor)
+                //.foregroundColor(vp.textColor)
+                .foregroundGradient1()
                 .padding(.top, 30)
                 
                 Spacer()
