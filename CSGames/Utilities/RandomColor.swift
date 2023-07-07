@@ -30,18 +30,24 @@ struct RandomColor {
                          "cyan", "orange", "pink", "indigo", "brown",
                          "mint", "black", "white", "gray"]
     
-    private var number = 0
+    // Number of the random color
+    private var colorNumber = 0
     
+    //
     private let withoutBlack: Bool
     
     // Public properties
     /// Color of the random color.
-    var color: Color { colors[number] }
+    var color: Color { colors[colorNumber] }
     
     /// Name of the random color.
-    var name: String { names[number] }
+    var name: String { names[colorNumber] }
 
     // Initializer
+    
+    /// Initialize RandomColor.
+    ///
+    /// Set withoutBlack to _true_ if random black is not allowed.
     init (withoutBlack: Bool = false) {
         self.withoutBlack = withoutBlack
         random()
@@ -51,9 +57,9 @@ struct RandomColor {
     private mutating func random () {
         var foundNumber = false
         while !foundNumber {
-            number = Int.random(in: 0..<colors.endIndex)
+            colorNumber = Int.random(in: 0..<colors.endIndex)
             if withoutBlack {
-                if colors[number] != .black { foundNumber = true }
+                if colors[colorNumber] != .black { foundNumber = true }
                 
             } else {
                 foundNumber = true
