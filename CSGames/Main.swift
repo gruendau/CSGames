@@ -12,7 +12,7 @@ import SwiftUI
 /// This view starts the CSGames program.
 struct Main: View {
 
-    @EnvironmentObject var s: Settings
+    @EnvironmentObject var set: Settings
     
     var body: some View {
         
@@ -28,7 +28,7 @@ struct Main: View {
                 
                 // Title
                 Title()
-                    .padding(.top, s.paddingTitleTop)
+                    .padding(.top, set.paddingTitleTop)
                 
                 // Table of content
                 VStack {
@@ -36,7 +36,7 @@ struct Main: View {
                     Text("Colored Squares")
                         .foregroundGradient1()
                         .onTapGesture {
-                            s.isAcitive_ColoredSquares = true
+                            set.isAcitive_ColoredSquares = true
                     }
                     
                     // Next App ...
@@ -44,21 +44,21 @@ struct Main: View {
                     
                 }
                 .font(.title2)
-                .foregroundColor(s.colorForeground)
+                .foregroundColor(set.colorForeground)
                 .padding(.top, 30)
                 
                 Spacer()
             
                 // Copyright
                 Copyright()
-                    .padding(.bottom, s.paddingCopyrightBottom)
+                    .padding(.bottom, set.paddingCopyrightBottom)
 
             }
             
             // 3. Layer
             // Chosen content of screen
-            if s.isAcitive_ColoredSquares {
-                CSMain(isAppActive: $s.isAcitive_ColoredSquares)
+            if set.isAcitive_ColoredSquares {
+                CSMain(isAppActive: $set.isAcitive_ColoredSquares)
             }
                 
         }
