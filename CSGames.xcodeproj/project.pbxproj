@@ -12,7 +12,7 @@
 		52718AA82805DD220065C9DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52718AA72805DD220065C9DE /* Assets.xcassets */; };
 		52718AAB2805DD220065C9DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52718AAA2805DD220065C9DE /* Preview Assets.xcassets */; };
 		52718AB22805DE110065C9DE /* CSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB12805DE110065C9DE /* CSModel.swift */; };
-		52718AB42805DE8C0065C9DE /* CSMainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB32805DE8C0065C9DE /* CSMainApp.swift */; };
+		52718AB42805DE8C0065C9DE /* CSGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB32805DE8C0065C9DE /* CSGame.swift */; };
 		52718AB62805DF0A0065C9DE /* CSSquarebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB52805DF0A0065C9DE /* CSSquarebox.swift */; };
 		52718AB82805DF7D0065C9DE /* CSSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB72805DF7D0065C9DE /* CSSquare.swift */; };
 		52718AC42805E3150065C9DE /* xGapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AC32805E3150065C9DE /* xGapView.swift */; };
@@ -23,7 +23,7 @@
 		5272163D2810B284001264F3 /* CSAppCustomization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5272163C2810B284001264F3 /* CSAppCustomization.swift */; };
 		52745F5A28088BCD00B39220 /* CSAppColorChoser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52745F5928088BCD00B39220 /* CSAppColorChoser.swift */; };
 		52745F612808AC9300B39220 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52745F602808AC9300B39220 /* Title.swift */; };
-		5276878328076E7400501744 /* CSMainAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276878228076E7400501744 /* CSMainAppInfo.swift */; };
+		5276878328076E7400501744 /* CSInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276878228076E7400501744 /* CSInfo.swift */; };
 		527687852807738300501744 /* Copyright.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527687842807738300501744 /* Copyright.swift */; };
 		527687872807742C00501744 /* CSSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527687862807742C00501744 /* CSSettings.swift */; };
 		52768789280777A000501744 /* CSTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52768788280777A000501744 /* CSTitle.swift */; };
@@ -43,7 +43,7 @@
 		52718AA72805DD220065C9DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52718AAA2805DD220065C9DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		52718AB12805DE110065C9DE /* CSModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSModel.swift; sourceTree = "<group>"; };
-		52718AB32805DE8C0065C9DE /* CSMainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMainApp.swift; sourceTree = "<group>"; };
+		52718AB32805DE8C0065C9DE /* CSGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSGame.swift; sourceTree = "<group>"; };
 		52718AB52805DF0A0065C9DE /* CSSquarebox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSquarebox.swift; sourceTree = "<group>"; };
 		52718AB72805DF7D0065C9DE /* CSSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSquare.swift; sourceTree = "<group>"; };
 		52718AC32805E3150065C9DE /* xGapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xGapView.swift; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		5272163C2810B284001264F3 /* CSAppCustomization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSAppCustomization.swift; sourceTree = "<group>"; };
 		52745F5928088BCD00B39220 /* CSAppColorChoser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSAppColorChoser.swift; sourceTree = "<group>"; };
 		52745F602808AC9300B39220 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
-		5276878228076E7400501744 /* CSMainAppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMainAppInfo.swift; sourceTree = "<group>"; };
+		5276878228076E7400501744 /* CSInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSInfo.swift; sourceTree = "<group>"; };
 		527687842807738300501744 /* Copyright.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Copyright.swift; sourceTree = "<group>"; };
 		527687862807742C00501744 /* CSSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSettings.swift; sourceTree = "<group>"; };
 		52768788280777A000501744 /* CSTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTitle.swift; sourceTree = "<group>"; };
@@ -143,8 +143,8 @@
 		52745F5528087AC700B39220 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				52745F5E2808A46900B39220 /* App */,
-				52745F5D2808A42C00B39220 /* AppInfo */,
+				52745F5E2808A46900B39220 /* Game */,
+				52745F5D2808A42C00B39220 /* Info */,
 				52745F5F2808A4DF00B39220 /* Misc */,
 			);
 			path = Views;
@@ -166,10 +166,10 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		52745F5D2808A42C00B39220 /* AppInfo */ = {
+		52745F5D2808A42C00B39220 /* Info */ = {
 			isa = PBXGroup;
 			children = (
-				5276878228076E7400501744 /* CSMainAppInfo.swift */,
+				5276878228076E7400501744 /* CSInfo.swift */,
 				5276878C28077AB600501744 /* CSAppInfo.swift */,
 				52745F5928088BCD00B39220 /* CSAppColorChoser.swift */,
 				527216362810B245001264F3 /* CSAppUserInstructions.swift */,
@@ -177,18 +177,18 @@
 				527216382810B257001264F3 /* CSAppStatistics.swift */,
 				5272163C2810B284001264F3 /* CSAppCustomization.swift */,
 			);
-			path = AppInfo;
+			path = Info;
 			sourceTree = "<group>";
 		};
-		52745F5E2808A46900B39220 /* App */ = {
+		52745F5E2808A46900B39220 /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				52718AB32805DE8C0065C9DE /* CSMainApp.swift */,
+				52718AB32805DE8C0065C9DE /* CSGame.swift */,
 				52718AB52805DF0A0065C9DE /* CSSquarebox.swift */,
 				52718AB72805DF7D0065C9DE /* CSSquare.swift */,
 				5276878A280779DA00501744 /* CSButton.swift */,
 			);
-			path = App;
+			path = Game;
 			sourceTree = "<group>";
 		};
 		52745F5F2808A4DF00B39220 /* Misc */ = {
@@ -292,7 +292,7 @@
 				52779B0B2808371A0071FCDC /* CSMain.swift in Sources */,
 				52718AB22805DE110065C9DE /* CSModel.swift in Sources */,
 				527216372810B245001264F3 /* CSAppUserInstructions.swift in Sources */,
-				5276878328076E7400501744 /* CSMainAppInfo.swift in Sources */,
+				5276878328076E7400501744 /* CSInfo.swift in Sources */,
 				528C0E6328171AF000C1962B /* xNaviTest.swift in Sources */,
 				527D1D6A2A5782B900807DBC /* Main.swift in Sources */,
 				521CDEC52A57F8000082C56B /* Settings.swift in Sources */,
@@ -301,7 +301,7 @@
 				5272163D2810B284001264F3 /* CSAppCustomization.swift in Sources */,
 				52745F612808AC9300B39220 /* Title.swift in Sources */,
 				52718AC62805E3A20065C9DE /* RandomColor.swift in Sources */,
-				52718AB42805DE8C0065C9DE /* CSMainApp.swift in Sources */,
+				52718AB42805DE8C0065C9DE /* CSGame.swift in Sources */,
 				527216392810B257001264F3 /* CSAppStatistics.swift in Sources */,
 				5272163B2810B273001264F3 /* CSAppData.swift in Sources */,
 				52718AA42805DD200065C9DE /* CSGamesApp.swift in Sources */,

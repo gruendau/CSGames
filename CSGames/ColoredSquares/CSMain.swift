@@ -16,12 +16,12 @@ struct CSMain: View {
         
         ZStack {
             
-            CSMainApp()
+            CSGame()
                 .onTapGesture() {
                     csm.updateSquarebox()
             }
             
-            CSMainAppInfo()
+            CSInfo()
                 .opacity(vp.showAppInfo ? 1 : 0)
         }
         

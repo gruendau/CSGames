@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CSMainAppInfo: View {
+struct CSInfo: View {
     
     //@Binding var showUserInstruction: Bool
     
@@ -45,9 +45,9 @@ struct CSMainAppInfo: View {
 }
 
 
-struct CSMainAppInfo_Previews: PreviewProvider {
+struct CSInfo_Previews: PreviewProvider {
     static var previews: some View {
-        CSMainAppInfo()
+        CSInfo()
             .environmentObject(CSModel())
             .environmentObject(CSSettings())
             //.edgesIgnoringSafeArea(.all)
