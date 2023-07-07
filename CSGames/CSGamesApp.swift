@@ -11,7 +11,7 @@ import SwiftUI
 @main
 struct CSGamesApp: App {
     
-    @StateObject var csm = ColoredSquaresModel()
+    @StateObject var csm = CSModel()
     @StateObject var vp = CSSettings()
     
     var body: some Scene {

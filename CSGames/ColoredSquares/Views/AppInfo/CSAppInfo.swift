@@ -68,7 +68,7 @@ struct CSAppInfo: View {
         //UITableView.appearance().backgroundColor = UIColor(Color.red)
     }
     
-    @EnvironmentObject var csm: ColoredSquaresModel
+    @EnvironmentObject var csm: CSModel
     @EnvironmentObject var vp: CSSettings
     
     @State private var showSquareboxInfo = false
@@ -244,7 +244,7 @@ struct CSAppInfo_Previews: PreviewProvider {
     static var previews: some View {
         CSAppInfo()
             .background(CSSettings().screenBackgroundColor)
-            .environmentObject(ColoredSquaresModel())
+            .environmentObject(CSModel())
             .environmentObject(CSSettings())
     }
 }

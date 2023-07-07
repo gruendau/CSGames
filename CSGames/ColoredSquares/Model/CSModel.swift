@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class ColoredSquaresModel: ObservableObject {
+class CSModel: ObservableObject {
     
     // MARK: - Properties
     

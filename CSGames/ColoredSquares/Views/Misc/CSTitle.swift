@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CSTitle: View {
     
-    @EnvironmentObject var csm: ColoredSquaresModel
+    @EnvironmentObject var csm: CSModel
     @EnvironmentObject var vp: CSSettings
     
     var body: some View {
@@ -63,7 +63,7 @@ struct CSTitle: View {
 struct CSTitle_Previews: PreviewProvider {
     static var previews: some View {
         CSTitle()
-            .environmentObject(ColoredSquaresModel())
+            .environmentObject(CSModel())
             .environmentObject(CSSettings())
     }
 }

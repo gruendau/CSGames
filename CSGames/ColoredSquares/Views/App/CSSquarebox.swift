@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CSSquarebox: View {
     
-    @EnvironmentObject var csm: ColoredSquaresModel
+    @EnvironmentObject var csm: CSModel
     @EnvironmentObject var vp: CSSettings
     
     var body: some View {
@@ -49,7 +49,7 @@ struct CSSquarebox: View {
 struct ColoredSquareboxView_Previews: PreviewProvider {
     static var previews: some View {
         CSSquarebox()
-            .environmentObject(ColoredSquaresModel())
+            .environmentObject(CSModel())
             .environmentObject(CSSettings())
     }
 }

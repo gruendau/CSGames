@@ -12,7 +12,7 @@ import SwiftUI
 /// This view starts the CSGames program.
 struct Main: View {
     
-    @EnvironmentObject var csm: ColoredSquaresModel
+    @EnvironmentObject var csm: CSModel
     @EnvironmentObject var vp: CSSettings
     
     var body: some View {
@@ -72,7 +72,7 @@ struct Main: View {
 struct Main_Previews: PreviewProvider {
     static var previews: some View {
         Main()
-            .environmentObject(ColoredSquaresModel())
+            .environmentObject(CSModel())
             .environmentObject(CSSettings())
     }
 }
