@@ -21,7 +21,7 @@ struct CSMain: View {
             // 1. Layer
             // Background for screen
             Rectangle()
-                .foregroundColor(vp.screenBackgroundColor)
+                .foregroundColor(vp.colorBackground)
             
             // 2. Layer
             // Content of screen
@@ -29,7 +29,7 @@ struct CSMain: View {
                 
                 // Title
                 CSTitle(isAppActive: $isAppActive)
-                    .padding([.top], vp.titlePaddingTop)
+                    .padding([.top], vp.paddingTitleTop)
                 
                 // Content
                 ZStack {
@@ -48,7 +48,7 @@ struct CSMain: View {
                 
                 // Copyright
                 Copyright()
-                    .padding([.bottom], vp.copyrightPaddingBottom)
+                    .padding([.bottom], vp.paddingCopyrightBottom)
                 
             }
             
