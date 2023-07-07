@@ -43,17 +43,21 @@ struct Main: View {
                     
                     
                     // Next ...
-//                    Text("Hallo")
-//                        .foregroundGradient1()
-//                    Text("Hallo")
-//                        .foregroundGradient1()
-//                    Text("Hallo")
-//                        .foregroundGradient1()
+                    Text("")
+                    Text("Hallo hier gehts ab.")
+                        .foregroundGradient1()
+                    Text("Hallo hier gehts echt ab.")
+                        .foregroundGradient1()
+                    Text("Hallo hier gehts auch ab.")
+                        .foregroundGradient1()
+                    Text("Hallo hier gehts aber sowas von ab!")
+                        .foregroundGradient1()
+                    Text("Wie gehts?")
+                        .foregroundGradient1()
                     
                 }
                 .font(.title2)
                 .foregroundColor(vp.textColor)
-                //.foregroundGradient1()
                 .padding(.top, 30)
                 
                 Spacer()
