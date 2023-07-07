@@ -11,9 +11,7 @@ import SwiftUI
 ///
 /// This view starts the CSGames program.
 struct Main: View {
-    
-    @EnvironmentObject var csm: CSModel
-    @EnvironmentObject var vp: CSSettings
+
     @EnvironmentObject var s: Settings
     
     var body: some View {
@@ -38,26 +36,15 @@ struct Main: View {
                     Text("Colored Squares")
                         .foregroundGradient1()
                         .onTapGesture {
-                            vp.activateGame("Colored Squares")
+                            s.activateGame(.ColoredSquares)
                     }
                     
-                    
-                    // Next ...
-                    Text("")
-                    Text("Hallo hier gehts ab.")
-                        .foregroundGradient1()
-                    Text("Hallo hier gehts echt ab.")
-                        .foregroundGradient1()
-                    Text("Hallo hier gehts auch ab.")
-                        .foregroundGradient1()
-                    Text("Hallo hier gehts aber sowas von ab!")
-                        .foregroundGradient1()
-                    Text("Wie gehts?")
-                        .foregroundGradient1()
+                    // Next App ...
+
                     
                 }
                 .font(.title2)
-                .foregroundColor(vp.textColor)
+                .foregroundColor(s.colorForeground)
                 .padding(.top, 30)
                 
                 Spacer()
@@ -70,10 +57,10 @@ struct Main: View {
             
             // 3. Layer
             // Chosen content of screen
-            CSMain()
-                .opacity(vp.isAcitive_ColoredSquares ? 1 : 0)
+            if s.isAcitive_ColoredSquares {
+                CSMain(isAppActive: $s.isAcitive_ColoredSquares)
+            }
                 
-            
         }
         .edgesIgnoringSafeArea(.all)
         .padding(.bottom, -50)
@@ -85,8 +72,6 @@ struct Main: View {
 struct Main_Previews: PreviewProvider {
     static var previews: some View {
         Main()
-            .environmentObject(CSModel())
-            .environmentObject(CSSettings())
             .environmentObject(Settings())
     }
 }
