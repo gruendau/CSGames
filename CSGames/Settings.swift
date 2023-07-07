@@ -9,6 +9,10 @@ import SwiftUI
 
 class Settings: ObservableObject {
     
+    // Texts
+    let textTitle = "CSGames"
+    let textCopyright = "© 2022 by volker"
+    
     // Colors
     let colorBackground = Color.black
     
