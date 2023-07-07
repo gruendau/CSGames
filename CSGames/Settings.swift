@@ -14,3 +14,9 @@ class Settings: ObservableObject {
 }
 
 
+extension Color {
+    static let colorBackground = Settings().colorBackground
+}
+
+
+
