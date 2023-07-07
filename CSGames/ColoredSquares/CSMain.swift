@@ -10,7 +10,7 @@ import SwiftUI
 struct CSMain: View {
     
     @EnvironmentObject var csm: ColoredSquaresModel
-    @EnvironmentObject var vp: ViewParameter
+    @EnvironmentObject var vp: CSSettings
     
     var body: some View {
         
@@ -32,6 +32,6 @@ struct CSMain_Previews: PreviewProvider {
     static var previews: some View {
         CSMain()
             .environmentObject(ColoredSquaresModel())
-            .environmentObject(ViewParameter())
+            .environmentObject(CSSettings())
     }
 }

@@ -50,7 +50,7 @@ struct CSAppColorChoser: View {
     @Binding var bindedColor: Color
     
     @EnvironmentObject var csm: ColoredSquaresModel
-    @EnvironmentObject var vp: ViewParameter
+    @EnvironmentObject var vp: CSSettings
     
     var body: some View {
     
@@ -83,7 +83,7 @@ struct CSAppColorChoser: View {
         @Binding var bindedColor: Color
         
         @EnvironmentObject var csm: ColoredSquaresModel
-        @EnvironmentObject var vp: ViewParameter
+        @EnvironmentObject var vp: CSSettings
         
         @State var isHovered = false
 
@@ -130,6 +130,6 @@ struct CSAppColorChoser_Previews: PreviewProvider {
     static var previews: some View {
         CSAppColorChoser(text: "Test Color", bindedColor: $bindedColor)
             .environmentObject(ColoredSquaresModel())
-            .environmentObject(ViewParameter())
+            .environmentObject(CSSettings())
     }
 }

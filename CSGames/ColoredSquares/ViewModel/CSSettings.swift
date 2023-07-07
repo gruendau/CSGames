@@ -28,7 +28,7 @@ struct Squarebox {
 
 
 
-class ViewParameter: ObservableObject {
+class CSSettings: ObservableObject {
     
     // Games
     @Published var isAcitive_ColoredSquares = false

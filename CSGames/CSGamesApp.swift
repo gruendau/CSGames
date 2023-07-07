@@ -12,7 +12,7 @@ import SwiftUI
 struct CSGamesApp: App {
     
     @StateObject var csm = ColoredSquaresModel()
-    @StateObject var vp = ViewParameter()
+    @StateObject var vp = CSSettings()
     
     var body: some Scene {
         WindowGroup {

@@ -69,7 +69,7 @@ struct CSAppInfo: View {
     }
     
     @EnvironmentObject var csm: ColoredSquaresModel
-    @EnvironmentObject var vp: ViewParameter
+    @EnvironmentObject var vp: CSSettings
     
     @State private var showSquareboxInfo = false
     
@@ -243,8 +243,8 @@ struct CSAppInfo_Previews: PreviewProvider {
     
     static var previews: some View {
         CSAppInfo()
-            .background(ViewParameter().screenBackgroundColor)
+            .background(CSSettings().screenBackgroundColor)
             .environmentObject(ColoredSquaresModel())
-            .environmentObject(ViewParameter())
+            .environmentObject(CSSettings())
     }
 }

@@ -24,7 +24,7 @@
 		52745F612808AC9300B39220 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52745F602808AC9300B39220 /* Title.swift */; };
 		5276878328076E7400501744 /* CSMainAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276878228076E7400501744 /* CSMainAppInfo.swift */; };
 		527687852807738300501744 /* Copyright.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527687842807738300501744 /* Copyright.swift */; };
-		527687872807742C00501744 /* ViewParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527687862807742C00501744 /* ViewParameter.swift */; };
+		527687872807742C00501744 /* CSSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527687862807742C00501744 /* CSSettings.swift */; };
 		52768789280777A000501744 /* CSTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52768788280777A000501744 /* CSTitle.swift */; };
 		5276878B280779DA00501744 /* CSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276878A280779DA00501744 /* CSButton.swift */; };
 		5276878D28077AB600501744 /* CSAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276878C28077AB600501744 /* CSAppInfo.swift */; };
@@ -54,7 +54,7 @@
 		52745F602808AC9300B39220 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		5276878228076E7400501744 /* CSMainAppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMainAppInfo.swift; sourceTree = "<group>"; };
 		527687842807738300501744 /* Copyright.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Copyright.swift; sourceTree = "<group>"; };
-		527687862807742C00501744 /* ViewParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewParameter.swift; sourceTree = "<group>"; };
+		527687862807742C00501744 /* CSSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSettings.swift; sourceTree = "<group>"; };
 		52768788280777A000501744 /* CSTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTitle.swift; sourceTree = "<group>"; };
 		5276878A280779DA00501744 /* CSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSButton.swift; sourceTree = "<group>"; };
 		5276878C28077AB600501744 /* CSAppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSAppInfo.swift; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 		527378AB280A170F000B92D2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				527687862807742C00501744 /* ViewParameter.swift */,
+				527687862807742C00501744 /* CSSettings.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -301,7 +301,7 @@
 				527216392810B257001264F3 /* CSAppStatistics.swift in Sources */,
 				5272163B2810B273001264F3 /* CSAppData.swift in Sources */,
 				52718AA42805DD200065C9DE /* CSGamesApp.swift in Sources */,
-				527687872807742C00501744 /* ViewParameter.swift in Sources */,
+				527687872807742C00501744 /* CSSettings.swift in Sources */,
 				527D1D662A575BF300807DBC /* ForegroundGradient1.swift in Sources */,
 				52718AB62805DF0A0065C9DE /* CSSquarebox.swift in Sources */,
 				5276878D28077AB600501744 /* CSAppInfo.swift in Sources */,

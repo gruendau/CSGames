@@ -11,7 +11,7 @@ import SwiftUI
 struct CSButton: View {
     
     @EnvironmentObject var csm: ColoredSquaresModel
-    @EnvironmentObject var vp: ViewParameter
+    @EnvironmentObject var vp: CSSettings
     
     var body: some View {
         
@@ -78,6 +78,6 @@ struct CSButton_Previews: PreviewProvider {
     static var previews: some View {
         CSButton()
             .environmentObject(ColoredSquaresModel())
-            .environmentObject(ViewParameter())
+            .environmentObject(CSSettings())
     }
 }

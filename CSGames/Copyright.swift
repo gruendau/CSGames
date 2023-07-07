@@ -13,7 +13,7 @@ import SwiftUI
 /// Shows app info when tapped.
 struct Copyright: View {
     
-    @EnvironmentObject var vp: ViewParameter
+    @EnvironmentObject var vp: CSSettings
     
     var body: some View {
         
@@ -35,6 +35,6 @@ struct Copyright: View {
 struct Copyright_Previews: PreviewProvider {
     static var previews: some View {
         Copyright()
-            .environmentObject(ViewParameter())
+            .environmentObject(CSSettings())
     }
 }

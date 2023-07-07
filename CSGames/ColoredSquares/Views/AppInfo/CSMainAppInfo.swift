@@ -12,7 +12,7 @@ struct CSMainAppInfo: View {
     //@Binding var showUserInstruction: Bool
     
     @EnvironmentObject var csm: ColoredSquaresModel
-    @EnvironmentObject var vp: ViewParameter
+    @EnvironmentObject var vp: CSSettings
     
     var body: some View {
         
@@ -49,7 +49,7 @@ struct CSMainAppInfo_Previews: PreviewProvider {
     static var previews: some View {
         CSMainAppInfo()
             .environmentObject(ColoredSquaresModel())
-            .environmentObject(ViewParameter())
+            .environmentObject(CSSettings())
             //.edgesIgnoringSafeArea(.all)
     }
 }
