@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+
+
+
 /// Main view for CSGames.
 ///
 /// This view starts the CSGames program.
@@ -33,17 +36,12 @@ struct Main: View {
                 // Table of content
                 VStack {
                     // Colored Squares
-                    Text("Colored Squares")
-                        .foregroundGradient1()
-                        .onTapGesture {
-                            set.isAcitive_ColoredSquares = true
-                    }
-                    
-                    // Next App ...
+                    GameSelector(name: "Colored Squares",
+                                 isActive: $set.isAcitive_ColoredSquares)
 
+                    // Next Game ...
                     
                 }
-                .font(.title2)
                 .foregroundColor(set.colorForeground)
                 .padding(.top, 30)
                 
