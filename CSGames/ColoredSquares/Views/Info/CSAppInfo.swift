@@ -28,21 +28,6 @@ struct ItemCell: View {
     
     var body: some View {
         
-        //        ZStack {
-        //
-        //            RoundedRectangle(cornerRadius: 10)
-        //                .fill(LinearGradient(gradient: Gradient(colors: [Color.green, Color.blue]), startPoint: .topLeading, endPoint: .bottomTrailing))
-        //                .clipShape(RoundedRectangle(cornerRadius: 10))
-        //                .padding(.horizontal, 4)
-        //                .shadow(color: Color.black, radius: 3, x: 3, y: 3)
-        //
-        //            HStack(alignment: .center) {
-        //                Text(item)
-        //            }.font(.body)
-        //        }
-        
-        
-        
         Text(item)
             .foregroundColor(.white)
         
@@ -58,14 +43,9 @@ struct CSAppInfo: View {
         UITableView.appearance().separatorColor = .clear
         // Set background color
         UITableView.appearance().backgroundColor = .black
-        //UITableView.appearance().backgroundColor = .black
-        //UITableViewCell.appearance().backgroundColor = .clear
+
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-        //UITableView.appearance()
-        //UITableView.appearance().separatorStyle = .none
-        //UITableViewCell.appearance().backgroundColor = .red
-        
-        //UITableView.appearance().backgroundColor = UIColor(Color.red)
+
     }
     
     @EnvironmentObject var csm: CSModel
@@ -77,29 +57,11 @@ struct CSAppInfo: View {
     
     var body: some View {
         
-        //        NavigationView {
-        //            Text("My View!")
-        //                .navigationBarTitleDisplayMode(.inline)
-        //                .toolbar {
-        //                    ToolbarItem(placement: .principal) {
-        //                        HStack {
-        //                            Image(systemName: "sun.min.fill")
-        //                            Text("Title")
-        //                                .font(.headline)
-        //                                .foregroundColor(.orange)
-        //                        }
-        //                    }
-        //                }
-        //        }
-        
         ZStack {
             Color.red
                 .edgesIgnoringSafeArea(.all)
+            
             NavigationView {
-                
-                
-                
-                
                 
                 List {
                     
@@ -124,116 +86,14 @@ struct CSAppInfo: View {
                     .listRowBackground(listRowBGColor)
                     
                 }
-                //.background(Color.purple.ignoresSafeArea())
-                //.background(.red)
-                
-                
                 .navigationBarHidden(true)
-                
-                //.navigationBarTitle("App Info")
                 .foregroundColor(.white)
-                //                .toolbar {
-                //                    ToolbarItem(placement: .navigationBarLeading) {
-                //                        HStack {
-                //                            //Image(systemName: "sun.min.fill")
-                //                            Text("App Info")
-                //                                .font(.largeTitle)
-                //                                .foregroundColor(.white)
-                //                        }
-                //                    }
-                //                }
                 .padding([.top], -25)
-                
                 
             }
             .navigationBarBackButtonHidden(true)
-            //.padding(.vertical, -50)
-            //.foregroundColor(.black)
             
         }
-        
-        
-        //.foregroundColor(.blue)
-        //.background(.black)
-        
-        //        VStack(alignment: .leading) {
-        //
-        //            // MARK: - User instruction
-        //            VStack(alignment: .leading) {
-        //                Text("User Instruction")
-        //                    .font(.title3)
-        //                    .bold()
-        //                VStack(alignment: .leading) {
-        //                    Text("Tap on screen to render squarebox.")
-        //                    Text("Tap on single square to render it.")
-        //                    Text("Tap on top buttons to change number of squares.")
-        //                    Text("Tap on bottom buttons to change size of squarebox.")
-        //                    Text("Tap on title to reset data.")
-        //                    Text("Tap on copyright to get app info.")
-        //                }.padding([.leading], 15)
-        //            }.padding([.bottom], 15)
-        //
-        //            // MARK: - Square data info
-        //            VStack(alignment: .leading) {
-        //                Text("App customization")
-        //                    .font(.title3)
-        //                    .bold()
-        //                VStack(alignment: .leading) {
-        ////                    Text("Squarebox")
-        ////                        .onTapGesture {
-        ////                            //TestView()
-        ////                        }
-        //                    Button(action: {
-        //                        self.showSquareboxInfo.toggle()
-        //                    }) {
-        //                        Text("Squarebox")
-        //                    }.sheet(isPresented: $showSquareboxInfo) {
-        //                        TestView()
-        //                    }
-        //                    // Screen
-        //                    ColorChooser(text: "Screen background color:",
-        //                                 bindedColor: $vp.screenBackgroundColor)
-        //                        .padding([.top], -15)
-        //                    ColorChooser(text: "Text color:",
-        //                                 bindedColor: $vp.textColor  )
-        //                    // Squarebox
-        //                    ColorChooser(text: "Squarebox background color:",
-        //                                 bindedColor: $vp.squarebox.backgroundColor)
-        //                    ColorChooser(text: "Squarebox border color:",
-        //                                 bindedColor: $vp.squarebox.borderColor)
-        //
-        //                }.padding([.leading], 15)
-        //            }.padding([.bottom], 15)
-        //
-        //            // MARK: - App data
-        //            VStack(alignment: .leading) {
-        //                Text("App data")
-        //                    .font(.title3)
-        //                    .bold()
-        //                VStack(alignment: .leading) {
-        //
-        //                    let squaresPerRow = Int(csm.number_SquaresPerEdge)
-        //                    let numberOfSquares = squaresPerRow * squaresPerRow
-        //
-        //                    Text("Squares: \(numberOfSquares)  (\(squaresPerRow) x \(squaresPerRow))")
-        //                    Text("Squarebox size: \(Int(csm.size_Squarebox)) px")
-        //                    Text("Square size: \(Int(csm.size_Square)) px")
-        //
-        //                }.padding([.leading], 15)
-        //            }.padding([.bottom], 15)
-        //
-        //            // MARK: - App statistics
-        //            VStack(alignment: .leading) {
-        //                Text("App statistics")
-        //                    .font(.title3)
-        //                    .bold()
-        ////                VStack(alignment: .leading) {
-        ////                    Text("Updates of squarebox: \(Int(csm.numberUpdates_Squares))")
-        ////                    Text("Updates of single squares: \(Int(csm.numberUpdates_Square))")
-        ////                }.padding([.leading], 15)
-        //            }.padding([.bottom], 15)
-        //
-        //        }.foregroundColor(vp.textColor)
         
     }
 }
@@ -243,7 +103,7 @@ struct CSAppInfo_Previews: PreviewProvider {
     
     static var previews: some View {
         CSAppInfo()
-            .background(CSSettings().screenBackgroundColor)
+            .background(CSSettings().colorBackground)
             .environmentObject(CSModel())
             .environmentObject(CSSettings())
     }
