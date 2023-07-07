@@ -19,10 +19,16 @@ class CSSettings: ObservableObject {
     @Published var colorForeground = Color.white
     
     // Position
+    // Title
     let paddingTitleTop = CGFloat(90)
 
     // Copyright
     let paddingCopyrightBottom = CGFloat(18)
+    
+    // Info
+    let paddingInfoLeading = CGFloat(30)
+    let paddingInfoTop = CGFloat(25)
+    let paddingInfoHorizontal = CGFloat(20)
 
     // AppInfo
     @Published var showAppInfo = false

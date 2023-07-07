@@ -20,25 +20,24 @@ struct CSAppData: View {
             
             // 2. Layer
             VStack(alignment: .leading) {
-                Text("App Data")
-                    .font(.title3)
-                    .bold()
-                    .padding(.bottom)
+                
+                CSInfoTitle(title: "Game Data",
+                            show: $set.showData)
                 
                 VStack(alignment: .leading) {
                     Text("Text ...")
                         .padding(.vertical, 1)
 
                 }
-                .padding(.leading, 15)
+                //.padding(.leading, 15)
                 
                 Spacer()
             }
-            .padding(.leading)
-            .padding(.top, -35)
+            .padding(.leading, set.paddingInfoLeading)    // 30
+            .padding(.top, set.paddingInfoTop)     // 25
             
         }
-        .padding(.horizontal, 20)
+        .padding(.horizontal, set.paddingInfoHorizontal)    //20
         .foregroundColor(set.colorForeground)
         .background(set.colorBackground)
         
