@@ -9,29 +9,61 @@ import SwiftUI
 
 struct CSMain: View {
     
-    @EnvironmentObject var csm: CSModel
-    @EnvironmentObject var vp: CSSettings
+    @StateObject var csm = CSModel()
+    @StateObject var vp = CSSettings()
+    
+    @Binding var isAppActive: Bool
     
     var body: some View {
         
         ZStack {
             
-            CSGame()
-                .onTapGesture() {
-                    csm.updateSquarebox()
+            // 1. Layer
+            // Background for screen
+            Rectangle()
+                .foregroundColor(vp.screenBackgroundColor)
+            
+            // 2. Layer
+            // Content of screen
+            VStack {
+                
+                // Title
+                CSTitle(isAppActive: $isAppActive)
+                    .padding([.top], vp.titlePaddingTop)
+                
+                // Content
+                ZStack {
+                    // 1.Layer
+                    // Game
+                    CSGame()
+                        .onTapGesture() {
+                            csm.updateSquarebox()
+                        }
+                    
+                    // 2.Layer
+                    // Info
+                    CSInfo()
+                        .opacity(vp.showAppInfo ? 1 : 0)
+                }
+                
+                // Copyright
+                Copyright()
+                    .padding([.bottom], vp.copyrightPaddingBottom)
+                
             }
             
-            CSInfo()
-                .opacity(vp.showAppInfo ? 1 : 0)
         }
+        .environmentObject(csm)
+        .environmentObject(vp)
         
     }
 }
 
-struct CSMain_Previews: PreviewProvider {
-    static var previews: some View {
-        CSMain()
-            .environmentObject(CSModel())
-            .environmentObject(CSSettings())
-    }
-}
+
+//struct CSMain_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CSMain(isAppActive: .constant(true))
+//        //.environmentObject(CSModel())
+//        //.environmentObject(CSSettings())
+//    }
+//}
