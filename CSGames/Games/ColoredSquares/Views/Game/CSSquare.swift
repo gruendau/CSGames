@@ -13,7 +13,7 @@ import SwiftUI
 struct CSSquare: View {
     
     @EnvironmentObject var csm: CSViewModel
-    @EnvironmentObject var vp: CSSettings
+    @EnvironmentObject var set: CSSettings
 
     var body: some View {
         
@@ -26,10 +26,7 @@ struct CSSquare: View {
                 ZStack {
                     // Colored square
                     Rectangle()
-                        .foregroundColor(RandomColor().color) //})
-                        //.gradientForeground(colors: [CSColors().color,
-                        //                             CSColors().color,
-                        //                             CSColors().color])
+                        .foregroundColor(RandomColor().color)
                         .rotationEffect(Angle(degrees: csm.randomAngle(30).big))
                     
                     // Border

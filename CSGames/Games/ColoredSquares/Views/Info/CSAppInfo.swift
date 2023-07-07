@@ -49,7 +49,7 @@ struct CSAppInfo: View {
     }
     
     @EnvironmentObject var csm: CSViewModel
-    @EnvironmentObject var vp: CSSettings
+    @EnvironmentObject var set: CSSettings
     
     @State private var showSquareboxInfo = false
     

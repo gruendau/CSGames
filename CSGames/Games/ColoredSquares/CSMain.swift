@@ -10,7 +10,7 @@ import SwiftUI
 struct CSMain: View {
     
     @StateObject var csm = CSViewModel()
-    @StateObject var vp = CSSettings()
+    @StateObject var set = CSSettings()
     
     @Binding var isAppActive: Bool
     
@@ -21,7 +21,7 @@ struct CSMain: View {
             // 1. Layer
             // Background for screen
             Rectangle()
-                .foregroundColor(vp.colorBackground)
+                .foregroundColor(set.colorBackground)
             
             // 2. Layer
             // Content of screen
@@ -29,7 +29,7 @@ struct CSMain: View {
                 
                 // Title
                 CSTitle(isAppActive: $isAppActive)
-                    .padding([.top], vp.paddingTitleTop)
+                    .padding([.top], set.paddingTitleTop)
                 
                 // Content
                 ZStack {
@@ -43,18 +43,18 @@ struct CSMain: View {
                     // 2.Layer
                     // Info
                     CSInfo()
-                        .opacity(vp.showAppInfo ? 1 : 0)
+                        .opacity(set.showAppInfo ? 1 : 0)
                 }
                 
                 // Copyright
                 CSCopyright()
-                    .padding([.bottom], vp.paddingCopyrightBottom)
+                    .padding([.bottom], set.paddingCopyrightBottom)
                 
             }
             
         }
         .environmentObject(csm)
-        .environmentObject(vp)
+        .environmentObject(set)
         
     }
 }

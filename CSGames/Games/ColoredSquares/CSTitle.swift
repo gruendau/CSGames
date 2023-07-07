@@ -10,13 +10,13 @@ import SwiftUI
 struct CSTitle: View {
     
     @EnvironmentObject var csm: CSViewModel
-    @EnvironmentObject var vp: CSSettings
+    @EnvironmentObject var set: CSSettings
     
     @Binding var isAppActive: Bool
     
     var body: some View {
         
-        Text(vp.textTitle)
+        Text(set.textTitle)
             .font(.largeTitle)
             .bold()
             .foregroundGradient1()

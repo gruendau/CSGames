@@ -10,7 +10,7 @@ import SwiftUI
 struct CSGame: View {
     
     @EnvironmentObject var csm: CSViewModel
-    @EnvironmentObject var vp: CSSettings
+    @EnvironmentObject var set: CSSettings
     
     var body: some View {
 

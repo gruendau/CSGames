@@ -10,7 +10,7 @@ import SwiftUI
 struct CSSquarebox: View {
     
     @EnvironmentObject var csm: CSViewModel
-    @EnvironmentObject var vp: CSSettings
+    @EnvironmentObject var set: CSSettings
     
     var body: some View {
         
@@ -18,12 +18,12 @@ struct CSSquarebox: View {
             
             // MARK: - Squaresbox border color
             Rectangle()
-                .frame(width: csm.size_Squarebox + vp.squarebox.borderSize,
-                       height: csm.size_Squarebox + vp.squarebox.borderSize,
+                .frame(width: csm.size_Squarebox + set.squarebox.borderSize,
+                       height: csm.size_Squarebox + set.squarebox.borderSize,
                        alignment: .center)
-                .foregroundColor(vp.squarebox.borderColor)
-                .blur(radius: vp.squarebox.borderIsBlured ?  vp.squarebox.borderBlurRadius : 0)
-                //.shadow(color: CSColors(withoutBlack: true).color, radius: 1.3, x: -1, y: 1)
+                .foregroundColor(set.squarebox.borderColor)
+                .blur(radius: set.squarebox.borderIsBlured ? set.squarebox.borderBlurRadius : 0)
+
             
             // MARK: - Squares
             ZStack {
@@ -39,7 +39,7 @@ struct CSSquarebox: View {
                     }
                 }
             }
-            .background(vp.squarebox.backgroundColor)
+            .background(set.squarebox.backgroundColor)
             
         }
         

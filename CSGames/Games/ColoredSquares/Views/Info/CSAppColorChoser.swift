@@ -41,16 +41,13 @@ let colors = [
 ]
 
 
-
-
-
 struct CSAppColorChoser: View {
     
     let text: String
     @Binding var bindedColor: Color
     
     @EnvironmentObject var csm: CSViewModel
-    @EnvironmentObject var vp: CSSettings
+    @EnvironmentObject var set: CSSettings
     
     var body: some View {
     
@@ -64,7 +61,6 @@ struct CSAppColorChoser: View {
                     CSColorChoseSquare(color: $0.color,
                                       borderColor: .white,
                                       bindedColor: $bindedColor)
-                                      //bindedColor: $vp.screenBackgroundColor)
                 }
 
             }
@@ -83,7 +79,7 @@ struct CSAppColorChoser: View {
         @Binding var bindedColor: Color
         
         @EnvironmentObject var csm: CSViewModel
-        @EnvironmentObject var vp: CSSettings
+        @EnvironmentObject var set: CSSettings
         
         @State var isHovered = false
 
@@ -103,14 +99,14 @@ struct CSAppColorChoser: View {
                 // Border of color chooser square for active color
                 Rectangle()
                     .frame(width: 14 + 4, height: 14 + 4)
-                    .foregroundColor(vp.colorBackground == . red ? .blue : .red)
+                    .foregroundColor(set.colorBackground == . red ? .blue : .red)
                     .padding(-3)
                     .opacity(color == bindedColor ? 1 : 0)
                 
                 // Interior of color chooser square
                 Rectangle()
                     .frame(width: 14, height: 14)
-                    .border(vp.colorBackground == . red ? .blue : .red)
+                    .border(set.colorBackground == . red ? .blue : .red)
                     .padding(-3)
                     .onTapGesture() { bindedColor = color }
                     .foregroundColor(isHovered ? .green : color)

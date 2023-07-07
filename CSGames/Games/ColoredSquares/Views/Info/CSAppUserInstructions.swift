@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CSAppUserInstructions: View {
     
-    @EnvironmentObject var vp: CSSettings
+    @EnvironmentObject var set: CSSettings
     
     var body: some View {
         
@@ -48,8 +48,8 @@ struct CSAppUserInstructions: View {
             
         }
         .padding(.horizontal, 20)
-        .foregroundColor(vp.colorForeground)
-        .background(vp.colorBackground)
+        .foregroundColor(set.colorForeground)
+        .background(set.colorBackground)
         
     }
 }
