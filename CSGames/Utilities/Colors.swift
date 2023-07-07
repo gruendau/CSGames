@@ -10,16 +10,20 @@ import SwiftUI
 
 struct Colors {
     
-    let colors: [Color] = [.red, .green, .blue, .yellow, .purple,
+    // Private Properties
+    private let colors: [Color] = [.red, .green, .blue, .yellow, .purple,
                            .cyan, .orange, .pink, .indigo, .brown,
                            .mint, .black, .white, .gray]
     
-    let names: [String] = ["red", "green", "blue", "yellow", "purple",
+    private let names: [String] = ["red", "green", "blue", "yellow", "purple",
                            "cyan", "orange", "pink", "indigo", "brown",
                            "mint", "black", "white", "gray"]
     
-    let withoutBlack: Bool
+    private var number: Int = 0
     
+    private let withoutBlack: Bool
+    
+    // Public properties
     var color: Color {
         get { colors[number] }
         set { processColor(newValue) }
@@ -28,13 +32,15 @@ struct Colors {
         get { names[number] }
         set { processName(newValue) }
     }
-    var number: Int = 0
     
+    
+    // Initializer
     init (withoutBlack: Bool = false) {
         self.withoutBlack = withoutBlack
         random()
     }
     
+    // Private Methodes
     private mutating func processColor (_ color: Color) {
         var n = -1
         for x in colors {
@@ -51,45 +57,20 @@ struct Colors {
         }
     }
     
+    // Public methodes
     mutating func random () {
         var foundNumber = false
         while !foundNumber {
             number = Int.random(in: 0..<colors.endIndex)
-            if withoutBlack { if colors[number] != .black { foundNumber = true } }
-            else { foundNumber = true }
+            if withoutBlack {
+                if colors[number] != .black { foundNumber = true }
+                
+            } else {
+                foundNumber = true
+            }
         }
     }
       
 }
-
-struct ViewTitle: View {
-    
-    var text: String
-    
-    init (_ text: String = "<Title>") {
-        self.text = text
-    }
-    
-    var body: some View {
-        Text(text)
-            .font(.largeTitle)
-            //.bold()
-    }
-}
-
-struct ViewSubtitle: View {
-    
-    var text: String
-    
-    init (_ text: String = "<Title>") {
-        self.text = text
-    }
-    
-    var body: some View {
-        Text(text)
-            .font(.subheadline)
-    }
-}
-
 
 
