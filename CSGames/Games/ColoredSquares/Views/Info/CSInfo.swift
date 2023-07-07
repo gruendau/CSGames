@@ -9,12 +9,9 @@ import SwiftUI
 
 struct CSInfo: View {
 
-    @EnvironmentObject var csm: CSViewModel
     @EnvironmentObject var set: CSSettings
 
     @State private var showSquareboxInfo = false
-
-    //let listRowBGColor: Color = .black
 
     var body: some View {
 
@@ -45,7 +42,7 @@ struct CSInfo: View {
             .padding(.top, -20)
             
             // 2. Layer
-            //
+            // Show Info Pages
             if set.showUserInstructions {
                 CSUserInstructions()
             }
@@ -71,7 +68,6 @@ struct CSInfo: View {
 struct CSInfo_Previews: PreviewProvider {
     static var previews: some View {
         CSInfo()
-            .environmentObject(CSViewModel())
             .environmentObject(CSSettings())
     }
 }
