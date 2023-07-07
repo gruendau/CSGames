@@ -7,4 +7,10 @@
 
 import SwiftUI
 
-let colorBackground = Color.black
+class Settings: ObservableObject {
+    
+    let colorBackground = Color.black
+    
+}
+
+
