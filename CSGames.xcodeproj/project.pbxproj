@@ -30,7 +30,6 @@
 		527687872807742C00501744 /* CSSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527687862807742C00501744 /* CSSettings.swift */; };
 		52768789280777A000501744 /* CSTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52768788280777A000501744 /* CSTitle.swift */; };
 		5276878B280779DA00501744 /* CSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276878A280779DA00501744 /* CSButton.swift */; };
-		5276878D28077AB600501744 /* CSAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276878C28077AB600501744 /* CSAppInfo.swift */; };
 		52779B0B2808371A0071FCDC /* CSMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52779B0A2808371A0071FCDC /* CSMain.swift */; };
 		527D1D632A57542F00807DBC /* README.txt in Sources */ = {isa = PBXBuildFile; fileRef = 527D1D622A57542F00807DBC /* README.txt */; };
 		527D1D662A575BF300807DBC /* ForegroundGradient1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D1D652A575BF300807DBC /* ForegroundGradient1.swift */; };
@@ -63,7 +62,6 @@
 		527687862807742C00501744 /* CSSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSettings.swift; sourceTree = "<group>"; };
 		52768788280777A000501744 /* CSTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTitle.swift; sourceTree = "<group>"; };
 		5276878A280779DA00501744 /* CSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSButton.swift; sourceTree = "<group>"; };
-		5276878C28077AB600501744 /* CSAppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSAppInfo.swift; sourceTree = "<group>"; };
 		52779B0A2808371A0071FCDC /* CSMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMain.swift; sourceTree = "<group>"; };
 		527D1D622A57542F00807DBC /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		527D1D652A575BF300807DBC /* ForegroundGradient1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForegroundGradient1.swift; sourceTree = "<group>"; };
@@ -192,7 +190,6 @@
 			isa = PBXGroup;
 			children = (
 				5276878228076E7400501744 /* CSInfo.swift */,
-				5276878C28077AB600501744 /* CSAppInfo.swift */,
 				52745F5928088BCD00B39220 /* CSAppColorChoser.swift */,
 				527216362810B245001264F3 /* CSAppUserInstructions.swift */,
 				5272163A2810B273001264F3 /* CSAppData.swift */,
@@ -324,7 +321,6 @@
 				527687872807742C00501744 /* CSSettings.swift in Sources */,
 				527D1D662A575BF300807DBC /* ForegroundGradient1.swift in Sources */,
 				52718AB62805DF0A0065C9DE /* CSSquarebox.swift in Sources */,
-				5276878D28077AB600501744 /* CSAppInfo.swift in Sources */,
 				52768789280777A000501744 /* CSTitle.swift in Sources */,
 				527D1D632A57542F00807DBC /* README.txt in Sources */,
 			);
