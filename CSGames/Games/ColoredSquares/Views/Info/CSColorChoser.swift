@@ -1,5 +1,5 @@
 //
-//  ColorChooserView.swift
+//  CSColorChooser.swift
 //  CSGames
 //
 //  Created by Test on 14.04.22.
@@ -41,7 +41,7 @@ let colors = [
 ]
 
 
-struct CSAppColorChoser: View {
+struct CSColorChoser: View {
     
     let text: String
     @Binding var bindedColor: Color
@@ -119,12 +119,12 @@ struct CSAppColorChoser: View {
 }
 
 
-struct CSAppColorChoser_Previews: PreviewProvider {
+struct CSColorChoser_Previews: PreviewProvider {
     
     @State static var bindedColor: Color = .white
     
     static var previews: some View {
-        CSAppColorChoser(text: "Test Color", bindedColor: $bindedColor)
+        CSColorChoser(text: "Test Color", bindedColor: $bindedColor)
             .environmentObject(CSViewModel())
             .environmentObject(CSSettings())
     }

@@ -59,16 +59,16 @@ struct CSInfo: View {
             // 2. Layer
             //
             if set.showUserInstructions {
-                CSAppUserInstructions()
+                CSUserInstructions()
             }
             if set.showData {
-                CSAppData()
+                CSData()
             }
             if set.showStatistics {
-                CSAppStatistics()
+                CSStatistics()
             }
             if set.showCustomization {
-                CSAppCustomization()
+                CSCustomization()
             }
             if set.showAbout {
                 //CSAppAbout()

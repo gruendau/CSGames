@@ -1,5 +1,5 @@
 //
-//  AppData.swift
+//  CSData.swift
 //  CSGames
 //
 //  Created by Test on 20.04.22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CSAppData: View {
+struct CSData: View {
     
     @EnvironmentObject var set: CSSettings
     
@@ -45,9 +45,9 @@ struct CSAppData: View {
 }
 
 
-struct CSAppData_Previews: PreviewProvider {
+struct CSData_Previews: PreviewProvider {
     static var previews: some View {
-        CSAppData()
+        CSData()
             .environmentObject(CSSettings())
     }
 }
