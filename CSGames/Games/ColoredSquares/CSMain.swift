@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CSMain: View {
     
-    @StateObject var csm = CSModel()
+    @StateObject var csm = CSViewModel()
     @StateObject var vp = CSSettings()
     
     @Binding var isAppActive: Bool

@@ -13,7 +13,7 @@
 		52718AA42805DD200065C9DE /* CSGamesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AA32805DD200065C9DE /* CSGamesApp.swift */; };
 		52718AA82805DD220065C9DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52718AA72805DD220065C9DE /* Assets.xcassets */; };
 		52718AAB2805DD220065C9DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52718AAA2805DD220065C9DE /* Preview Assets.xcassets */; };
-		52718AB22805DE110065C9DE /* CSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB12805DE110065C9DE /* CSModel.swift */; };
+		52718AB22805DE110065C9DE /* CSViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB12805DE110065C9DE /* CSViewModel.swift */; };
 		52718AB42805DE8C0065C9DE /* CSGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB32805DE8C0065C9DE /* CSGame.swift */; };
 		52718AB62805DF0A0065C9DE /* CSSquarebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB52805DF0A0065C9DE /* CSSquarebox.swift */; };
 		52718AB82805DF7D0065C9DE /* CSSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB72805DF7D0065C9DE /* CSSquare.swift */; };
@@ -46,7 +46,7 @@
 		52718AA32805DD200065C9DE /* CSGamesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSGamesApp.swift; sourceTree = "<group>"; };
 		52718AA72805DD220065C9DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52718AAA2805DD220065C9DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		52718AB12805DE110065C9DE /* CSModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSModel.swift; sourceTree = "<group>"; };
+		52718AB12805DE110065C9DE /* CSViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSViewModel.swift; sourceTree = "<group>"; };
 		52718AB32805DE8C0065C9DE /* CSGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSGame.swift; sourceTree = "<group>"; };
 		52718AB52805DF0A0065C9DE /* CSSquarebox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSquarebox.swift; sourceTree = "<group>"; };
 		52718AB72805DF7D0065C9DE /* CSSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSquare.swift; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 		527378AB280A170F000B92D2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				52718AB12805DE110065C9DE /* CSModel.swift */,
+				52718AB12805DE110065C9DE /* CSViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -304,7 +304,7 @@
 				527687852807738300501744 /* Copyright.swift in Sources */,
 				5276878B280779DA00501744 /* CSButton.swift in Sources */,
 				52779B0B2808371A0071FCDC /* CSMain.swift in Sources */,
-				52718AB22805DE110065C9DE /* CSModel.swift in Sources */,
+				52718AB22805DE110065C9DE /* CSViewModel.swift in Sources */,
 				527216372810B245001264F3 /* CSAppUserInstructions.swift in Sources */,
 				5276878328076E7400501744 /* CSInfo.swift in Sources */,
 				528C0E6328171AF000C1962B /* xNaviTest.swift in Sources */,

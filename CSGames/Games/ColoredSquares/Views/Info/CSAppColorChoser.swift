@@ -49,7 +49,7 @@ struct CSAppColorChoser: View {
     let text: String
     @Binding var bindedColor: Color
     
-    @EnvironmentObject var csm: CSModel
+    @EnvironmentObject var csm: CSViewModel
     @EnvironmentObject var vp: CSSettings
     
     var body: some View {
@@ -82,7 +82,7 @@ struct CSAppColorChoser: View {
         let borderColor: Color
         @Binding var bindedColor: Color
         
-        @EnvironmentObject var csm: CSModel
+        @EnvironmentObject var csm: CSViewModel
         @EnvironmentObject var vp: CSSettings
         
         @State var isHovered = false
@@ -129,7 +129,7 @@ struct CSAppColorChoser_Previews: PreviewProvider {
     
     static var previews: some View {
         CSAppColorChoser(text: "Test Color", bindedColor: $bindedColor)
-            .environmentObject(CSModel())
+            .environmentObject(CSViewModel())
             .environmentObject(CSSettings())
     }
 }

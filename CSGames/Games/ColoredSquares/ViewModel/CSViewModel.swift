@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class CSModel: ObservableObject {
+class CSViewModel: ObservableObject {
     
     // MARK: - Properties
     

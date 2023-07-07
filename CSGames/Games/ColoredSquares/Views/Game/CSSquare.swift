@@ -12,7 +12,7 @@ import SwiftUI
 
 struct CSSquare: View {
     
-    @EnvironmentObject var csm: CSModel
+    @EnvironmentObject var csm: CSViewModel
     @EnvironmentObject var vp: CSSettings
 
     var body: some View {
@@ -53,7 +53,7 @@ struct CSSquare: View {
 struct ColoredSquareView_Previews: PreviewProvider {
     static var previews: some View {
         CSSquare()
-            .environmentObject(CSModel())
+            .environmentObject(CSViewModel())
             .environmentObject(CSSettings())
             .frame(width: 200, height: 200, alignment: .center)
     }

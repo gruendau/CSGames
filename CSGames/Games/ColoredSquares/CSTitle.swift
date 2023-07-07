@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CSTitle: View {
     
-    @EnvironmentObject var csm: CSModel
+    @EnvironmentObject var csm: CSViewModel
     @EnvironmentObject var vp: CSSettings
     
     @Binding var isAppActive: Bool
@@ -41,7 +41,7 @@ struct CSTitle: View {
 struct CSTitle_Previews: PreviewProvider {
     static var previews: some View {
         CSTitle(isAppActive: .constant(true))
-            .environmentObject(CSModel())
+            .environmentObject(CSViewModel())
             .environmentObject(CSSettings())
     }
 }
