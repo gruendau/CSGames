@@ -80,6 +80,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		521CDEC82A587FC40082C56B /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				521CDEC62A587BA90082C56B /* Games.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		521CDEC92A587FDE0082C56B /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				52745F54280879EB00B39220 /* ColoredSquares */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
 		52718A972805DD200065C9DE = {
 			isa = PBXGroup;
 			children = (
@@ -105,10 +121,10 @@
 				52745F602808AC9300B39220 /* Title.swift */,
 				527687842807738300501744 /* Copyright.swift */,
 				521CDEC42A57F8000082C56B /* Settings.swift */,
-				521CDEC62A587BA90082C56B /* Games.swift */,
+				521CDEC82A587FC40082C56B /* Enums */,
 				527D1D642A575BAF00807DBC /* Modifiers */,
-				52745F54280879EB00B39220 /* ColoredSquares */,
 				52745F5828087B7600B39220 /* Utilities */,
+				521CDEC92A587FDE0082C56B /* Games */,
 				527D1D6B2A5784A000807DBC /* Junk */,
 				52718AA72805DD220065C9DE /* Assets.xcassets */,
 				52718AA92805DD220065C9DE /* Preview Content */,
