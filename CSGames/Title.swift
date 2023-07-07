@@ -12,23 +12,22 @@ import SwiftUI
 /// Title with foreground gradient color that changes when title is tapped.
 struct Title: View {
     
-    @State var refreshTitle = 1
+    @State var recolorize = true
     
     var body: some View {
         
-        HStack {
-            Button(action: {
-                refreshTitle += 1
-            }, label: {
-                Text("CSGames")
-                    .bold()
-                    .font(.largeTitle)
-                    .foregroundGradient1()
-            })
-            
-            Text("\(refreshTitle)").hidden()
-        }
+        let title = Text("CSGames").bold().font(.largeTitle)
         
+        Button(action: {
+            recolorize.toggle()
+        }, label: {
+            if recolorize {
+                title.foregroundGradient1()
+            } else {
+                title.foregroundGradient1()
+            }
+        })
+
     }
 }
 
