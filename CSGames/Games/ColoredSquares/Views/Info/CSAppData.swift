@@ -16,9 +16,11 @@ struct CSAppData: View {
         ZStack(alignment: .leading) {
             
             // 1.Layer
+            // Background color
             Color.black
             
             // 2. Layer
+            // Content
             VStack(alignment: .leading) {
                 
                 CSInfoTitle(title: "Game Data",
@@ -29,17 +31,15 @@ struct CSAppData: View {
                         .padding(.vertical, 1)
 
                 }
-                //.padding(.leading, 15)
                 
                 Spacer()
             }
-            .padding(.leading, set.paddingInfoLeading)    // 30
-            .padding(.top, set.paddingInfoTop)     // 25
+            .padding(.leading, set.paddingInfoLeading)
+            .padding(.top, set.paddingInfoTop)
             
         }
-        .padding(.horizontal, set.paddingInfoHorizontal)    //20
+        .padding(.horizontal, set.paddingInfoHorizontal)
         .foregroundColor(set.colorForeground)
-        .background(set.colorBackground)
         
     }
 }
