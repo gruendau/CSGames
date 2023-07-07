@@ -47,7 +47,7 @@ struct CSMain: View {
                 }
                 
                 // Copyright
-                Copyright()
+                CSCopyright()
                     .padding([.bottom], vp.paddingCopyrightBottom)
                 
             }
