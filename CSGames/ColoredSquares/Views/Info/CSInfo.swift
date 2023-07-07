@@ -8,36 +8,17 @@
 import SwiftUI
 
 struct CSInfo: View {
-    
-    //@Binding var showUserInstruction: Bool
-    
+
     @EnvironmentObject var csm: CSModel
     @EnvironmentObject var vp: CSSettings
     
     var body: some View {
         
-        ZStack {
+        VStack {
             
-            // Background for screen
-            Rectangle()
-                .foregroundColor(vp.screenBackgroundColor)
+            CSAppInfo()
             
-            // Content of screen
-            VStack {
-                
-                CSTitle()
-                    .padding([.top], vp.titlePaddingTop)
-                
-                CSAppInfo()
-                    //.padding(.vertical, -150)
-
-                Spacer()
-                
-                Copyright()
-                    .padding([.bottom], vp.copyrightPaddingBottom)
-                
-            }
-            
+            Spacer()
             
         }
         
@@ -50,6 +31,5 @@ struct CSInfo_Previews: PreviewProvider {
         CSInfo()
             .environmentObject(CSModel())
             .environmentObject(CSSettings())
-            //.edgesIgnoringSafeArea(.all)
     }
 }
