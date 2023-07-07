@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		52718AA42805DD200065C9DE /* CSGamesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AA32805DD200065C9DE /* CSGamesApp.swift */; };
-		52718AA62805DD200065C9DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AA52805DD200065C9DE /* ContentView.swift */; };
 		52718AA82805DD220065C9DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52718AA72805DD220065C9DE /* Assets.xcassets */; };
 		52718AAB2805DD220065C9DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52718AAA2805DD220065C9DE /* Preview Assets.xcassets */; };
 		52718AB22805DE110065C9DE /* ColoredSquaresModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB12805DE110065C9DE /* ColoredSquaresModel.swift */; };
@@ -39,7 +38,6 @@
 /* Begin PBXFileReference section */
 		52718AA02805DD200065C9DE /* CSGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52718AA32805DD200065C9DE /* CSGamesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSGamesApp.swift; sourceTree = "<group>"; };
-		52718AA52805DD200065C9DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		52718AA72805DD220065C9DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52718AAA2805DD220065C9DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		52718AB12805DE110065C9DE /* ColoredSquaresModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredSquaresModel.swift; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 			children = (
 				527D1D622A57542F00807DBC /* README.txt */,
 				52718AA32805DD200065C9DE /* CSGamesApp.swift */,
-				52718AA52805DD200065C9DE /* ContentView.swift */,
 				527D1D692A5782B900807DBC /* Main.swift */,
 				52745F602808AC9300B39220 /* Title.swift */,
 				527687842807738300501744 /* Copyright.swift */,
@@ -305,7 +302,6 @@
 				527D1D6A2A5782B900807DBC /* Main.swift in Sources */,
 				52718AC42805E3150065C9DE /* xGapView.swift in Sources */,
 				52745F5A28088BCD00B39220 /* CSAppColorChoser.swift in Sources */,
-				52718AA62805DD200065C9DE /* ContentView.swift in Sources */,
 				5272163D2810B284001264F3 /* CSAppCustomization.swift in Sources */,
 				52745F612808AC9300B39220 /* Title.swift in Sources */,
 				52718AC62805E3A20065C9DE /* Colors.swift in Sources */,

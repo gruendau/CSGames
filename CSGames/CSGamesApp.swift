@@ -16,7 +16,7 @@ struct CSGamesApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Main()
                 .environmentObject(csm)
                 .environmentObject(vp)
         }
