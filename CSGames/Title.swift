@@ -18,7 +18,7 @@ struct Title: View {
     
     var body: some View {
         
-        let title = Text(s.textTitle).bold().font(.largeTitle)
+        let title = Text(s.textTitle).font(.largeTitle).bold()
         
         Button(action: {
             recolorize.toggle()

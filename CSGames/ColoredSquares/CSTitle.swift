@@ -14,47 +14,23 @@ struct CSTitle: View {
     
     var body: some View {
         
-        HStack {
-            
-            VStack {
-                Text("Colored Squares")
-                    .bold()
-                //.foregroundColor(.white)
-                //.foregroundColor(CSColors(withoutBlack: true).color)
-                    .gradientForeground(colors:
-                        [RandomColor(withoutBlack: true).color,
-                        RandomColor(withoutBlack: true).color,
-                        RandomColor(withoutBlack: true).color])
-                //.background(LinearGradient(gradient: Gradient(colors: [.red, .orange, .yellow, .green, .blue]), startPoint: .leading, endPoint: .trailing))
-                    .font(.largeTitle)
-                    .shadow(color: RandomColor(withoutBlack: true).color, radius: 1.3, x: -1, y: 1)
-                    .onTapGesture {
-                        csm.reset()
-                    }
+        Text("Colored Squares")
+            .font(.largeTitle)
+            .bold()
+            .foregroundGradient1()
+        
+            // Reset Colored Squares
+            .onTapGesture {
+                csm.reset()
             }
+        
+            // Quit Colored Squares
             .highPriorityGesture(
                 TapGesture(count: 2)
                     .onEnded { _ in
                         vp.isAcitive_ColoredSquares = false
                     }
             )
-            
-            
-//            Button(action: {
-//                csm.reset()
-//            }, label: {
-//                Text("Colored Squares")
-//                    .bold()
-//                //.foregroundColor(.white)
-//                //.foregroundColor(CSColors(withoutBlack: true).color)
-//                    .gradientForeground(colors: [CSColors(withoutBlack: true).color,
-//                                                 CSColors(withoutBlack: true).color,
-//                                                 CSColors(withoutBlack: true).color])
-//                //.background(LinearGradient(gradient: Gradient(colors: [.red, .orange, .yellow, .green, .blue]), startPoint: .leading, endPoint: .trailing))
-//                    .font(.largeTitle)
-//                    .shadow(color: CSColors(withoutBlack: true).color, radius: 1.3, x: -1, y: 1)
-//            })
-        }
         
     }
 }
