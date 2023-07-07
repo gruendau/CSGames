@@ -128,32 +128,32 @@ struct CSInfo_Previews: PreviewProvider {
 }
 
 
-struct NavigationConfigurator: UIViewControllerRepresentable {
-    var configure: (UINavigationController) -> Void = { _ in }
+//struct NavigationConfigurator: UIViewControllerRepresentable {
+//    var configure: (UINavigationController) -> Void = { _ in }
+//
+//    func makeUIViewController(context: UIViewControllerRepresentableContext<NavigationConfigurator>) -> UIViewController {
+//        UIViewController()
+//    }
+//    func updateUIViewController(_ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<NavigationConfigurator>) {
+//        if let nc = uiViewController.navigationController {
+//            self.configure(nc)
+//        }
+//    }
+//
+//}
 
-    func makeUIViewController(context: UIViewControllerRepresentableContext<NavigationConfigurator>) -> UIViewController {
-        UIViewController()
-    }
-    func updateUIViewController(_ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<NavigationConfigurator>) {
-        if let nc = uiViewController.navigationController {
-            self.configure(nc)
-        }
-    }
-
-}
-
-struct ItemCell: View {
-    // https://www.hackingwithswift.com/forums/swiftui/background-color-of-a-list-make-it-clear-color/3379
-    
-    var item: String
-    
-    var body: some View {
-        
-        Text(item)
-            .foregroundColor(.white)
-        
-    }
-}
+//struct ItemCell: View {
+//    // https://www.hackingwithswift.com/forums/swiftui/background-color-of-a-list-make-it-clear-color/3379
+//
+//    var item: String
+//
+//    var body: some View {
+//
+//        Text(item)
+//            .foregroundColor(.white)
+//
+//    }
+//}
 
 
 
