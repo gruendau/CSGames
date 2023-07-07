@@ -58,8 +58,6 @@ struct CSAppInfo: View {
     var body: some View {
         
         ZStack {
-            Color.red
-                .edgesIgnoringSafeArea(.all)
             
             NavigationView {
                 
@@ -87,8 +85,8 @@ struct CSAppInfo: View {
                     
                 }
                 .navigationBarHidden(true)
-                .foregroundColor(.white)
-                .padding([.top], -25)
+                .foregroundColor(set.colorForeground)
+                .padding(.top, -25)
                 
             }
             .navigationBarBackButtonHidden(true)
