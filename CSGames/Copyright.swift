@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+
+/// Copyright for CSGames.
+///
+/// Shows app info when tapped.
 struct Copyright: View {
     
     @EnvironmentObject var vp: ViewParameter

@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-
+/// Main view for CSGames.
+///
+/// This view starts the CSGames program.
 struct Main: View {
     
     @EnvironmentObject var csm: ColoredSquaresModel
