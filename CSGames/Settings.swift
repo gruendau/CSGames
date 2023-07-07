@@ -20,7 +20,8 @@ class Settings: ObservableObject {
     
     // Positions
     let paddingTitleTop = CGFloat(90)
-    let paddingCopyrightBottom = CGFloat(30)
+    let paddingContentTop = CGFloat(30)
+    let paddingCopyrightBottom = CGFloat(18)
     
     // Games
     @Published var isAcitive_ColoredSquares = false

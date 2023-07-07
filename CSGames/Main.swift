@@ -43,7 +43,7 @@ struct Main: View {
                     
                 }
                 .foregroundColor(set.colorForeground)
-                .padding(.top, 30)
+                .padding(.top, set.paddingContentTop)
                 
                 Spacer()
             
@@ -61,7 +61,6 @@ struct Main: View {
                 
         }
         .edgesIgnoringSafeArea(.all)
-        .padding(.bottom, -50)
         
     }
 }
