@@ -22,7 +22,7 @@ class CSSettings: ObservableObject {
     let paddingTitleTop = CGFloat(90)
 
     // Copyright
-    let paddingCopyrightBottom = CGFloat(30)
+    let paddingCopyrightBottom = CGFloat(18)
 
     // AppInfo
     @Published var showAppInfo = false
