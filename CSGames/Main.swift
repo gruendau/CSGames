@@ -21,8 +21,7 @@ struct Main: View {
             
             // 1. Layer
             // Background for screen
-            Rectangle()
-                .foregroundColor(.black)
+            Color.black
             
             // 2. Layer
             // Initial content of screen
