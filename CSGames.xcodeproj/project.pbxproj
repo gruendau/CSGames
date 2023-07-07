@@ -126,13 +126,6 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		527378AC280A171B000B92D2 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
 		52745F54280879EB00B39220 /* ColoredSquares */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,7 +133,6 @@
 				52745F5528087AC700B39220 /* Views */,
 				527378AB280A170F000B92D2 /* ViewModel */,
 				52745F5628087AD300B39220 /* Model */,
-				527378AC280A171B000B92D2 /* Data */,
 			);
 			path = ColoredSquares;
 			sourceTree = "<group>";
