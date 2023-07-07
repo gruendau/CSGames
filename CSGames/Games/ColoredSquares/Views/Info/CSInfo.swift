@@ -40,6 +40,7 @@ struct CSInfo: View {
             }
             .padding(.leading, 10)
             .padding(.top, -20)
+            //.background(set.colorBackground)
             
             // 2. Layer
             // Show Info Pages
@@ -60,6 +61,7 @@ struct CSInfo: View {
             }
             
         }
+        //.background(set.colorBackground)
 
     }
 }

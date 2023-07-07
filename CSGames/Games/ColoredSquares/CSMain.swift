@@ -20,8 +20,9 @@ struct CSMain: View {
             
             // 1. Layer
             // Background for screen
-            Rectangle()
-                .foregroundColor(set.colorBackground)
+            Color.black
+//            Rectangle()
+//                .foregroundColor(set.colorBackground)
             
             // 2. Layer
             // Content of screen
