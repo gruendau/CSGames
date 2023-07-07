@@ -16,7 +16,7 @@ struct CSTitle: View {
     
     var body: some View {
         
-        Text("Colored Squares")
+        Text(vp.textTitle)
             .font(.largeTitle)
             .bold()
             .foregroundGradient1()

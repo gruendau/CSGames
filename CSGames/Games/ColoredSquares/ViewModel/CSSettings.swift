@@ -9,6 +9,10 @@ import SwiftUI
 
 
 class CSSettings: ObservableObject {
+    
+    // Texts
+    let textTitle = "Colored Squares"
+    let textCopyright = "© 2022 by volker"
 
     // Colors
     @Published var colorBackground = Color.black

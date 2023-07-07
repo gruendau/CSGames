@@ -12,15 +12,14 @@ import SwiftUI
 /// Shows app info when tapped.
 struct CSCopyright: View {
     
-    @EnvironmentObject var vp: CSSettings
-    @EnvironmentObject var s: Settings
+    @EnvironmentObject var set: CSSettings
     
     var body: some View {
         
         HStack {
             Button(action: {
-                vp.showAppInfo.toggle()
-            }, label: { Text(s.textCopyright)
+                set.showAppInfo.toggle()
+            }, label: { Text(set.textCopyright)
                     .font(.footnote)
                     .foregroundColor(.red)
                     .opacity(0.8)
@@ -36,7 +35,6 @@ struct CSCopyright_Previews: PreviewProvider {
     static var previews: some View {
         CSCopyright()
             .environmentObject(CSSettings())
-            .environmentObject(Settings())
     }
 }
 
