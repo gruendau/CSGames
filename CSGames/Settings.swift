@@ -14,6 +14,7 @@ class Settings: ObservableObject {
     
     // Positions
     let paddingTitleTop: CGFloat = 90
+    let paddingCopyrightBottom: CGFloat = 30
     
 }
 

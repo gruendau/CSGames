@@ -46,13 +46,13 @@ struct Main: View {
                 }
                 .font(.title2)
                 .foregroundColor(vp.textColor)
-                .padding([.top], 30)
+                .padding(.top, 30)
                 
                 Spacer()
             
                 // Copyright
                 Copyright()
-                    .padding([.bottom], vp.copyrightPaddingBottom)
+                    .padding(.bottom, s.paddingCopyrightBottom)
 
             }
             
@@ -64,7 +64,7 @@ struct Main: View {
             
         }
         .edgesIgnoringSafeArea(.all)
-        .padding([.bottom], -50)
+        .padding(.bottom, -50)
         
     }
 }
