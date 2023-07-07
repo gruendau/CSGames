@@ -31,21 +31,11 @@ class CSSettings: ObservableObject {
     @Published var squarebox = Squarebox()
     
     struct Squarebox {
-        var borderColor: Color
-        var borderSize: CGFloat
-        var borderIsBlured: Bool
-        var borderBlurRadius: CGFloat
-        var backgroundColor: Color
-        
-        init (borderColor: Color = .white,
-              borderSize: CGFloat = 4,
-              backgroundColor: Color = .black) {
-            self.borderColor = borderColor
-            self.borderSize = borderSize
-            self.borderIsBlured = true
-            self.borderBlurRadius = 0
-            self.backgroundColor = backgroundColor
-        }
+        var borderColor = Color.white
+        var borderSize = CGFloat(4)
+        var borderIsBlured = true
+        var borderBlurRadius = CGFloat(0)
+        var backgroundColor = Color.black
     }
-    
+
 }
