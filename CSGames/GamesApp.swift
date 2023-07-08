@@ -9,7 +9,7 @@ import SwiftUI
 
 
 @main
-struct CSGamesApp: App {
+struct GamesApp: App {
 
     @StateObject var s = Settings()
     

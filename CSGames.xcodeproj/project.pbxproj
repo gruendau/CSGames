@@ -12,7 +12,7 @@
 		521CDECB2A5881180082C56B /* CSCopyright.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521CDECA2A5881180082C56B /* CSCopyright.swift */; };
 		523C561F2A596D6D00FFB817 /* CSAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C561E2A596D6D00FFB817 /* CSAbout.swift */; };
 		523C56212A597AF900FFB817 /* _CSInfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C56202A597AF900FFB817 /* _CSInfoPage.swift */; };
-		52718AA42805DD200065C9DE /* CSGamesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AA32805DD200065C9DE /* CSGamesApp.swift */; };
+		52718AA42805DD200065C9DE /* GamesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AA32805DD200065C9DE /* GamesApp.swift */; };
 		52718AA82805DD220065C9DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52718AA72805DD220065C9DE /* Assets.xcassets */; };
 		52718AAB2805DD220065C9DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52718AAA2805DD220065C9DE /* Preview Assets.xcassets */; };
 		52718AB22805DE110065C9DE /* CSViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AB12805DE110065C9DE /* CSViewModel.swift */; };
@@ -50,7 +50,7 @@
 		523C561E2A596D6D00FFB817 /* CSAbout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSAbout.swift; sourceTree = "<group>"; };
 		523C56202A597AF900FFB817 /* _CSInfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _CSInfoPage.swift; sourceTree = "<group>"; };
 		52718AA02805DD200065C9DE /* CSGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		52718AA32805DD200065C9DE /* CSGamesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSGamesApp.swift; sourceTree = "<group>"; };
+		52718AA32805DD200065C9DE /* GamesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesApp.swift; sourceTree = "<group>"; };
 		52718AA72805DD220065C9DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52718AAA2805DD220065C9DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		52718AB12805DE110065C9DE /* CSViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSViewModel.swift; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				527D1D622A57542F00807DBC /* README.txt */,
-				52718AA32805DD200065C9DE /* CSGamesApp.swift */,
+				52718AA32805DD200065C9DE /* GamesApp.swift */,
 				527D1D692A5782B900807DBC /* Main.swift */,
 				52745F602808AC9300B39220 /* Title.swift */,
 				5277B5742A58A4CC00DD16E8 /* GameSelector.swift */,
@@ -346,7 +346,7 @@
 				52718AB42805DE8C0065C9DE /* CSGame.swift in Sources */,
 				527216392810B257001264F3 /* CSStatistics.swift in Sources */,
 				5272163B2810B273001264F3 /* CSData.swift in Sources */,
-				52718AA42805DD200065C9DE /* CSGamesApp.swift in Sources */,
+				52718AA42805DD200065C9DE /* GamesApp.swift in Sources */,
 				527687872807742C00501744 /* CSSettings.swift in Sources */,
 				527D1D662A575BF300807DBC /* ForegroundGradient1.swift in Sources */,
 				52718AB62805DF0A0065C9DE /* CSSquarebox.swift in Sources */,
