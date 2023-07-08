@@ -15,13 +15,13 @@ Author:
   Volker Kasack
 
 eMail:
-  volker.kasack@protonmail.com
+  volker.kasack at email service protonmail.com
 
 Updated:
   2023-07-08 Refactured, separated from CSGames
 
 Remarks:
-  Designed for iPhone 12 mini
+  Designed for iPhone 12 pro.
 
 TODOs:
   Render square, when clicked on square.
