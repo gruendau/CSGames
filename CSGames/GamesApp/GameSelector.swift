@@ -12,7 +12,7 @@ struct GameSelector: View {
     @EnvironmentObject var set: Settings
     
     let name: String
-    @Binding var isActive: Bool
+    @Binding var show: Bool
     
     var body: some View {
         
@@ -20,7 +20,7 @@ struct GameSelector: View {
             .foregroundGradient1()
             .font(.title2)
             .onTapGesture {
-                isActive = true
+                show = true
             }
                 
     }
@@ -29,7 +29,7 @@ struct GameSelector: View {
 
 struct GameSelector_Previews: PreviewProvider {
     static var previews: some View {
-        GameSelector(name: "Super Mario", isActive: .constant(true))
+        GameSelector(name: "Super Mario", show: .constant(true))
             .environmentObject(Settings())
     }
 }

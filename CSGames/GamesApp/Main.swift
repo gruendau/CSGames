@@ -35,7 +35,7 @@ struct Main: View {
                 VStack {
                     // Colored Squares
                     GameSelector(name: "Colored Squares",
-                                 isActive: $set.isAcitive_ColoredSquares)
+                                 show: $set.isAcitive_ColoredSquares)
 
                     // Next Game ...
                     
