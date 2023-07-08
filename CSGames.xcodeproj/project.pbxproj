@@ -159,8 +159,16 @@
 				523C562F2A5A1C8200FFB817 /* Info.swift */,
 				523C56312A5A1D5500FFB817 /* InfoTitle.swift */,
 				523C56332A5A1E0200FFB817 /* InfoSelector.swift */,
+				523C56352A5A1EFE00FFB817 /* Pages */,
 			);
 			path = Info;
+			sourceTree = "<group>";
+		};
+		523C56352A5A1EFE00FFB817 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pages;
 			sourceTree = "<group>";
 		};
 		52718A972805DD200065C9DE = {
