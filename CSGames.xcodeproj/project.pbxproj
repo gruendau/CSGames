@@ -218,8 +218,8 @@
 			isa = PBXGroup;
 			children = (
 				5276878228076E7400501744 /* CSInfo.swift */,
-				5277B5762A58BD9B00DD16E8 /* CSInfoSelector.swift */,
 				5277B5782A58C43000DD16E8 /* CSInfoTitle.swift */,
+				5277B5762A58BD9B00DD16E8 /* CSInfoSelector.swift */,
 				5277B57A2A58CEEB00DD16E8 /* Pages */,
 			);
 			path = Info;
@@ -244,8 +244,8 @@
 				5272163A2810B273001264F3 /* CSData.swift */,
 				527216382810B257001264F3 /* CSStatistics.swift */,
 				5272163C2810B284001264F3 /* CSCustomization.swift */,
-				52745F5928088BCD00B39220 /* CSColorChoser.swift */,
 				523C561E2A596D6D00FFB817 /* CSAbout.swift */,
+				52745F5928088BCD00B39220 /* CSColorChoser.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
