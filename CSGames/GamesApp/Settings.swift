@@ -12,7 +12,7 @@ class Settings: ObservableObject {
     
     // Texts
     let textTitle = "CSGames"
-    let textCopyright = "© 2022 by volker"
+    let textCopyright = "© 2023 by volker"
     
     // Colors
     let colorBackground = Color.black
@@ -26,20 +26,7 @@ class Settings: ObservableObject {
     // Games
     @Published var showColoredSquares = false
     
-//    func showGame (_ game: Games) {
-//
-//        // Deactivate
-//        deactivateAllGames()
-//
-//        // Activate
-//        switch game {
-//        case .ColoredSquares: showColoredSquares = true
-//        }
-//
-//        func deactivateAllGames () {
-//            showColoredSquares = false
-//        }
-//    }
+
     
 }
 
