@@ -18,7 +18,6 @@ struct CSInfo: View {
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.white]
     }
 
-
     @EnvironmentObject var set: CSSettings
 
     var body: some View {
