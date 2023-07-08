@@ -10,11 +10,11 @@ import SwiftUI
 struct CSStatistics: View {
     @EnvironmentObject var set: CSSettings
     var body: some View {
-        _CSInfoPage(content: InfoContent())
+        _CSInfoPage(content: ContentStatistics())
     }
 }
 
-struct InfoContent: View {
+struct ContentStatistics: View {
     @EnvironmentObject var set: CSSettings
     var body: some View {
         

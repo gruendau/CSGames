@@ -8,53 +8,45 @@
 import SwiftUI
 
 struct CSUserInstructions: View {
-    
     @EnvironmentObject var set: CSSettings
-    
+    var body: some View {
+        _CSInfoPage(content: ContentUserInstructions())
+    }
+}
+
+struct ContentUserInstructions: View {
+    @EnvironmentObject var set: CSSettings
     var body: some View {
         
-        ZStack(alignment: .leading) {
+        Group {
+            // Content Start ---------------
+            CSInfoTitle(title: "User Instructions",
+                        show: $set.showUserInstructions)
             
-            // 1.Layer
-            // Background color
-            Color.black
-            
-            // 2. Layer
-            // Content
             VStack(alignment: .leading) {
-                
-                CSInfoTitle(title: "User Instructions",
-                            show: $set.showUserInstructions)
-                
-                VStack(alignment: .leading) {
-                    Text("Tap on ...")
+                Text("Tap on ...")
+                    .padding(.vertical, 1)
+                Group {
+                    Text("Title to reset data.")
                         .padding(.vertical, 1)
-                    Group {
-                        Text("Title to reset data.")
-                            .padding(.vertical, 1)
-                        Text("Screen to render squarebox.")
-                            .padding(.vertical, 1)
-                        Text("Single square to render the square.")
-                            .padding(.vertical, 1)
-                        Text("Top buttons to change number of squares.")
-                            .padding(.vertical, 1)
-                        Text("Bottom buttons to change size of squarebox.")
-                            .padding(.vertical, 1)
-                        Text("Copyright to get info.")
-                            .padding(.vertical, 1)
-                    }
-                    .padding(.leading)
-
+                    Text("Screen to render squarebox.")
+                        .padding(.vertical, 1)
+                    Text("Single square to render the square.")
+                        .padding(.vertical, 1)
+                    Text("Top buttons to change number of squares.")
+                        .padding(.vertical, 1)
+                    Text("Bottom buttons to change size of squarebox.")
+                        .padding(.vertical, 1)
+                    Text("Copyright to get info.")
+                        .padding(.vertical, 1)
                 }
-                
-                Spacer()
+                .padding(.leading)
+
             }
-            .padding(.leading, 30)
-            .padding(.top, 25)
             
+            Spacer()
+            // Content End -----------------
         }
-        .padding(.horizontal, 20)
-        .foregroundColor(set.colorForeground)
         
     }
 }

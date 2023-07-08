@@ -8,38 +8,30 @@
 import SwiftUI
 
 struct CSData: View {
-    
     @EnvironmentObject var set: CSSettings
-    
+    var body: some View {
+        _CSInfoPage(content: ContentData())
+    }
+}
+
+struct ContentData: View {
+    @EnvironmentObject var set: CSSettings
     var body: some View {
         
-        ZStack(alignment: .leading) {
+        Group {
+            // Content Start ---------------
+            CSInfoTitle(title: "Game Data",
+                        show: $set.showData)
             
-            // 1.Layer
-            // Background color
-            Color.black
-            
-            // 2. Layer
-            // Content
             VStack(alignment: .leading) {
-                
-                CSInfoTitle(title: "Game Data",
-                            show: $set.showData)
-                
-                VStack(alignment: .leading) {
-                    Text("Text ...")
-                        .padding(.vertical, 1)
+                Text("Text ...")
+                    .padding(.vertical, 1)
 
-                }
-                
-                Spacer()
             }
-            .padding(.leading, set.paddingInfoLeading)
-            .padding(.top, set.paddingInfoTop)
             
+            Spacer()
+            // Content End -----------------
         }
-        .padding(.horizontal, set.paddingInfoHorizontal)
-        .foregroundColor(set.colorForeground)
         
     }
 }
