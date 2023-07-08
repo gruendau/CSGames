@@ -40,7 +40,6 @@ struct CSCustomization: View {
         }
         .padding(.horizontal, set.paddingInfoHorizontal)
         .foregroundColor(set.colorForeground)
-        //.background(set.colorBackground)
         
     }
 }
