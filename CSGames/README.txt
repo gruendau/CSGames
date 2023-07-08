@@ -51,7 +51,7 @@ Coding equipment:
   
 --------------------------------
     
-Literatur:
+Literature:
   Code documentation:
     https://mobikul.com/how-to-create-documentation-of-your-swift-code/
 
