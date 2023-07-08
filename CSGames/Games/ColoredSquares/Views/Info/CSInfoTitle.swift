@@ -31,7 +31,7 @@ struct CSInfoTitle: View {
 
 struct CSInfoTitle_Previews: PreviewProvider {
     static var previews: some View {
-        CSInfoTitle(title: "Info", show: .constant(true))
+        CSInfoTitle(title: "Info Title", show: .constant(true))
             .environmentObject(CSSettings())
     }
 }
