@@ -12,6 +12,8 @@
 		521CDECB2A5881180082C56B /* CSCopyright.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521CDECA2A5881180082C56B /* CSCopyright.swift */; };
 		523C561F2A596D6D00FFB817 /* CSAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C561E2A596D6D00FFB817 /* CSAbout.swift */; };
 		523C56212A597AF900FFB817 /* _CSInfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C56202A597AF900FFB817 /* _CSInfoPage.swift */; };
+		523C56242A59836C00FFB817 /* README.txt in Sources */ = {isa = PBXBuildFile; fileRef = 523C56232A59836C00FFB817 /* README.txt */; };
+		523C56262A5983D200FFB817 /* README.txt in Sources */ = {isa = PBXBuildFile; fileRef = 523C56252A5983D200FFB817 /* README.txt */; };
 		52718AA42805DD200065C9DE /* GamesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AA32805DD200065C9DE /* GamesApp.swift */; };
 		52718AA82805DD220065C9DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52718AA72805DD220065C9DE /* Assets.xcassets */; };
 		52718AAB2805DD220065C9DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52718AAA2805DD220065C9DE /* Preview Assets.xcassets */; };
@@ -49,6 +51,8 @@
 		521CDECA2A5881180082C56B /* CSCopyright.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSCopyright.swift; sourceTree = "<group>"; };
 		523C561E2A596D6D00FFB817 /* CSAbout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSAbout.swift; sourceTree = "<group>"; };
 		523C56202A597AF900FFB817 /* _CSInfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _CSInfoPage.swift; sourceTree = "<group>"; };
+		523C56232A59836C00FFB817 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		523C56252A5983D200FFB817 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		52718AA02805DD200065C9DE /* CSGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52718AA32805DD200065C9DE /* GamesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesApp.swift; sourceTree = "<group>"; };
 		52718AA72805DD220065C9DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 		521CDEC92A587FDE0082C56B /* Games */ = {
 			isa = PBXGroup;
 			children = (
+				523C56252A5983D200FFB817 /* README.txt */,
 				52745F54280879EB00B39220 /* ColoredSquares */,
 			);
 			path = Games;
@@ -111,6 +116,7 @@
 		523C56222A5982BA00FFB817 /* GamesApp */ = {
 			isa = PBXGroup;
 			children = (
+				523C56232A59836C00FFB817 /* README.txt */,
 				52718AA32805DD200065C9DE /* GamesApp.swift */,
 				527D1D692A5782B900807DBC /* Main.swift */,
 				52745F602808AC9300B39220 /* Title.swift */,
@@ -351,10 +357,12 @@
 				52718AC62805E3A20065C9DE /* RandomColor.swift in Sources */,
 				521CDEC72A587BA90082C56B /* Games.swift in Sources */,
 				5277B5752A58A4CC00DD16E8 /* GameSelector.swift in Sources */,
+				523C56242A59836C00FFB817 /* README.txt in Sources */,
 				52718AB42805DE8C0065C9DE /* CSGame.swift in Sources */,
 				527216392810B257001264F3 /* CSStatistics.swift in Sources */,
 				5272163B2810B273001264F3 /* CSData.swift in Sources */,
 				52718AA42805DD200065C9DE /* GamesApp.swift in Sources */,
+				523C56262A5983D200FFB817 /* README.txt in Sources */,
 				527687872807742C00501744 /* CSSettings.swift in Sources */,
 				527D1D662A575BF300807DBC /* ForegroundGradient1.swift in Sources */,
 				52718AB62805DF0A0065C9DE /* CSSquarebox.swift in Sources */,
