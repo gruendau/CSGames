@@ -127,6 +127,7 @@
 				527D1D692A5782B900807DBC /* Main.swift */,
 				521CDEC42A57F8000082C56B /* Settings.swift */,
 				523C562D2A5A0A5F00FFB817 /* Main */,
+				523C562E2A5A1B7900FFB817 /* Info */,
 				521CDEC82A587FC40082C56B /* Enums */,
 				527D1D642A575BAF00807DBC /* Modifiers */,
 				52745F5828087B7600B39220 /* Utilities */,
@@ -144,6 +145,13 @@
 				527687842807738300501744 /* Copyright.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		523C562E2A5A1B7900FFB817 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Info;
 			sourceTree = "<group>";
 		};
 		52718A972805DD200065C9DE = {
