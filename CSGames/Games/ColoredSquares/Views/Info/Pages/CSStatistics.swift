@@ -10,16 +10,17 @@ import SwiftUI
 struct CSStatistics: View {
     @EnvironmentObject var set: CSSettings
     var body: some View {
-        _CSInfoPage(content: ContentStatistics())
+        _CSInfoPage(content: Content())
     }
 }
 
-struct ContentStatistics: View {
+
+private struct Content: View {
     @EnvironmentObject var set: CSSettings
     var body: some View {
         
         Group {
-            // Content Start ---------------
+            // CONTENT START ---------------------
             
             CSInfoTitle(title: "Statistics",
                         show: $set.showStatistics)
@@ -32,7 +33,7 @@ struct ContentStatistics: View {
             
             Spacer()
             
-            // Content End -----------------
+            // CONTENT END -----------------------
         }
         
     }

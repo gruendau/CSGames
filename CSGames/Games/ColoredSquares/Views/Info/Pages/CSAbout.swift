@@ -10,16 +10,18 @@ import SwiftUI
 struct CSAbout: View {
     @EnvironmentObject var set: CSSettings
     var body: some View {
-        _CSInfoPage(content: ContentAbout())
+        _CSInfoPage(content: Content())
     }
 }
 
-struct ContentAbout: View {
+
+private struct Content: View {
     @EnvironmentObject var set: CSSettings
     var body: some View {
         
         Group {
-            // Content Start ---------------
+            // CONTENT START ---------------------
+            
             CSInfoTitle(title: "About",
                         show: $set.showAbout)
             
@@ -30,7 +32,8 @@ struct ContentAbout: View {
             }
             
             Spacer()
-            // Content End -----------------
+            
+            // CONTENT END -----------------------
         }
         
     }

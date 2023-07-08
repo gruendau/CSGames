@@ -28,11 +28,15 @@ private struct Content: View {
             // GameSelector(name: "Colored Squares",
             //              show: $set.showColoredSquares)
             
+            // CONTENT START ---------------------
+            
             // Colored Squares
             GameSelector(name: "Colored Squares",
                          show: $set.showColoredSquares)
             
             // ...
+            
+            // CONTENT END -----------------------
             
         }
     }
@@ -49,12 +53,16 @@ private struct Links: View {
             //     CSMain(showApp: $set.showColoredSquares)
             // }
             
+            // CONTENT START ---------------------
+            
             // Colored Squares
             if set.showColoredSquares {
                 CSMain(showApp: $set.showColoredSquares)
             }
             
             // ...
+            
+            // CONTENT END -----------------------
             
         }
     }
