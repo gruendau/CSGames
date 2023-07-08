@@ -42,7 +42,8 @@ struct CSInfo: View {
                 
                 CSInfoSelector(name: "About",
                                show: $set.showAbout)
-                
+                //.background(.whitee)
+                //.gradientBackground(colors: [Color.red, Color.blue])
                 
             }
             .padding(.leading, 10)

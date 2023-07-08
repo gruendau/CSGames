@@ -14,6 +14,7 @@
 		523C56212A597AF900FFB817 /* _CSInfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C56202A597AF900FFB817 /* _CSInfoPage.swift */; };
 		523C56242A59836C00FFB817 /* README.txt in Sources */ = {isa = PBXBuildFile; fileRef = 523C56232A59836C00FFB817 /* README.txt */; };
 		523C56262A5983D200FFB817 /* README.txt in Sources */ = {isa = PBXBuildFile; fileRef = 523C56252A5983D200FFB817 /* README.txt */; };
+		523C56282A59BC1B00FFB817 /* RandomTricolorBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C56272A59BC1B00FFB817 /* RandomTricolorBackground.swift */; };
 		52718AA42805DD200065C9DE /* GamesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52718AA32805DD200065C9DE /* GamesApp.swift */; };
 		52718AA82805DD220065C9DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52718AA72805DD220065C9DE /* Assets.xcassets */; };
 		52718AAB2805DD220065C9DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52718AAA2805DD220065C9DE /* Preview Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		523C56202A597AF900FFB817 /* _CSInfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _CSInfoPage.swift; sourceTree = "<group>"; };
 		523C56232A59836C00FFB817 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		523C56252A5983D200FFB817 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		523C56272A59BC1B00FFB817 /* RandomTricolorBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomTricolorBackground.swift; sourceTree = "<group>"; };
 		52718AA02805DD200065C9DE /* CSGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52718AA32805DD200065C9DE /* GamesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesApp.swift; sourceTree = "<group>"; };
 		52718AA72805DD220065C9DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				527D1D652A575BF300807DBC /* RandomTricolorForeground.swift */,
+				523C56272A59BC1B00FFB817 /* RandomTricolorBackground.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				52718AB82805DF7D0065C9DE /* CSSquare.swift in Sources */,
 				527687852807738300501744 /* Copyright.swift in Sources */,
 				5276878B280779DA00501744 /* CSButtonBox.swift in Sources */,
+				523C56282A59BC1B00FFB817 /* RandomTricolorBackground.swift in Sources */,
 				52779B0B2808371A0071FCDC /* CSMain.swift in Sources */,
 				52718AB22805DE110065C9DE /* CSViewModel.swift in Sources */,
 				527216372810B245001264F3 /* CSUserInstructions.swift in Sources */,
