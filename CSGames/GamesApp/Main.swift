@@ -22,15 +22,14 @@ struct Main: View {
             // 1. Layer
             // Background for screen
             Color.colorBackground
+                .edgesIgnoringSafeArea(.all)
                 
-            
             // 2. Layer
             // Initial content of screen
             VStack {
                 
                 // Title
                 Title()
-                    .padding(.top, set.paddingTitleTop)
                 
                 // Table of content
                 VStack {
@@ -48,7 +47,6 @@ struct Main: View {
             
                 // Copyright
                 Copyright()
-                    .padding(.bottom, set.paddingCopyrightBottom)
 
             }
             

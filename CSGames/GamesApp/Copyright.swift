@@ -13,18 +13,21 @@ import SwiftUI
 /// Shows app info when tapped.
 struct Copyright: View {
     
-    @EnvironmentObject var s: Settings
+    @EnvironmentObject var set: Settings
     
     var body: some View {
         
         HStack {
+            
             Button(action: {
-                // s.showAppInfo.toggle()
-            }, label: { Text(s.textCopyright)
+                // set.showAppInfo.toggle()
+            }, label: { Text(set.textCopyright)
                     .font(.footnote)
                     .foregroundColor(.red)
                     .opacity(0.8)
             })
+            .padding(.bottom, set.paddingCopyrightBottom)
+            
         }
         
     }

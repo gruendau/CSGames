@@ -12,13 +12,13 @@ import SwiftUI
 /// Title with foreground gradient color that changes when title is tapped.
 struct Title: View {
     
-    @EnvironmentObject var s: Settings
+    @EnvironmentObject var set: Settings
     
     @State var recolorize = true
     
     var body: some View {
         
-        let title = Text(s.textTitle).font(.largeTitle).bold()
+        let title = Text(set.textTitle).font(.largeTitle).bold()
         
         Button(action: {
             recolorize.toggle()
@@ -29,6 +29,7 @@ struct Title: View {
                 title.randomTricolorForeground()
             }
         })
+        .padding(.top, set.paddingTitleTop)
 
     }
 }
