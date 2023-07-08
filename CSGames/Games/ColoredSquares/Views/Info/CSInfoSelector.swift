@@ -31,9 +31,9 @@ struct CSInfoSelector: View {
 }
 
 
-//struct CSInfoSelector_Previews: PreviewProvider {
-//    static var previews: some View {
-//        CSInfoSelector()
-//            .environmentObject(CSSettings())
-//    }
-//}
+struct CSInfoSelector_Previews: PreviewProvider {
+    static var previews: some View {
+        CSInfoSelector(name: "Link", show: .constant(true))
+            .environmentObject(CSSettings())
+    }
+}
