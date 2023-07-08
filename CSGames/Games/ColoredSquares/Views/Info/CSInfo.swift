@@ -8,48 +8,46 @@
 import SwiftUI
 
 struct CSInfo: View {
+    
+    init () {
+        // Remove separator lines
+        UITableView.appearance().separatorColor = .clear
+        // Set background color
+        UITableView.appearance().backgroundColor = .black
+
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+    }
+
 
     @EnvironmentObject var set: CSSettings
 
-    @State private var showSquareboxInfo = false
-
     var body: some View {
-
 
         ZStack {
             
-            // 1.Layer
-            // Background color
-            Color.black
-            
             // 1. Layer
             // Content list
-            
-                List {
-                    
-                    CSInfoSelector(name: "User Instructions",
-                                   show: $set.showUserInstructions)
-                    
-                    CSInfoSelector(name: "Data",
-                                   show: $set.showData)
-                    
-                    CSInfoSelector(name: "Statistics",
-                                   show: $set.showStatistics)
-                    
-                    CSInfoSelector(name: "Customization",
-                                   show: $set.showCustomization)
-                    
-                    CSInfoSelector(name: "About",
-                                   show: $set.showAbout)
-
-
-                }
-                .padding(.leading, 10)
-                .padding(.top, -20)
-                .background(set.colorBackground)
-            
-
-
+            List {
+                
+                CSInfoSelector(name: "User Instructions",
+                               show: $set.showUserInstructions)
+                
+                CSInfoSelector(name: "Data",
+                               show: $set.showData)
+                
+                CSInfoSelector(name: "Statistics",
+                               show: $set.showStatistics)
+                
+                CSInfoSelector(name: "Customization",
+                               show: $set.showCustomization)
+                
+                CSInfoSelector(name: "About",
+                               show: $set.showAbout)
+                
+                
+            }
+            .padding(.leading, 10)
+            .padding(.top, -20)
             
             // 2. Layer
             // Show Info Pages
@@ -70,7 +68,7 @@ struct CSInfo: View {
             }
             
         }
-        //.background(set.colorBackground)
+        .background(set.colorBackground)
 
     }
 }
