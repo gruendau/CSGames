@@ -32,16 +32,16 @@ Updated:
   2022-04-10 Creation
     
 Remarks:
-  Designed for iPhone 12 mini
+  Designed for iPhone 12 Pro.
 
 Literatur:
   Code documentation:
     https://mobikul.com/how-to-create-documentation-of-your-swift-code/
 
 TODOs:
-    ColoredSquareModel
+    ColoredSquaresModel
     Problem: With lot of squares ... square hide box border, bottom square row become rectangles
-    Set simulator on iPhone 12 mini as default
+    Set simulator on iPhone 12 pro as default
     Project navigator with folders (e.g. for ColoredSquaresApp)
     Implement app choser in ContentView
     Comments
@@ -66,7 +66,7 @@ TODOs:
     Show model data
     Gestures https://www.hackingwithswift.com/books/ios-swiftui/how-to-use-gestures-in-swiftui
 
-    Game: all squares in the same color
+    Game: All squares in the same color
     Game: Color memory
     Game: Tetris
     Game: Tennis
