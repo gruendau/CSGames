@@ -24,20 +24,20 @@ class Settings: ObservableObject {
     let paddingCopyrightBottom = CGFloat(18)
     
     // Games
-    @Published var isAcitive_ColoredSquares = false
+    @Published var showColoredSquares = false
     
-//    func activateGame (_ game: Games) {
+//    func showGame (_ game: Games) {
 //
 //        // Deactivate
 //        deactivateAllGames()
 //
 //        // Activate
 //        switch game {
-//        case .ColoredSquares: isAcitive_ColoredSquares = true
+//        case .ColoredSquares: showColoredSquares = true
 //        }
 //
 //        func deactivateAllGames () {
-//            isAcitive_ColoredSquares = false
+//            showColoredSquares = false
 //        }
 //    }
     

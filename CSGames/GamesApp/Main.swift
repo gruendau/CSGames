@@ -35,7 +35,7 @@ struct Main: View {
                 VStack {
                     // Colored Squares
                     GameSelector(name: "Colored Squares",
-                                 show: $set.isAcitive_ColoredSquares)
+                                 show: $set.showColoredSquares)
 
                     // Next Game ...
                     
@@ -53,8 +53,8 @@ struct Main: View {
             
             // 3. Layer
             // Chosen content of screen
-            if set.isAcitive_ColoredSquares {
-                CSMain(isAppActive: $set.isAcitive_ColoredSquares)
+            if set.showColoredSquares {
+                CSMain(isAppActive: $set.showColoredSquares)
             }
                 
         }
