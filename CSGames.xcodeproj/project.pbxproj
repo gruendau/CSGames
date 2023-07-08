@@ -40,7 +40,7 @@
 		5277B5792A58C43000DD16E8 /* CSInfoTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5277B5782A58C43000DD16E8 /* CSInfoTitle.swift */; };
 		5277B57C2A58CFC500DD16E8 /* README.txt in Sources */ = {isa = PBXBuildFile; fileRef = 5277B57B2A58CFC500DD16E8 /* README.txt */; };
 		527D1D632A57542F00807DBC /* README.txt in Sources */ = {isa = PBXBuildFile; fileRef = 527D1D622A57542F00807DBC /* README.txt */; };
-		527D1D662A575BF300807DBC /* ForegroundGradient1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D1D652A575BF300807DBC /* ForegroundGradient1.swift */; };
+		527D1D662A575BF300807DBC /* RandomTricolorForeground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D1D652A575BF300807DBC /* RandomTricolorForeground.swift */; };
 		527D1D6A2A5782B900807DBC /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D1D692A5782B900807DBC /* Main.swift */; };
 		528C0E6328171AF000C1962B /* xNaviTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528C0E6228171AF000C1962B /* xNaviTest.swift */; };
 /* End PBXBuildFile section */
@@ -80,7 +80,7 @@
 		5277B5782A58C43000DD16E8 /* CSInfoTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSInfoTitle.swift; sourceTree = "<group>"; };
 		5277B57B2A58CFC500DD16E8 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		527D1D622A57542F00807DBC /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		527D1D652A575BF300807DBC /* ForegroundGradient1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForegroundGradient1.swift; sourceTree = "<group>"; };
+		527D1D652A575BF300807DBC /* RandomTricolorForeground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomTricolorForeground.swift; sourceTree = "<group>"; };
 		527D1D692A5782B900807DBC /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		528C0E6228171AF000C1962B /* xNaviTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xNaviTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -253,7 +253,7 @@
 		527D1D642A575BAF00807DBC /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
-				527D1D652A575BF300807DBC /* ForegroundGradient1.swift */,
+				527D1D652A575BF300807DBC /* RandomTricolorForeground.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -364,7 +364,7 @@
 				52718AA42805DD200065C9DE /* GamesApp.swift in Sources */,
 				523C56262A5983D200FFB817 /* README.txt in Sources */,
 				527687872807742C00501744 /* CSSettings.swift in Sources */,
-				527D1D662A575BF300807DBC /* ForegroundGradient1.swift in Sources */,
+				527D1D662A575BF300807DBC /* RandomTricolorForeground.swift in Sources */,
 				52718AB62805DF0A0065C9DE /* CSSquarebox.swift in Sources */,
 				5277B5792A58C43000DD16E8 /* CSInfoTitle.swift in Sources */,
 				52768789280777A000501744 /* CSTitle.swift in Sources */,

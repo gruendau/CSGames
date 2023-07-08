@@ -20,7 +20,7 @@ struct CSTitle: View {
         Text(set.textTitle)
             .font(.largeTitle)
             .bold()
-            .foregroundGradient1()
+            .randomTricolorForeground()
         
             // Reset Colored Squares
             .onTapGesture {

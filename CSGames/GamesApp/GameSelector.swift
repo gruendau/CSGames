@@ -17,7 +17,7 @@ struct GameSelector: View {
     var body: some View {
         
         Text(name)
-            .foregroundGradient1()
+            .randomTricolorForeground()
             .font(.title2)
             .onTapGesture {
                 show = true

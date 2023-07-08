@@ -24,9 +24,9 @@ struct Title: View {
             recolorize.toggle()
         }, label: {
             if recolorize {
-                title.foregroundGradient1()
+                title.randomTricolorForeground()
             } else {
-                title.foregroundGradient1()
+                title.randomTricolorForeground()
             }
         })
 

@@ -1,5 +1,5 @@
 //
-//  ForegroundGradient1.swift
+//  RandomTricolorForeground.swift
 //  CSGames
 //
 //  Created by volker on 06.07.23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ForegroundGradient1: ViewModifier {
+struct RandomTricolorForeground: ViewModifier {
     func body(content: Content) -> some View {
         content
             .gradientForeground(colors: [
@@ -21,10 +21,11 @@ struct ForegroundGradient1: ViewModifier {
 }
 
 extension View {
-    func foregroundGradient1 () -> some View {
-        modifier(ForegroundGradient1())
+    func randomTricolorForeground () -> some View {
+        modifier(RandomTricolorForeground())
     }
 }
+
 
 extension View {
     // https://stackoverflow.com/questions/58991311/gradient-as-foreground-color-of-text-in-swiftui

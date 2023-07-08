@@ -22,6 +22,7 @@ struct Main: View {
             // 1. Layer
             // Background for screen
             Color.colorBackground
+                
             
             // 2. Layer
             // Initial content of screen
