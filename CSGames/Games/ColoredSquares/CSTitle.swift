@@ -12,7 +12,8 @@ struct CSTitle: View {
     @EnvironmentObject var csm: CSViewModel
     @EnvironmentObject var set: CSSettings
     
-    @Binding var isAppActive: Bool
+    // Binding to exit app
+    @Binding var showApp: Bool
     
     var body: some View {
         
@@ -30,7 +31,7 @@ struct CSTitle: View {
             .highPriorityGesture(
                 TapGesture(count: 2)
                     .onEnded { _ in
-                        isAppActive = false
+                        showApp = false
                     }
             )
         
@@ -40,7 +41,7 @@ struct CSTitle: View {
 
 struct CSTitle_Previews: PreviewProvider {
     static var previews: some View {
-        CSTitle(isAppActive: .constant(true))
+        CSTitle(showApp: .constant(true))
             .environmentObject(CSViewModel())
             .environmentObject(CSSettings())
     }

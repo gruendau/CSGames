@@ -12,6 +12,7 @@ struct CSMain: View {
     @StateObject var csm = CSViewModel()
     @StateObject var set = CSSettings()
     
+    // Binding to exit app
     @Binding var showApp: Bool
     
     var body: some View {
@@ -27,7 +28,7 @@ struct CSMain: View {
             VStack {
                 
                 // Title
-                CSTitle(isAppActive: $showApp)
+                CSTitle(showApp: $showApp)
                     .padding(.top, set.paddingTitleTop)
                 
                 // Content
