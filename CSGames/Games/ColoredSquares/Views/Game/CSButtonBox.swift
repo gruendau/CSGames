@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct CSButton: View {
+struct CSButtonBox: View {
     
     @EnvironmentObject var csm: CSViewModel
     @EnvironmentObject var set: CSSettings
@@ -18,6 +18,7 @@ struct CSButton: View {
         // Buttons number of squares
         VStack {
             
+            // Buttons - number of squares
             HStack {
                 
                 Button(action: {
@@ -30,7 +31,7 @@ struct CSButton: View {
                 
             }
             
-            // Buttons size of big square
+            // Buttons - size of square box
             HStack {
                 
                 Button(action: {
@@ -46,6 +47,7 @@ struct CSButton: View {
         }
         
     }
+    
     
     struct CSRoundButton: View {
         
@@ -64,8 +66,8 @@ struct CSButton: View {
                     .bold()
                     .foregroundColor(.white)
                     .font(.largeTitle)
-                    .padding([.top], -3)
-                    .padding([.leading], 1)
+                    .padding(.top, -3)
+                    .padding(.leading, 1)
             }.padding(5)
             
         }
@@ -74,9 +76,9 @@ struct CSButton: View {
 }
 
 
-struct CSButton_Previews: PreviewProvider {
+struct CSButtonBox_Previews: PreviewProvider {
     static var previews: some View {
-        CSButton()
+        CSButtonBox()
             .environmentObject(CSViewModel())
             .environmentObject(CSSettings())
     }
