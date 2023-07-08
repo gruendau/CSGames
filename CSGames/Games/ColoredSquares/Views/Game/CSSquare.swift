@@ -10,6 +10,7 @@
 
 import SwiftUI
 
+
 struct CSSquare: View {
     
     @EnvironmentObject var csm: CSViewModel
@@ -32,7 +33,6 @@ struct CSSquare: View {
                     // Border
                     Rectangle()
                         .strokeBorder(.black)
-                        //.foregroundColor(.black)
                         .rotationEffect(Angle(degrees: csm.randomAngle(30).small))
                     
                 }
@@ -46,6 +46,7 @@ struct CSSquare: View {
         
     }
 }
+
 
 struct ColoredSquareView_Previews: PreviewProvider {
     static var previews: some View {

@@ -22,7 +22,7 @@ struct CSGame: View {
             
             Spacer()
             
-            CSButton()
+            CSButtonBox()
             
             Spacer()
             

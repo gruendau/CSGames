@@ -33,7 +33,7 @@
 		527687852807738300501744 /* Copyright.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527687842807738300501744 /* Copyright.swift */; };
 		527687872807742C00501744 /* CSSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527687862807742C00501744 /* CSSettings.swift */; };
 		52768789280777A000501744 /* CSTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52768788280777A000501744 /* CSTitle.swift */; };
-		5276878B280779DA00501744 /* CSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276878A280779DA00501744 /* CSButton.swift */; };
+		5276878B280779DA00501744 /* CSButtonBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276878A280779DA00501744 /* CSButtonBox.swift */; };
 		52779B0B2808371A0071FCDC /* CSMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52779B0A2808371A0071FCDC /* CSMain.swift */; };
 		5277B5752A58A4CC00DD16E8 /* GameSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5277B5742A58A4CC00DD16E8 /* GameSelector.swift */; };
 		5277B5772A58BD9B00DD16E8 /* CSInfoSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5277B5762A58BD9B00DD16E8 /* CSInfoSelector.swift */; };
@@ -73,7 +73,7 @@
 		527687842807738300501744 /* Copyright.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Copyright.swift; sourceTree = "<group>"; };
 		527687862807742C00501744 /* CSSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSettings.swift; sourceTree = "<group>"; };
 		52768788280777A000501744 /* CSTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTitle.swift; sourceTree = "<group>"; };
-		5276878A280779DA00501744 /* CSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSButton.swift; sourceTree = "<group>"; };
+		5276878A280779DA00501744 /* CSButtonBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSButtonBox.swift; sourceTree = "<group>"; };
 		52779B0A2808371A0071FCDC /* CSMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMain.swift; sourceTree = "<group>"; };
 		5277B5742A58A4CC00DD16E8 /* GameSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSelector.swift; sourceTree = "<group>"; };
 		5277B5762A58BD9B00DD16E8 /* CSInfoSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSInfoSelector.swift; sourceTree = "<group>"; };
@@ -231,7 +231,7 @@
 				52718AB32805DE8C0065C9DE /* CSGame.swift */,
 				52718AB52805DF0A0065C9DE /* CSSquarebox.swift */,
 				52718AB72805DF7D0065C9DE /* CSSquare.swift */,
-				5276878A280779DA00501744 /* CSButton.swift */,
+				5276878A280779DA00501744 /* CSButtonBox.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -339,7 +339,7 @@
 			files = (
 				52718AB82805DF7D0065C9DE /* CSSquare.swift in Sources */,
 				527687852807738300501744 /* Copyright.swift in Sources */,
-				5276878B280779DA00501744 /* CSButton.swift in Sources */,
+				5276878B280779DA00501744 /* CSButtonBox.swift in Sources */,
 				52779B0B2808371A0071FCDC /* CSMain.swift in Sources */,
 				52718AB22805DE110065C9DE /* CSViewModel.swift in Sources */,
 				527216372810B245001264F3 /* CSUserInstructions.swift in Sources */,
