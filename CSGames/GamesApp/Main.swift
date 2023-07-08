@@ -8,8 +8,6 @@
 import SwiftUI
 
 
-
-
 /// Main view for CSGames.
 ///
 /// This view starts the CSGames program.
