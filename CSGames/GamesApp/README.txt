@@ -14,6 +14,9 @@ Updated:
   2023-07-08 Implemented README
 
 ToDos:
+  Improve RandomColor
+  Improve ForegroundGradient1
+  Add info pages
 
 Content:
 
@@ -22,7 +25,7 @@ Content:
     Main
       Title
       GameSelector
-      Colyright
+      Copyright
     Settings
     
   #Enums
