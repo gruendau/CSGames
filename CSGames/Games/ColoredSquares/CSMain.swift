@@ -12,7 +12,7 @@ struct CSMain: View {
     @StateObject var csm = CSViewModel()
     @StateObject var set = CSSettings()
     
-    @Binding var isAppActive: Bool
+    @Binding var showApp: Bool
     
     var body: some View {
         
@@ -21,16 +21,14 @@ struct CSMain: View {
             // 1. Layer
             // Background for screen
             Color.black
-//            Rectangle()
-//                .foregroundColor(set.colorBackground)
             
             // 2. Layer
             // Content of screen
             VStack {
                 
                 // Title
-                CSTitle(isAppActive: $isAppActive)
-                    .padding([.top], set.paddingTitleTop)
+                CSTitle(isAppActive: $showApp)
+                    .padding(.top, set.paddingTitleTop)
                 
                 // Content
                 ZStack {
@@ -49,7 +47,7 @@ struct CSMain: View {
                 
                 // Copyright
                 CSCopyright()
-                    .padding([.bottom], set.paddingCopyrightBottom)
+                    .padding(.bottom, set.paddingCopyrightBottom)
                 
             }
             
@@ -61,10 +59,10 @@ struct CSMain: View {
 }
 
 
-//struct CSMain_Previews: PreviewProvider {
-//    static var previews: some View {
-//        CSMain(isAppActive: .constant(true))
-//        //.environmentObject(CSModel())
-//        //.environmentObject(CSSettings())
-//    }
-//}
+struct CSMain_Previews: PreviewProvider {
+    static var previews: some View {
+        CSMain(showApp: .constant(true))
+            .environmentObject(CSViewModel())
+            .environmentObject(CSSettings())
+    }
+}

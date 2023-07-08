@@ -54,7 +54,7 @@ struct Main: View {
             // 3. Layer
             // Chosen content of screen
             if set.showColoredSquares {
-                CSMain(isAppActive: $set.showColoredSquares)
+                CSMain(showApp: $set.showColoredSquares)
             }
                 
         }
