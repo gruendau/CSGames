@@ -20,18 +20,17 @@ struct Main: View {
         ZStack {
             
             // 1. Layer
-            // Background for screen
-            Color.colorBackground
-                .edgesIgnoringSafeArea(.all)
+            // Background
+            Background()
                 
             // 2. Layer
-            // Initial content of screen
+            // Content (title, content, copyright)
             VStack {
                 
                 // Title
                 Title()
                 
-                // Table of content
+                // Content
                 VStack {
                     // Colored Squares
                     GameSelector(name: "Colored Squares",
@@ -51,7 +50,8 @@ struct Main: View {
             }
             
             // 3. Layer
-            // Chosen content of screen
+            // Chosen game
+            // Colored Squares
             if set.showColoredSquares {
                 CSMain(showApp: $set.showColoredSquares)
             }
