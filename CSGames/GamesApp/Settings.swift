@@ -13,7 +13,7 @@ class Settings: ObservableObject {
     // MARK: Main
     // Texts
     let textTitle = "CSGames"
-    let textCopyright = "© 2023 by volker"
+    let textCopyright = "© 2022 by volker"
     
     // Colors
     let colorBackground = Color.black
