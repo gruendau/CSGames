@@ -64,7 +64,7 @@ struct CSInfo: View {
                 CSCustomization()
             }
             if set.showAbout {
-                //CSAppAbout()
+                CSAbout()
             }
             
         }
