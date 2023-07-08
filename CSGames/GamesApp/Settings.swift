@@ -26,8 +26,6 @@ class Settings: ObservableObject {
     // Games
     @Published var showColoredSquares = false
     
-
-    
 }
 
 
