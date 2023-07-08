@@ -13,36 +13,70 @@ struct CSStatistics: View {
     
     var body: some View {
         
-        ZStack(alignment: .leading) {
-            
-            // 1.Layer
-            // Background color
-            Color.black
-            
-            // 2. Layer
-            // Content
-            VStack(alignment: .leading) {
-                
-                CSInfoTitle(title: "Statistics",
-                            show: $set.showStatistics)
-                
-                VStack(alignment: .leading) {
-                    Text("Text ...")
-                        .padding(.vertical, 1)
-
-                }
-                
-                Spacer()
-            }
-            .padding(.leading, set.paddingInfoLeading)
-            .padding(.top, set.paddingInfoTop)
-            
-        }
-        .padding(.horizontal, set.paddingInfoHorizontal)
-        .foregroundColor(set.colorForeground)
+        CSInfoPage_Body(content: InfoContent())
         
     }
 }
+
+struct CSInfoPage_Body<Content: View>: View {
+
+    @EnvironmentObject var set: CSSettings
+
+    let content: Content
+
+    var body: some View {
+
+        Group {
+
+            ZStack(alignment: .leading) {
+
+                // 1.Layer
+                // Background color
+                Color.black
+
+                // 2. Layer
+                // Content
+                VStack(alignment: .leading) {
+
+                    content
+
+                }
+                .padding(.leading, set.paddingInfoLeading)
+                .padding(.top, set.paddingInfoTop)
+
+            }
+            .padding(.horizontal, set.paddingInfoHorizontal)
+            .foregroundColor(set.colorForeground)
+
+        }
+    }
+}
+
+
+struct InfoContent: View {
+
+    @EnvironmentObject var set: CSSettings
+
+    var body: some View {
+
+        Group {
+
+            CSInfoTitle(title: "Statistics",
+                        show: $set.showStatistics)
+
+            VStack(alignment: .leading) {
+                Text("Text ...")
+                    .padding(.vertical, 1)
+
+            }
+
+            Spacer()
+        }
+
+    }
+}
+
+
 
 
 struct CSStatistics_Previews: PreviewProvider {
