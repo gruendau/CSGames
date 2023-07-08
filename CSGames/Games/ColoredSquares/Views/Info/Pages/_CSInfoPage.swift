@@ -46,7 +46,7 @@ struct _CSInfoPage<Content: View>: View {
 
 struct _CSInfoPage_Previews: PreviewProvider {
     static var previews: some View {
-        _CSInfoPage(content: Text("Hallo"))
+        _CSInfoPage(content: Text("Hallo _CSInfoPage"))
             .environmentObject(CSSettings())
     }
 }
