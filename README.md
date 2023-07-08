@@ -1,6 +1,8 @@
 # CSGames
 
-Eine Sammlung graphischen Animationen und Spielen.
+Eine Sammlung graphischer Animationen und Spiele.
+
+_A collection of graphical animations and games._
 
 Start
 <img src="./Screenshots/CSGames_Start 2023-07-06.png" 
