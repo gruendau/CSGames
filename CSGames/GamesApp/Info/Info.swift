@@ -50,6 +50,6 @@ struct Info: View {
 struct Info_Previews: PreviewProvider {
     static var previews: some View {
         Info()
-            .environmentObject(CSSettings())
+            .environmentObject(Settings())
     }
 }
