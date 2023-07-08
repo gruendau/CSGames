@@ -20,7 +20,7 @@ struct Copyright: View {
         HStack {
             
             Button(action: {
-                // set.showAppInfo.toggle()
+                set.showAppInfo.toggle()
             }, label: { Text(set.textCopyright)
                     .font(.footnote)
                     .foregroundColor(.red)

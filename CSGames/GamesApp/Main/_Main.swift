@@ -34,7 +34,7 @@ struct _Main<Content: View, Links: View>: View {
                     content
                 }
                 .foregroundColor(set.colorForeground)
-                .padding(.top, set.paddingContentTop)
+                //.padding(.top, set.paddingContentTop)
                 
                 Spacer()
             

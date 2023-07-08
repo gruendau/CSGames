@@ -12,6 +12,7 @@ import SwiftUI
 ///
 /// This view starts the CSGames program.
 struct Main: View {
+    @EnvironmentObject var set: Settings
     var body: some View {
         _Main(content: Content(), links: Links())
     }
@@ -30,12 +31,28 @@ private struct Content: View {
             
             // CONTENT START ---------------------
             
-            // Colored Squares
-            GameSelector(name: "Colored Squares",
-                         show: $set.showColoredSquares)
-            
-            // ...
-            
+            ZStack {
+                // 1.Layer
+                // Game selector
+                VStack {
+                    
+                    // Colored Squares
+                    GameSelector(name: "Colored Squares",
+                                 show: $set.showColoredSquares)
+                    
+                    // ...
+                    
+                    Spacer()
+                }
+                .padding(.top, set.paddingContentTop)
+
+                // 2.Layer
+                // Info
+                Info()
+                    .opacity(set.showAppInfo ? 1 : 0)
+                    
+            }
+    
             // CONTENT END -----------------------
             
         }
@@ -72,6 +89,7 @@ private struct Links: View {
 struct Main_Previews: PreviewProvider {
     static var previews: some View {
         Main()
+            .environmentObject(Settings())
     }
 }
 
