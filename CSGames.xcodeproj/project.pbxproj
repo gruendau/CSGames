@@ -125,17 +125,25 @@
 				523C56232A59836C00FFB817 /* README.txt */,
 				52718AA32805DD200065C9DE /* GamesApp.swift */,
 				527D1D692A5782B900807DBC /* Main.swift */,
-				523C562B2A5A0A0F00FFB817 /* _Main.swift */,
-				523C56292A5A07B600FFB817 /* Background.swift */,
-				52745F602808AC9300B39220 /* Title.swift */,
-				5277B5742A58A4CC00DD16E8 /* GameSelector.swift */,
-				527687842807738300501744 /* Copyright.swift */,
 				521CDEC42A57F8000082C56B /* Settings.swift */,
+				523C562D2A5A0A5F00FFB817 /* Main */,
 				521CDEC82A587FC40082C56B /* Enums */,
 				527D1D642A575BAF00807DBC /* Modifiers */,
 				52745F5828087B7600B39220 /* Utilities */,
 			);
 			path = GamesApp;
+			sourceTree = "<group>";
+		};
+		523C562D2A5A0A5F00FFB817 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				523C562B2A5A0A0F00FFB817 /* _Main.swift */,
+				523C56292A5A07B600FFB817 /* Background.swift */,
+				52745F602808AC9300B39220 /* Title.swift */,
+				5277B5742A58A4CC00DD16E8 /* GameSelector.swift */,
+				527687842807738300501744 /* Copyright.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		52718A972805DD200065C9DE = {
