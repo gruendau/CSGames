@@ -13,44 +13,12 @@ struct CSStatistics: View {
     
     var body: some View {
         
-        CSInfoPage_Body(content: InfoContent())
+        _CSInfoPage(content: InfoContent())
         
     }
 }
 
-struct CSInfoPage_Body<Content: View>: View {
 
-    @EnvironmentObject var set: CSSettings
-
-    let content: Content
-
-    var body: some View {
-
-        Group {
-
-            ZStack(alignment: .leading) {
-
-                // 1.Layer
-                // Background color
-                Color.black
-
-                // 2. Layer
-                // Content
-                VStack(alignment: .leading) {
-
-                    content
-
-                }
-                .padding(.leading, set.paddingInfoLeading)
-                .padding(.top, set.paddingInfoTop)
-
-            }
-            .padding(.horizontal, set.paddingInfoHorizontal)
-            .foregroundColor(set.colorForeground)
-
-        }
-    }
-}
 
 
 struct InfoContent: View {
