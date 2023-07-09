@@ -12,16 +12,16 @@ class CSViewModel: ObservableObject {
     // MARK: - Properties
     
     // MARK: _Size of squarebox
-    private let minSize_Squarebox = 100
-    private let maxSize_Squarebox = 300
-    private let stepSize_Squarebox = 5
+    let minSize_Squarebox = 100
+    let maxSize_Squarebox = 300
+    let stepSize_Squarebox = 5
     var targetSize_Squarebox = 300
     @Published var size_Squarebox: CGFloat = 300
     
     // MARK: _Number of square per edge (per row)
-    private let minNumber_SquaresPerEdge = 1
-    private let maxNumber_SquaresPerEdge = 30
-    private let stepNumber_SquaresPerEdge = 1
+    let minNumber_SquaresPerEdge = 1
+    let maxNumber_SquaresPerEdge = 30
+    let stepNumber_SquaresPerEdge = 1
     @Published var number_SquaresPerEdge = 6
     
     // MARK: _Size of square
