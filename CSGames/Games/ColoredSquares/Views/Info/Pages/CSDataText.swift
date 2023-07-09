@@ -93,4 +93,3 @@ struct CSDataText_Previews: PreviewProvider {
     }
 }
 
-CSDataText(key: <#T##String#>, value: <#T##String#>, unit: <#T##String#>, widthKeyValue: <#T##CGFloat#>, colorKey: <#T##Color#>, colorValue: <#T##Color#>, colorUnit: <#T##Color#>)
