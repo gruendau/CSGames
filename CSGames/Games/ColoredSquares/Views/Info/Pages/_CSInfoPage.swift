@@ -31,7 +31,7 @@ struct _CSInfoPage<Content: View>: View {
                     content
 
                 }
-                .padding(.leading, set.paddingInfoLeading)
+                .padding(.horizontal)
                 .padding(.top, set.paddingInfoTop)
 
             }
