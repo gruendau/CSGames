@@ -23,7 +23,7 @@ private struct Content: View {
         Group {
             // CONTENT START ---------------------
             
-            let offset = CGFloat(0)
+            let offset = CGFloat(100)
             
             CSInfoTitle(title: "Game Data",
                         show: $set.showData)
@@ -34,10 +34,12 @@ private struct Content: View {
                         .bold()
                     VStack(alignment: .leading) {
                         CSDataText(key: "size",
-                             value: String(Int(csm.size_Squarebox)),
-                             unit: "px",
-                             widthKeyValue: offset,
-                             colorValue: .yellow)
+                                   value: String(Int(csm.size_Squarebox)),
+                                   unit: "px",
+                                   widthKeyValue: offset,
+                                   colorKey: .yellow,
+                                   colorValue: .yellow,
+                                   colorUnit: .yellow)
                         CSDataText(key: "min",
                              value: String(Int(csm.minSize_Squarebox)),
                              unit: "px",
