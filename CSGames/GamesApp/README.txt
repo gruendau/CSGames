@@ -15,6 +15,7 @@ Description:
 --------------------------------
 
 Updated:
+  2023-07-09 Implemented Info for CSGames
   2023-07-08 Implemented README
 
 --------------------------------
@@ -32,28 +33,45 @@ Literature:
 
 ToDos:
   Improve RandomColor
-  Improve ForegroundGradient1
-  Add info pages
+  Improve RandomTricolorForeground
+  Improve RandomTricolorBackground
 
 --------------------------------
 
 Content:
-
-  README
-  GamesApp
-    Main
-      Title
-      GameSelector
-      Copyright
-    Settings
+  #CSGames
+    README
     
-  #Enums
-    Games
+    #GamesApp
+      README
+      GamesApp
+      Main
+      Settings
+      
+      #Main
+        _Main
+        Background
+        Title
+        GameSelector
+        Copyright
+      
+    #Info
+      Info
+      InfoTitle
+      InfoSelector
+      
+      #Pages
+        _InfoPage
+        About
     
-  #Modifiers
-    ForegroundGradient1
+    #Enums
+      Games
     
-  #Utilities
-    RandomColor
+    #Modifiers
+      RandomTricolorForeground
+      RandomTricolorBackground
+    
+    #Utilities
+      RandomColor
 
 --------------------------------
