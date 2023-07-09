@@ -43,9 +43,9 @@ struct CSDataText: View {
           value: String,
           unit: String,
           widthKeyValue: CGFloat = 150,
-          colorKey: Color = .white,
-          colorValue: Color = .white,
-          colorUnit: Color = .white) {
+          colorKey: Color = .blue,
+          colorValue: Color = .blue,
+          colorUnit: Color = .blue) {
         self.key = key
         self.value = value
         self.unit = unit

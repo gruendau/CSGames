@@ -31,30 +31,29 @@ private struct Content: View {
             VStack(alignment: .leading) {
                 Group {
                     Text("Squarebox size")
+                        .foregroundColor(.blue)
                         .bold()
                     VStack(alignment: .leading) {
                         CSDataText(key: "size",
                                    value: String(Int(csm.size_Squarebox)),
                                    unit: "px",
                                    widthKeyValue: offset,
-                                   colorKey: .yellow,
-                                   colorValue: .yellow,
-                                   colorUnit: .yellow)
+                                   colorValue: .blue)
                         CSDataText(key: "min",
-                             value: String(Int(csm.minSize_Squarebox)),
-                             unit: "px",
-                             widthKeyValue: offset,
-                             colorValue: .blue)
+                                   value: String(Int(csm.minSize_Squarebox)),
+                                   unit: "px",
+                                   widthKeyValue: offset,
+                                   colorValue: .blue)
                         CSDataText(key: "max",
-                             value: String(Int(csm.maxSize_Squarebox)),
-                             unit: "px",
-                             widthKeyValue: offset,
-                             colorValue: .blue)
+                                   value: String(Int(csm.maxSize_Squarebox)),
+                                   unit: "px",
+                                   widthKeyValue: offset,
+                                   colorValue: .blue)
                         CSDataText(key: "step",
-                             value: "\(String(Int(csm.stepSize_Squarebox)))",
-                             unit: "px",
-                             widthKeyValue: offset,
-                             colorValue: .blue)
+                                   value: "\(String(Int(csm.stepSize_Squarebox)))",
+                                   unit: "px",
+                                   widthKeyValue: offset,
+                                   colorValue: .blue)
                         
                     }
                     .padding(.leading)
@@ -62,26 +61,28 @@ private struct Content: View {
                 }
                 Group {
                     Text("Square size")
+                        .foregroundColor(.blue)
                         .bold()
                     VStack(alignment: .leading) {
                         CSDataText(key: "size",
                              value: String(Int(csm.size_Square)),
                              unit: "px",
                              widthKeyValue: offset,
-                             colorValue: .yellow)
+                             colorValue: .blue)
                     }
                     .padding(.leading)
                     Text("")
                 }
                 Group {
                     Text("Squares per edge")
+                        .foregroundColor(.blue)
                         .bold()
                     VStack(alignment: .leading) {
                         CSDataText(key: "number",
                              value: String(Int(csm.number_SquaresPerEdge)),
                              unit: "",
                              widthKeyValue: offset,
-                             colorValue: .yellow)
+                             colorValue: .blue)
                         CSDataText(key: "min",
                              value: String(Int(csm.minNumber_SquaresPerEdge)),
                              unit: "",
