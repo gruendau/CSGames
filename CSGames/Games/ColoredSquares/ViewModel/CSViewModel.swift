@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// View model for Colored Squares.
 class CSViewModel: ObservableObject {
     
     // MARK: - Properties
@@ -16,16 +17,16 @@ class CSViewModel: ObservableObject {
     let maxSize_Squarebox = 300
     let stepSize_Squarebox = 5
     var targetSize_Squarebox = 300
-    @Published var size_Squarebox: CGFloat = 300
+    private(set) var size_Squarebox: CGFloat = 300
     
     // MARK: _Number of square per edge (per row)
     let minNumber_SquaresPerEdge = 1
     let maxNumber_SquaresPerEdge = 30
     let stepNumber_SquaresPerEdge = 1
-    @Published var number_SquaresPerEdge = 6
+    private(set) var number_SquaresPerEdge = 6
     
     // MARK: _Size of square
-    @Published var size_Square: CGFloat = 1
+    @Published private(set) var size_Square: CGFloat = 1
     
     // MARK: _Number of updates
     //@Published var numberUpdates_SizeSquarebox = 0
@@ -150,7 +151,6 @@ class CSViewModel: ObservableObject {
         return (bigAngle, smallAngle)
         
     }
-    
     
     //---------------------------------------------------------
     // MARK: ViewModel
