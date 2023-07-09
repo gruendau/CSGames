@@ -19,40 +19,40 @@ struct Data: View {
     @EnvironmentObject var csm: CSViewModel
     @EnvironmentObject var set: CSSettings
     
-    let name: String
+    let key: String
     let value: String
     let unit: String
     
-    let valueOffset: CGFloat
+    let frame: CGFloat
     let valueColor: Color
     
-    init (name: String,
+    init (key: String,
           value: String,
           unit: String,
-          valueOffset: CGFloat = 100,
+          frame: CGFloat = 150,
           valueColor: Color = .white) {
-        self.name = name
+        self.key = key
         self.value = value
         self.unit = unit
-        self.valueOffset = valueOffset
+        self.frame = frame
         self.valueColor = valueColor
     }
     
     var body: some View {
-        
         HStack {
-            Text("\(name): ")
-            //Spacer()
             HStack {
-                //Spacer()
+                // Key
+                Text("\(key): ")
+                Spacer()
+                // Value
                 Text(value)
                     .foregroundColor(valueColor)
-                Text(unit)
-                .padding(.trailing, 90)
             }
-              //valueOffset)
+            .frame(width: 110)
+            // Unit
+            Text(unit)
+            Spacer()
         }
-        
     }
 }
 
@@ -77,27 +77,27 @@ private struct Content: View {
                     Text("Squarebox size")
                         .bold()
                     VStack(alignment: .leading) {
-                        Data(name: "size",
+                        Data(key: "size",
                              value: String(Int(csm.size_Squarebox)),
                              unit: "px",
-                             valueOffset: offset,
-                             valueColor: .blue)
-                        Data(name: "min",
+                             frame: offset,
+                             valueColor: .yellow)
+                        Data(key: "min",
                              value: String(Int(csm.minSize_Squarebox)),
                              unit: "px",
-                             valueOffset: offset,
-                             valueColor: .red)
-                        Data(name: "max",
+                             frame: offset,
+                             valueColor: .blue)
+                        Data(key: "max",
                              value: String(Int(csm.maxSize_Squarebox)),
                              unit: "px",
-                             valueOffset: offset,
-                             valueColor: .red)
-                        Data(name: "step",
+                             frame: offset,
+                             valueColor: .blue)
+                        Data(key: "step",
                              value: "\(String(Int(csm.stepSize_Squarebox)))",
                              unit: "px",
-                             valueOffset: offset,
-                             valueColor: .red)
-
+                             frame: offset,
+                             valueColor: .blue)
+                        
                     }
                     .padding(.leading)
                     Text("")
@@ -106,7 +106,11 @@ private struct Content: View {
                     Text("Square size")
                         .bold()
                     VStack(alignment: .leading) {
-                        Text("size:   \(Int(csm.size_Square)) px")
+                        Data(key: "size",
+                             value: String(Int(csm.size_Square)),
+                             unit: "px",
+                             frame: offset,
+                             valueColor: .yellow)
                     }
                     .padding(.leading)
                     Text("")
@@ -115,10 +119,27 @@ private struct Content: View {
                     Text("Squares per edge")
                         .bold()
                     VStack(alignment: .leading) {
-                    Text("min:    \(csm.minNumber_SquaresPerEdge)")
-                    Text("max:    \(csm.maxNumber_SquaresPerEdge)")
-                    Text("step:   \(csm.stepNumber_SquaresPerEdge)")
-                    Text("number: \(Int(csm.number_SquaresPerEdge))")
+                        Data(key: "number",
+                             value: String(Int(csm.number_SquaresPerEdge)),
+                             unit: "",
+                             frame: offset,
+                             valueColor: .yellow)
+                        Data(key: "min",
+                             value: String(Int(csm.minNumber_SquaresPerEdge)),
+                             unit: "",
+                             frame: offset,
+                             valueColor: .blue)
+                        Data(key: "max",
+                             value: String(Int(csm.maxNumber_SquaresPerEdge)),
+                             unit: "",
+                             frame: offset,
+                             valueColor: .blue)
+                        Data(key: "step",
+                             value: String(Int(csm.stepNumber_SquaresPerEdge)),
+                             unit: "",
+                             frame: offset,
+                             valueColor: .blue)
+                        
                     }
                     .padding(.leading)
                     Text("")
@@ -126,7 +147,7 @@ private struct Content: View {
                 Group {
                     
                 }
-
+                
             }
             
             Spacer()
