@@ -10,6 +10,7 @@
 		521CDEC52A57F8000082C56B /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521CDEC42A57F8000082C56B /* Settings.swift */; };
 		521CDEC72A587BA90082C56B /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521CDEC62A587BA90082C56B /* Games.swift */; };
 		521CDECB2A5881180082C56B /* CSCopyright.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521CDECA2A5881180082C56B /* CSCopyright.swift */; };
+		52209E992A5B23EA00C947EE /* CSDataText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52209E982A5B23EA00C947EE /* CSDataText.swift */; };
 		523C561F2A596D6D00FFB817 /* CSAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C561E2A596D6D00FFB817 /* CSAbout.swift */; };
 		523C56212A597AF900FFB817 /* _CSInfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C56202A597AF900FFB817 /* _CSInfoPage.swift */; };
 		523C56242A59836C00FFB817 /* README.txt in Sources */ = {isa = PBXBuildFile; fileRef = 523C56232A59836C00FFB817 /* README.txt */; };
@@ -57,6 +58,7 @@
 		521CDEC42A57F8000082C56B /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		521CDEC62A587BA90082C56B /* Games.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
 		521CDECA2A5881180082C56B /* CSCopyright.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSCopyright.swift; sourceTree = "<group>"; };
+		52209E982A5B23EA00C947EE /* CSDataText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSDataText.swift; sourceTree = "<group>"; };
 		523C561E2A596D6D00FFB817 /* CSAbout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSAbout.swift; sourceTree = "<group>"; };
 		523C56202A597AF900FFB817 /* _CSInfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _CSInfoPage.swift; sourceTree = "<group>"; };
 		523C56232A59836C00FFB817 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
@@ -287,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				523C56202A597AF900FFB817 /* _CSInfoPage.swift */,
+				52209E982A5B23EA00C947EE /* CSDataText.swift */,
 				527216362810B245001264F3 /* CSUserInstructions.swift */,
 				5272163A2810B273001264F3 /* CSData.swift */,
 				527216382810B257001264F3 /* CSStatistics.swift */,
@@ -385,6 +388,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52209E992A5B23EA00C947EE /* CSDataText.swift in Sources */,
 				52718AB82805DF7D0065C9DE /* CSSquare.swift in Sources */,
 				527687852807738300501744 /* Copyright.swift in Sources */,
 				5276878B280779DA00501744 /* CSButtonBox.swift in Sources */,

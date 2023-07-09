@@ -15,50 +15,6 @@ struct CSData: View {
     }
 }
 
-struct Data: View {
-    @EnvironmentObject var csm: CSViewModel
-    @EnvironmentObject var set: CSSettings
-    
-    let key: String
-    let value: String
-    let unit: String
-    
-    let frame: CGFloat
-    let valueColor: Color
-    
-    init (key: String,
-          value: String,
-          unit: String,
-          frame: CGFloat = 150,
-          valueColor: Color = .white) {
-        self.key = key
-        self.value = value
-        self.unit = unit
-        self.frame = frame
-        self.valueColor = valueColor
-    }
-    
-    var body: some View {
-        HStack {
-            HStack {
-                // Key
-                Text("\(key): ")
-                Spacer()
-                // Value
-                Text(value)
-                    .foregroundColor(valueColor)
-            }
-            .frame(width: 110)
-            // Unit
-            Text(unit)
-            Spacer()
-        }
-    }
-}
-
-
-
-
 private struct Content: View {
     @EnvironmentObject var csm: CSViewModel
     @EnvironmentObject var set: CSSettings
@@ -77,26 +33,26 @@ private struct Content: View {
                     Text("Squarebox size")
                         .bold()
                     VStack(alignment: .leading) {
-                        Data(key: "size",
+                        CSDataText(key: "size",
                              value: String(Int(csm.size_Squarebox)),
                              unit: "px",
-                             frame: offset,
-                             valueColor: .yellow)
-                        Data(key: "min",
+                             widthKeyValue: offset,
+                             colorValue: .yellow)
+                        CSDataText(key: "min",
                              value: String(Int(csm.minSize_Squarebox)),
                              unit: "px",
-                             frame: offset,
-                             valueColor: .blue)
-                        Data(key: "max",
+                             widthKeyValue: offset,
+                             colorValue: .blue)
+                        CSDataText(key: "max",
                              value: String(Int(csm.maxSize_Squarebox)),
                              unit: "px",
-                             frame: offset,
-                             valueColor: .blue)
-                        Data(key: "step",
+                             widthKeyValue: offset,
+                             colorValue: .blue)
+                        CSDataText(key: "step",
                              value: "\(String(Int(csm.stepSize_Squarebox)))",
                              unit: "px",
-                             frame: offset,
-                             valueColor: .blue)
+                             widthKeyValue: offset,
+                             colorValue: .blue)
                         
                     }
                     .padding(.leading)
@@ -106,11 +62,11 @@ private struct Content: View {
                     Text("Square size")
                         .bold()
                     VStack(alignment: .leading) {
-                        Data(key: "size",
+                        CSDataText(key: "size",
                              value: String(Int(csm.size_Square)),
                              unit: "px",
-                             frame: offset,
-                             valueColor: .yellow)
+                             widthKeyValue: offset,
+                             colorValue: .yellow)
                     }
                     .padding(.leading)
                     Text("")
@@ -119,26 +75,26 @@ private struct Content: View {
                     Text("Squares per edge")
                         .bold()
                     VStack(alignment: .leading) {
-                        Data(key: "number",
+                        CSDataText(key: "number",
                              value: String(Int(csm.number_SquaresPerEdge)),
                              unit: "",
-                             frame: offset,
-                             valueColor: .yellow)
-                        Data(key: "min",
+                             widthKeyValue: offset,
+                             colorValue: .yellow)
+                        CSDataText(key: "min",
                              value: String(Int(csm.minNumber_SquaresPerEdge)),
                              unit: "",
-                             frame: offset,
-                             valueColor: .blue)
-                        Data(key: "max",
+                             widthKeyValue: offset,
+                             colorValue: .blue)
+                        CSDataText(key: "max",
                              value: String(Int(csm.maxNumber_SquaresPerEdge)),
                              unit: "",
-                             frame: offset,
-                             valueColor: .blue)
-                        Data(key: "step",
+                             widthKeyValue: offset,
+                             colorValue: .blue)
+                        CSDataText(key: "step",
                              value: String(Int(csm.stepNumber_SquaresPerEdge)),
                              unit: "",
-                             frame: offset,
-                             valueColor: .blue)
+                             widthKeyValue: offset,
+                             colorValue: .blue)
                         
                     }
                     .padding(.leading)
