@@ -92,6 +92,7 @@ Content:
       
       #Pages
         _CSInfoPage
+        CSDataText
         CSUserInstructions
         CSDate
         CSStatistics
